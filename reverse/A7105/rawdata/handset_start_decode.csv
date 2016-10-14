@@ -1,0 +1,2871 @@
+remote 1.628711 W Device Reset
+remote 1.630788 W ID DATA Register [55 20 10 41]
+remote 1.630817 W Mode Control Register [62]
+remote 1.630848 W Calibration Control Register [00]
+remote 1.630877 W FIFO Register I [0F]
+remote 1.630906 W FIFO Register II [C0]
+remote 1.630934 W RC OSC Register I [00]
+remote 1.630963 W RC OSC Register II [00]
+remote 1.630992 W RC OSC Register III [04]
+remote 1.631020 W CKO Pin Control Register [A2]
+remote 1.631049 W GIO1 Pin Control Register I [01]
+remote 1.631078 W GIO2 Pin Control Register II [01]
+remote 1.631107 W Clock Register [05]
+remote 1.631135 W Data Rate Register [04]
+remote 1.631164 W CH 80 (320.0MHz)
+remote 1.631193 W PLL Register II [9E]
+remote 1.631222 W PLL Register III [4B]
+remote 1.631251 W PLL Register IV [00]
+remote 1.631279 W PLL Register V [00]
+remote 1.631308 W TX Register I [16]
+remote 1.631337 W TX Register II [2B]
+remote 1.631366 W Delay Register I [12]
+remote 1.631394 W Delay Register II [00]
+remote 1.631423 W RX Register [62]
+remote 1.631452 W RX Gain Register I [80]
+remote 1.631481 W RX Gain Register II [80]
+remote 1.631509 W RX Gain Register III [00]
+remote 1.631538 W RX Gain Register IV [0A]
+remote 1.631567 W RSSI Thershld Register [32]
+remote 1.631596 W ADC Control Register [C3]
+remote 1.631625 W Code Register I [07]
+remote 1.631654 W Code Register II [17]
+remote 1.631683 W Code Register III [00]
+remote 1.631711 W IF Calibration Register I [00]
+remote 1.631740 W VCO current Calibration Register [00]
+remote 1.631768 W VCO Single band Calibration Register I [00]
+remote 1.631797 W VCO Single band Calibration Register II [3B]
+remote 1.631826 W Battery detect Register [00]
+remote 1.631858 W TX test Register [1F]
+remote 1.631887 W Rx DEM test Register I [47]
+remote 1.631915 W Rx DEM test Register II [80]
+remote 1.631944 W Charge Pump Current Register [03]
+remote 1.631973 W Crystal test Register [01]
+remote 1.632001 W PLL test Register [45]
+remote 1.632030 W VCO test Register I [18]
+remote 1.632059 W VCO test Register II [00]
+remote 1.632087 W IFAT Register [01]
+remote 1.652178 W RScale Register [0F]
+remote 1.652192 S Standby Mode
+remote 1.652221 W Calibration Control Register [01]
+remote 1.652453 R Calibration Control Register [01]
+remote 1.652483 R Calibration Control Register [00]
+remote 1.652513 R IF Calibration Register I [06]
+remote 1.652541 W IF Calibration Register I [13]
+remote 1.652570 W IF Calibration Register II [3B]
+remote 1.652598 W CH 0 (2400.0MHz)
+remote 1.652626 W Calibration Control Register [02]
+remote 1.652859 R Calibration Control Register [02]
+remote 1.652889 R Calibration Control Register [00]
+remote 1.652918 R IF Calibration Register I [03]
+remote 1.652947 W CH 120 (2460.0MHz)
+remote 1.652975 W Calibration Control Register [02]
+remote 1.653208 R Calibration Control Register [02]
+remote 1.653238 R Calibration Control Register [00]
+remote 1.653268 R IF Calibration Register I [03]
+remote 1.653297 W VCO Single band Calibration Register I [0B]
+remote 1.653312 S Standby Mode
+remote 1.653340 W CH 0 (2400.0MHz)
+remote 1.656365 S PLL Mode
+remote 1.656381 S RX Mode
+remote 1.656410 W ADC Control Register [C3]
+remote 1.656439 W CH 20 (2410.0MHz)
+remote 1.659463 S PLL Mode
+remote 1.664495 S RX Mode
+remote 1.666532 R RSSI = 0.647V
+remote 1.668569 R RSSI = 0.633V
+remote 1.670606 R RSSI = 0.637V
+remote 1.672643 R RSSI = 0.647V
+remote 1.674680 R RSSI = 0.656V
+remote 1.676717 R RSSI = 0.661V
+remote 1.678754 R RSSI = 0.633V
+remote 1.680791 R RSSI = 0.661V
+remote 1.682827 R RSSI = 0.731V
+remote 1.684867 R RSSI = 0.666V
+remote 1.686905 R RSSI = 0.675V
+remote 1.690978 R RSSI = 0.731V (Repeated 1 times)
+remote 1.693015 R RSSI = 0.698V
+remote 1.695054 R RSSI = 0.703V
+remote 1.695083 W CH 30 (2415.0MHz)
+remote 1.698108 S PLL Mode
+remote 1.703139 S RX Mode
+remote 1.705176 R RSSI = 0.652V
+remote 1.707213 R RSSI = 0.713V
+remote 1.711287 R RSSI = 0.656V (Repeated 1 times)
+remote 1.713324 R RSSI = 0.666V
+remote 1.715361 R RSSI = 0.670V
+remote 1.717398 R RSSI = 0.680V
+remote 1.719435 R RSSI = 0.694V
+remote 1.721471 R RSSI = 0.703V
+remote 1.723508 R RSSI = 0.666V
+remote 1.725545 R RSSI = 0.698V
+remote 1.727582 R RSSI = 0.652V
+remote 1.729619 R RSSI = 0.647V
+remote 1.731656 R RSSI = 0.642V
+remote 1.733695 R RSSI = 0.684V
+remote 1.733723 W CH 40 (2420.0MHz)
+remote 1.736748 S PLL Mode
+remote 1.741780 S RX Mode
+remote 1.743817 R RSSI = 0.647V
+remote 1.745854 R RSSI = 0.661V
+remote 1.747894 R RSSI = 0.656V
+remote 1.749931 R RSSI = 0.680V
+remote 1.751968 R RSSI = 0.717V
+remote 1.758078 R RSSI = 0.708V (Repeated 2 times)
+remote 1.760115 R RSSI = 0.703V
+remote 1.762151 R RSSI = 0.722V
+remote 1.764188 R RSSI = 0.731V
+remote 1.766225 R RSSI = 0.713V
+remote 1.768262 R RSSI = 0.689V
+remote 1.770299 R RSSI = 0.675V
+remote 1.772338 R RSSI = 0.689V
+remote 1.772366 W CH 50 (2425.0MHz)
+remote 1.775392 S PLL Mode
+remote 1.780423 S RX Mode
+remote 1.782460 R RSSI = 0.675V
+remote 1.784497 R RSSI = 0.689V
+remote 1.786534 R RSSI = 0.703V
+remote 1.788571 R RSSI = 0.666V
+remote 1.792645 R RSSI = 0.680V (Repeated 1 times)
+remote 1.794682 R RSSI = 0.727V
+remote 1.796719 R RSSI = 0.694V
+remote 1.798755 R RSSI = 0.717V
+remote 1.800792 R RSSI = 0.666V
+remote 1.802829 R RSSI = 0.694V
+remote 1.804866 R RSSI = 0.666V
+remote 1.806906 R RSSI = 0.694V
+remote 1.808943 R RSSI = 0.713V
+remote 1.810982 R RSSI = 0.642V
+remote 1.811010 W CH 60 (2430.0MHz)
+remote 1.814035 S PLL Mode
+remote 1.819067 S RX Mode
+remote 1.821104 R RSSI = 0.703V
+remote 1.823141 R RSSI = 0.741V
+remote 1.825177 R RSSI = 0.727V
+remote 1.827214 R RSSI = 0.694V
+remote 1.829251 R RSSI = 0.731V
+remote 1.831288 R RSSI = 0.750V
+remote 1.833325 R RSSI = 0.727V
+remote 1.835362 R RSSI = 0.741V
+remote 1.837399 R RSSI = 0.689V
+remote 1.839435 R RSSI = 0.736V
+remote 1.841472 R RSSI = 0.680V
+remote 1.843509 R RSSI = 0.703V
+remote 1.845546 R RSSI = 0.745V
+remote 1.847582 R RSSI = 0.731V
+remote 1.849622 R RSSI = 0.694V
+remote 1.849650 W CH 70 (2435.0MHz)
+remote 1.852675 S PLL Mode
+remote 1.857707 S RX Mode
+remote 1.859743 R RSSI = 0.661V
+remote 1.861781 R RSSI = 0.713V
+remote 1.863817 R RSSI = 0.670V
+remote 1.867891 R RSSI = 0.689V (Repeated 1 times)
+remote 1.869931 R RSSI = 0.717V
+remote 1.874004 R RSSI = 0.745V (Repeated 1 times)
+remote 1.876041 R RSSI = 0.741V
+remote 1.878077 R RSSI = 0.698V
+remote 1.880114 R RSSI = 0.694V
+remote 1.882151 R RSSI = 0.647V
+remote 1.884189 R RSSI = 0.755V
+remote 1.886226 R RSSI = 0.684V
+remote 1.888264 R RSSI = 0.661V
+remote 1.888292 W CH 80 (2440.0MHz)
+remote 1.891317 S PLL Mode
+remote 1.896349 S RX Mode
+remote 1.898386 R RSSI = 0.698V
+remote 1.900423 R RSSI = 0.731V
+remote 1.902460 R RSSI = 0.750V
+remote 1.904497 R RSSI = 0.703V
+remote 1.906534 R RSSI = 0.727V
+remote 1.908570 R RSSI = 0.698V
+remote 1.910607 R RSSI = 0.684V
+remote 1.914681 R RSSI = 0.689V (Repeated 1 times)
+remote 1.916718 R RSSI = 0.713V
+remote 1.918755 R RSSI = 0.694V
+remote 1.920792 R RSSI = 0.698V
+remote 1.922829 R RSSI = 0.713V
+remote 1.924866 R RSSI = 0.694V
+remote 1.926905 R RSSI = 0.708V
+remote 1.926936 W CH 90 (2445.0MHz)
+remote 1.929961 S PLL Mode
+remote 1.934993 S RX Mode
+remote 1.937030 R RSSI = 0.694V
+remote 1.939066 R RSSI = 0.708V
+remote 1.941103 R RSSI = 0.722V
+remote 1.943140 R RSSI = 0.736V
+remote 1.945177 R RSSI = 0.731V
+remote 1.947213 R RSSI = 0.736V
+remote 1.951287 R RSSI = 0.741V (Repeated 1 times)
+remote 1.953324 R RSSI = 0.764V
+remote 1.955360 R RSSI = 0.736V
+remote 1.957397 R RSSI = 0.750V
+remote 1.959434 R RSSI = 0.745V
+remote 1.961471 R RSSI = 0.708V
+remote 1.963507 R RSSI = 0.727V
+remote 1.965546 R RSSI = 0.698V
+remote 1.965575 W CH 100 (2450.0MHz)
+remote 1.968600 S PLL Mode
+remote 1.973631 S RX Mode
+remote 1.975668 R RSSI = 0.694V
+remote 1.977705 R RSSI = 0.727V
+remote 1.979742 R RSSI = 0.731V
+remote 1.981778 R RSSI = 0.736V
+remote 1.983815 R RSSI = 0.694V
+remote 1.985853 R RSSI = 0.684V
+remote 1.987890 R RSSI = 0.694V
+remote 1.989926 R RSSI = 0.731V
+remote 1.991966 R RSSI = 0.736V
+remote 1.994003 R RSSI = 0.745V
+remote 1.996040 R RSSI = 0.759V
+remote 1.998076 R RSSI = 0.745V
+remote 2.000113 R RSSI = 0.727V
+remote 2.002150 R RSSI = 0.750V
+remote 2.004189 R RSSI = 0.731V
+remote 2.004217 W CH 110 (2455.0MHz)
+remote 2.007242 S PLL Mode
+remote 2.012274 S RX Mode
+remote 2.014311 R RSSI = 0.755V
+remote 2.016348 R RSSI = 0.750V
+remote 2.018385 R RSSI = 0.736V
+remote 2.022459 R RSSI = 0.713V (Repeated 1 times)
+remote 2.024496 R RSSI = 0.755V
+remote 2.026533 R RSSI = 0.741V
+remote 2.028569 R RSSI = 0.708V
+remote 2.032643 R RSSI = 0.727V (Repeated 1 times)
+remote 2.036716 R RSSI = 0.703V (Repeated 1 times)
+remote 2.038753 R RSSI = 0.689V
+remote 2.040790 R RSSI = 0.713V
+remote 2.042829 R RSSI = 0.717V
+remote 2.042857 W CH 120 (2460.0MHz)
+remote 2.045882 S PLL Mode
+remote 2.050914 S RX Mode
+remote 2.052951 R RSSI = 0.802V
+remote 2.057027 R RSSI = 0.783V (Repeated 1 times)
+remote 2.061101 R RSSI = 0.806V (Repeated 1 times)
+remote 2.063138 R RSSI = 0.792V
+remote 2.065174 R RSSI = 0.802V
+remote 2.067211 R RSSI = 0.736V
+remote 2.069248 R RSSI = 0.722V
+remote 2.071285 R RSSI = 0.731V
+remote 2.073322 R RSSI = 0.773V
+remote 2.075359 R RSSI = 0.769V
+remote 2.077396 R RSSI = 0.759V
+remote 2.079433 R RSSI = 0.684V
+remote 2.081472 R RSSI = 0.750V
+remote 2.081500 W CH 130 (2465.0MHz)
+remote 2.084525 S PLL Mode
+remote 2.089557 S RX Mode
+remote 2.091594 R RSSI = 0.778V
+remote 2.093631 R RSSI = 0.708V
+remote 2.095668 R RSSI = 0.755V
+remote 2.097704 R RSSI = 0.736V
+remote 2.099741 R RSSI = 0.708V
+remote 2.101777 R RSSI = 0.727V
+remote 2.103814 R RSSI = 0.731V
+remote 2.105852 R RSSI = 0.750V
+remote 2.109925 R RSSI = 0.745V (Repeated 1 times)
+remote 2.111961 R RSSI = 0.773V
+remote 2.114002 R RSSI = 0.769V
+remote 2.116038 R RSSI = 0.773V
+remote 2.118075 R RSSI = 0.769V
+remote 2.120114 R RSSI = 0.755V
+remote 2.120143 W CH 120 (2460.0MHz)
+remote 2.123168 S PLL Mode
+remote 2.123183 S RX Mode
+remote 2.123211 W TX Register I [06]
+remote 6.184046 S TX Mode
+remote 6.204136 W Device Reset
+remote 6.206219 W ID DATA Register [55 20 10 41]
+remote 6.206247 W Mode Control Register [62]
+remote 6.206284 W Calibration Control Register [00]
+remote 6.206313 W FIFO Register I [0F]
+remote 6.206341 W FIFO Register II [C0]
+remote 6.206370 W RC OSC Register I [00]
+remote 6.206399 W RC OSC Register II [00]
+remote 6.206427 W RC OSC Register III [04]
+remote 6.206461 W CKO Pin Control Register [A2]
+remote 6.206490 W GIO1 Pin Control Register I [01]
+remote 6.206518 W GIO2 Pin Control Register II [01]
+remote 6.206547 W Clock Register [05]
+remote 6.206576 W Data Rate Register [04]
+remote 6.206613 W CH 80 (2440.0MHz)
+remote 6.206642 W PLL Register II [9E]
+remote 6.206671 W PLL Register III [4B]
+remote 6.206699 W PLL Register IV [00]
+remote 6.206728 W PLL Register V [00]
+remote 6.206757 W TX Register I [16]
+remote 6.206791 W TX Register II [2B]
+remote 6.206819 W Delay Register I [12]
+remote 6.206848 W Delay Register II [00]
+remote 6.206877 W RX Register [62]
+remote 6.206906 W RX Gain Register I [80]
+remote 6.206934 W RX Gain Register II [80]
+remote 6.206969 W RX Gain Register III [00]
+remote 6.206997 W RX Gain Register IV [0A]
+remote 6.207026 W RSSI Thershld Register [32]
+remote 6.207055 W ADC Control Register [C3]
+remote 6.207084 W Code Register I [07]
+remote 6.207113 W Code Register II [17]
+remote 6.207147 W Code Register III [00]
+remote 6.207175 W IF Calibration Register I [00]
+remote 6.207204 W VCO current Calibration Register [00]
+remote 6.207232 W VCO Single band Calibration Register I [00]
+remote 6.207264 W VCO Single band Calibration Register II [3B]
+remote 6.207293 W Battery detect Register [00]
+remote 6.207327 W TX test Register [1F]
+remote 6.207356 W Rx DEM test Register I [47]
+remote 6.207385 W Rx DEM test Register II [80]
+remote 6.207413 W Charge Pump Current Register [03]
+remote 6.207442 W Crystal test Register [01]
+remote 6.207471 W PLL test Register [45]
+remote 6.207504 W VCO test Register I [18]
+remote 6.207533 W VCO test Register II [00]
+remote 6.207562 W IFAT Register [01]
+remote 6.227669 W RScale Register [0F]
+remote 6.227683 S Standby Mode
+remote 6.227720 W Calibration Control Register [01]
+remote 6.227953 R Calibration Control Register [01]
+remote 6.227983 R Calibration Control Register [00]
+remote 6.228012 R IF Calibration Register I [06]
+remote 6.228040 W IF Calibration Register I [13]
+remote 6.228069 W IF Calibration Register II [3B]
+remote 6.228103 W CH 0 (2400.0MHz)
+remote 6.228131 W Calibration Control Register [02]
+remote 6.228364 R Calibration Control Register [02]
+remote 6.228394 R Calibration Control Register [00]
+remote 6.228429 R IF Calibration Register I [03]
+remote 6.228457 W CH 120 (2460.0MHz)
+remote 6.228486 W Calibration Control Register [02]
+remote 6.228718 R Calibration Control Register [02]
+remote 6.228748 R Calibration Control Register [00]
+remote 6.228784 R IF Calibration Register I [03]
+remote 6.228813 W VCO Single band Calibration Register I [0B]
+remote 6.228828 S Standby Mode
+remote 6.228856 W CH 0 (2400.0MHz)
+remote 6.231881 S PLL Mode
+remote 6.252023 S RX Mode
+remote 6.272113 W Device Reset
+remote 6.274190 W ID DATA Register [55 20 10 41]
+remote 6.274219 W Mode Control Register [62]
+remote 6.274248 W Calibration Control Register [00]
+remote 6.274276 W FIFO Register I [0F]
+remote 6.274308 W FIFO Register II [C0]
+remote 6.274337 W RC OSC Register I [00]
+remote 6.274365 W RC OSC Register II [00]
+remote 6.274394 W RC OSC Register III [04]
+remote 6.274423 W CKO Pin Control Register [A2]
+remote 6.274451 W GIO1 Pin Control Register I [01]
+remote 6.274480 W GIO2 Pin Control Register II [01]
+remote 6.274509 W Clock Register [05]
+remote 6.274538 W Data Rate Register [04]
+remote 6.274566 W CH 80 (2440.0MHz)
+remote 6.274595 W PLL Register II [9E]
+remote 6.274624 W PLL Register III [4B]
+remote 6.274653 W PLL Register IV [00]
+remote 6.274681 W PLL Register V [00]
+remote 6.274710 W TX Register I [16]
+remote 6.274739 W TX Register II [2B]
+remote 6.274768 W Delay Register I [12]
+remote 6.274797 W Delay Register II [00]
+remote 6.274825 W RX Register [62]
+remote 6.274854 W RX Gain Register I [80]
+remote 6.274883 W RX Gain Register II [80]
+remote 6.274912 W RX Gain Register III [00]
+remote 6.274940 W RX Gain Register IV [0A]
+remote 6.274969 W RSSI Thershld Register [32]
+remote 6.274998 W ADC Control Register [C3]
+remote 6.275028 W Code Register I [07]
+remote 6.275056 W Code Register II [17]
+remote 6.275085 W Code Register III [00]
+remote 6.275113 W IF Calibration Register I [00]
+remote 6.275142 W VCO current Calibration Register [00]
+remote 6.275170 W VCO Single band Calibration Register I [00]
+remote 6.275199 W VCO Single band Calibration Register II [3B]
+remote 6.275228 W Battery detect Register [00]
+remote 6.275257 W TX test Register [1F]
+remote 6.275292 W Rx DEM test Register I [47]
+remote 6.275321 W Rx DEM test Register II [80]
+remote 6.275350 W Charge Pump Current Register [03]
+remote 6.275378 W Crystal test Register [01]
+remote 6.275407 W PLL test Register [45]
+remote 6.275436 W VCO test Register I [18]
+remote 6.275465 W VCO test Register II [00]
+remote 6.275493 W IFAT Register [01]
+remote 6.295588 W RScale Register [0F]
+remote 6.295603 S Standby Mode
+remote 6.295632 W Calibration Control Register [01]
+remote 6.295869 R Calibration Control Register [01]
+remote 6.295899 R Calibration Control Register [00]
+remote 6.295928 R IF Calibration Register I [06]
+remote 6.295957 W IF Calibration Register I [13]
+remote 6.295985 W IF Calibration Register II [3B]
+remote 6.296013 W CH 0 (2400.0MHz)
+remote 6.296047 W Calibration Control Register [02]
+remote 6.296280 R Calibration Control Register [02]
+remote 6.296313 R Calibration Control Register [00]
+remote 6.296342 R IF Calibration Register I [03]
+remote 6.296371 W CH 120 (2460.0MHz)
+remote 6.296408 W Calibration Control Register [02]
+remote 6.296640 R Calibration Control Register [02]
+remote 6.296670 R Calibration Control Register [00]
+remote 6.296701 R IF Calibration Register I [03]
+remote 6.296729 W VCO Single band Calibration Register I [0B]
+remote 6.296750 S Standby Mode
+remote 6.296778 W CH 0 (2400.0MHz)
+remote 6.299803 S PLL Mode
+remote 6.299819 S RX Mode
+remote 6.299847 W TX test Register [01]
+remote 6.299876 W RX Gain Register I [9F]
+remote 6.299913 W CH 120 (2460.0MHz)
+remote 6.302938 S PLL Mode
+remote 6.302977 S RX Mode
+remote 6.302992 S Standby Mode
+remote 6.303006 S FIFO Write pointer reset
+remote 6.303249 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 6.303268 S TX Mode
+remote 6.305328 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 6.305362 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 6.305403 S RX Mode
+remote 6.317377 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 215 times)
+remote 6.317391 S Standby Mode
+remote 6.317405 S FIFO Write pointer reset
+remote 6.317651 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 6.317665 S TX Mode
+remote 6.319721 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 6.319750 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 6.319795 S RX Mode
+remote 6.331332 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 207 times)
+remote 6.331347 S Standby Mode
+remote 6.331361 S FIFO Write pointer reset
+remote 6.331611 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 6.331626 S TX Mode
+remote 6.333675 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 6.333710 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 6.333750 S RX Mode
+remote 6.345345 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 6.345360 S Standby Mode
+remote 6.345374 S FIFO Write pointer reset
+remote 6.345616 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 6.345631 S TX Mode
+remote 6.347688 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 6.347717 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 6.347764 S RX Mode
+remote 6.359351 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 6.359365 S Standby Mode
+remote 6.359379 S FIFO Write pointer reset
+remote 6.359627 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 6.359642 S TX Mode
+remote 6.361699 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 6.361728 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 6.361769 S RX Mode
+remote 6.373361 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 6.373375 S Standby Mode
+remote 6.373389 S FIFO Write pointer reset
+remote 6.373637 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 6.373652 S TX Mode
+remote 6.375709 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 6.375743 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 6.375783 S RX Mode
+remote 6.387372 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 6.387387 S Standby Mode
+remote 6.387401 S FIFO Write pointer reset
+remote 6.387644 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 6.387659 S TX Mode
+remote 6.389717 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 6.389746 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 6.389787 S RX Mode
+remote 6.401379 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 6.401393 S Standby Mode
+remote 6.401408 S FIFO Write pointer reset
+remote 6.401655 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 6.401670 S TX Mode
+remote 6.403728 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 6.403757 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 6.403798 S RX Mode
+remote 6.415394 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 6.415408 S Standby Mode
+remote 6.415422 S FIFO Write pointer reset
+remote 6.415665 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 6.415679 S TX Mode
+remote 6.417734 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 6.417764 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 6.417813 S RX Mode
+remote 6.429401 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 6.429416 S Standby Mode
+remote 6.429430 S FIFO Write pointer reset
+remote 6.429672 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 6.429687 S TX Mode
+remote 6.431742 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 6.431771 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 6.431812 S RX Mode
+remote 6.443407 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 6.443422 S Standby Mode
+remote 6.443436 S FIFO Write pointer reset
+remote 6.443683 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 6.443698 S TX Mode
+remote 6.445752 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 6.445786 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 6.445827 S RX Mode
+remote 6.457421 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 6.457436 S Standby Mode
+remote 6.457450 S FIFO Write pointer reset
+remote 6.457693 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 6.457708 S TX Mode
+remote 6.459763 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 6.459792 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 6.459838 S RX Mode
+remote 6.471376 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 207 times)
+remote 6.471390 S Standby Mode
+remote 6.471405 S FIFO Write pointer reset
+remote 6.471652 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 6.471667 S TX Mode
+remote 6.473717 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 6.473751 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 6.473792 S RX Mode
+remote 6.485392 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 6.485407 S Standby Mode
+remote 6.485421 S FIFO Write pointer reset
+remote 6.485664 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 6.485678 S TX Mode
+remote 6.487733 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 6.487762 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 6.487809 S RX Mode
+remote 6.499400 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 6.499420 S Standby Mode
+remote 6.499434 S FIFO Write pointer reset
+remote 6.499677 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 6.499691 S TX Mode
+remote 6.501746 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 6.501776 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 6.501816 S RX Mode
+remote 6.513414 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 6.513428 S Standby Mode
+remote 6.513442 S FIFO Write pointer reset
+remote 6.513690 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 6.513705 S TX Mode
+remote 6.515758 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 6.515792 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 6.515833 S RX Mode
+remote 6.527426 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 6.527441 S Standby Mode
+remote 6.527455 S FIFO Write pointer reset
+remote 6.527698 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 6.527713 S TX Mode
+remote 6.529768 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 6.529797 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 6.529838 S RX Mode
+remote 6.541432 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 6.541447 S Standby Mode
+remote 6.541466 S FIFO Write pointer reset
+remote 6.541709 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 6.541723 S TX Mode
+remote 6.543778 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 6.543807 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 6.543848 S RX Mode
+remote 6.555447 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 6.555461 S Standby Mode
+remote 6.555475 S FIFO Write pointer reset
+remote 6.555723 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 6.555738 S TX Mode
+remote 6.557788 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 6.557817 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 6.557863 S RX Mode
+remote 6.569456 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 6.569470 S Standby Mode
+remote 6.569484 S FIFO Write pointer reset
+remote 6.569727 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 6.569741 S TX Mode
+remote 6.571796 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 6.571826 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 6.571866 S RX Mode
+remote 6.583408 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 207 times)
+remote 6.583422 S Standby Mode
+remote 6.583436 S FIFO Write pointer reset
+remote 6.583679 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 6.583699 S TX Mode
+remote 6.585752 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 6.585782 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 6.585827 S RX Mode
+remote 6.617470 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 6.637565 W Device Reset
+remote 6.639643 W ID DATA Register [55 20 10 41]
+remote 6.639677 W Mode Control Register [62]
+remote 6.639705 W Calibration Control Register [00]
+remote 6.639734 W FIFO Register I [0F]
+remote 6.639762 W FIFO Register II [C0]
+remote 6.639791 W RC OSC Register I [00]
+remote 6.639820 W RC OSC Register II [00]
+remote 6.639854 W RC OSC Register III [04]
+remote 6.639883 W CKO Pin Control Register [A2]
+remote 6.639911 W GIO1 Pin Control Register I [01]
+remote 6.639940 W GIO2 Pin Control Register II [01]
+remote 6.639969 W Clock Register [05]
+remote 6.639998 W Data Rate Register [04]
+remote 6.640031 W CH 80 (2440.0MHz)
+remote 6.640060 W PLL Register II [9E]
+remote 6.640089 W PLL Register III [4B]
+remote 6.640118 W PLL Register IV [00]
+remote 6.640146 W PLL Register V [00]
+remote 6.640175 W TX Register I [16]
+remote 6.640209 W TX Register II [2B]
+remote 6.640238 W Delay Register I [12]
+remote 6.640267 W Delay Register II [00]
+remote 6.640296 W RX Register [62]
+remote 6.640325 W RX Gain Register I [80]
+remote 6.640353 W RX Gain Register II [80]
+remote 6.640382 W RX Gain Register III [00]
+remote 6.640419 W RX Gain Register IV [0A]
+remote 6.640448 W RSSI Thershld Register [32]
+remote 6.640477 W ADC Control Register [C3]
+remote 6.640506 W Code Register I [07]
+remote 6.640535 W Code Register II [17]
+remote 6.640569 W Code Register III [00]
+remote 6.640597 W IF Calibration Register I [00]
+remote 6.640626 W VCO current Calibration Register [00]
+remote 6.640654 W VCO Single band Calibration Register I [00]
+remote 6.640683 W VCO Single band Calibration Register II [3B]
+remote 6.640712 W Battery detect Register [00]
+remote 6.640746 W TX test Register [1F]
+remote 6.640775 W Rx DEM test Register I [47]
+remote 6.640803 W Rx DEM test Register II [80]
+remote 6.640832 W Charge Pump Current Register [03]
+remote 6.640860 W Crystal test Register [01]
+remote 6.640889 W PLL test Register [45]
+remote 6.640924 W VCO test Register I [18]
+remote 6.640952 W VCO test Register II [00]
+remote 6.640981 W IFAT Register [01]
+remote 6.661073 W RScale Register [0F]
+remote 6.661087 S Standby Mode
+remote 6.661116 W Calibration Control Register [01]
+remote 6.661348 R Calibration Control Register [01]
+remote 6.661378 R Calibration Control Register [00]
+remote 6.661417 R IF Calibration Register I [06]
+remote 6.661445 W IF Calibration Register I [13]
+remote 6.661473 W IF Calibration Register II [3B]
+remote 6.661502 W CH 0 (2400.0MHz)
+remote 6.661530 W Calibration Control Register [02]
+remote 6.661762 R Calibration Control Register [02]
+remote 6.661792 R Calibration Control Register [00]
+remote 6.661822 R IF Calibration Register I [03]
+remote 6.661851 W CH 120 (2460.0MHz)
+remote 6.661879 W Calibration Control Register [02]
+remote 6.662111 R Calibration Control Register [02]
+remote 6.662141 R Calibration Control Register [00]
+remote 6.662172 R IF Calibration Register I [03]
+remote 6.662200 W VCO Single band Calibration Register I [0B]
+remote 6.662216 S Standby Mode
+remote 6.662244 W CH 0 (2400.0MHz)
+remote 6.665269 S PLL Mode
+remote 6.665290 S RX Mode
+remote 6.665318 W TX test Register [01]
+remote 6.665347 W RX Gain Register I [9F]
+remote 6.665375 W CH 120 (2460.0MHz)
+remote 6.668404 S PLL Mode
+remote 6.668445 S RX Mode
+remote 6.668465 S Standby Mode
+remote 6.668479 S FIFO Write pointer reset
+remote 6.668722 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 6.668736 S TX Mode
+remote 6.670791 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 6.670820 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 6.670861 S RX Mode
+remote 6.682455 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 6.682470 S Standby Mode
+remote 6.682484 S FIFO Write pointer reset
+remote 6.682727 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 6.682742 S TX Mode
+remote 6.684797 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 6.684826 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 6.684872 S RX Mode
+remote 6.696465 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 6.696479 S Standby Mode
+remote 6.696493 S FIFO Write pointer reset
+remote 6.696741 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 6.696756 S TX Mode
+remote 6.698806 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 6.698841 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 6.698881 S RX Mode
+remote 6.710493 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 210 times)
+remote 6.710508 S Standby Mode
+remote 6.710522 S FIFO Write pointer reset
+remote 6.710759 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 6.710774 S TX Mode
+remote 6.712852 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 70 times)
+remote 6.712892 S RX Mode
+remote 6.724482 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 215 times)
+remote 6.724497 S Standby Mode
+remote 6.724511 S FIFO Write pointer reset
+remote 6.724748 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 6.724763 S TX Mode
+remote 6.726815 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 69 times)
+remote 6.726844 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 6.726885 S RX Mode
+remote 6.738475 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 215 times)
+remote 6.738490 S Standby Mode
+remote 6.738504 S FIFO Write pointer reset
+remote 6.738741 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 6.738756 S TX Mode
+remote 6.740805 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 69 times)
+remote 6.740834 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 6.740875 S RX Mode
+remote 6.752465 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 215 times)
+remote 6.752479 S Standby Mode
+remote 6.752493 S FIFO Write pointer reset
+remote 6.752731 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 6.752745 S TX Mode
+remote 6.754794 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 69 times)
+remote 6.754823 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 6.754864 S RX Mode
+remote 6.766513 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 216 times)
+remote 6.766528 S Standby Mode
+remote 6.766542 S FIFO Write pointer reset
+remote 6.766779 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 6.766794 S TX Mode
+remote 6.768842 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 69 times)
+remote 6.768872 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 6.768912 S RX Mode
+remote 6.780503 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 215 times)
+remote 6.780517 S Standby Mode
+remote 6.780531 S FIFO Write pointer reset
+remote 6.780769 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 6.780783 S TX Mode
+remote 6.782861 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 70 times)
+remote 6.782902 S RX Mode
+remote 6.794492 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 215 times)
+remote 6.794507 S Standby Mode
+remote 6.794521 S FIFO Write pointer reset
+remote 6.794759 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 6.794773 S TX Mode
+remote 6.796825 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 69 times)
+remote 6.796855 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 6.796895 S RX Mode
+remote 6.808486 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 215 times)
+remote 6.808501 S Standby Mode
+remote 6.808515 S FIFO Write pointer reset
+remote 6.808752 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 6.808767 S TX Mode
+remote 6.810815 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 69 times)
+remote 6.810844 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 6.810885 S RX Mode
+remote 6.822518 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 212 times)
+remote 6.822533 S Standby Mode
+remote 6.822547 S FIFO Write pointer reset
+remote 6.822790 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 6.822805 S TX Mode
+remote 6.824860 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 6.824889 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 6.824935 S RX Mode
+remote 6.836528 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 6.836542 S Standby Mode
+remote 6.836557 S FIFO Write pointer reset
+remote 6.836804 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 6.836819 S TX Mode
+remote 6.838869 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 6.838903 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 6.838944 S RX Mode
+remote 6.850528 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 6.850551 S Standby Mode
+remote 6.850565 S FIFO Write pointer reset
+remote 6.850808 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 6.850822 S TX Mode
+remote 6.852877 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 6.852907 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 6.852947 S RX Mode
+remote 6.864540 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 6.864555 S Standby Mode
+remote 6.864569 S FIFO Write pointer reset
+remote 6.864814 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 6.864829 S TX Mode
+remote 6.866888 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 6.866917 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 6.866963 S RX Mode
+remote 6.878498 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 207 times)
+remote 6.878512 S Standby Mode
+remote 6.878526 S FIFO Write pointer reset
+remote 6.878769 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 6.878783 S TX Mode
+remote 6.880841 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 6.880870 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 6.880917 S RX Mode
+remote 6.892503 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 6.892518 S Standby Mode
+remote 6.892532 S FIFO Write pointer reset
+remote 6.892779 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 6.892794 S TX Mode
+remote 6.894847 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 6.894881 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 6.894922 S RX Mode
+remote 6.906509 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 6.906529 S Standby Mode
+remote 6.906543 S FIFO Write pointer reset
+remote 6.906786 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 6.906801 S TX Mode
+remote 6.908859 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 6.908888 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 6.908929 S RX Mode
+remote 6.920520 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 6.920534 S Standby Mode
+remote 6.920549 S FIFO Write pointer reset
+remote 6.920791 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 6.920806 S TX Mode
+remote 6.922861 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 6.922890 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 6.922931 S RX Mode
+remote 6.934525 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 6.934540 S Standby Mode
+remote 6.934554 S FIFO Write pointer reset
+remote 6.934801 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 6.934816 S TX Mode
+remote 6.936870 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 6.936904 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 6.936945 S RX Mode
+remote 6.948536 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 6.948551 S Standby Mode
+remote 6.948565 S FIFO Write pointer reset
+remote 6.948808 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 6.948822 S TX Mode
+remote 6.950878 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 6.950907 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 6.950948 S RX Mode
+remote 6.982590 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 7.002685 W Device Reset
+remote 7.004767 W ID DATA Register [55 20 10 41]
+remote 7.004796 W Mode Control Register [62]
+remote 7.004829 W Calibration Control Register [00]
+remote 7.004858 W FIFO Register I [0F]
+remote 7.004887 W FIFO Register II [C0]
+remote 7.004915 W RC OSC Register I [00]
+remote 7.004944 W RC OSC Register II [00]
+remote 7.004972 W RC OSC Register III [04]
+remote 7.005007 W CKO Pin Control Register [A2]
+remote 7.005035 W GIO1 Pin Control Register I [01]
+remote 7.005064 W GIO2 Pin Control Register II [01]
+remote 7.005093 W Clock Register [05]
+remote 7.005122 W Data Rate Register [04]
+remote 7.005151 W CH 80 (2440.0MHz)
+remote 7.005184 W PLL Register II [9E]
+remote 7.005213 W PLL Register III [4B]
+remote 7.005242 W PLL Register IV [00]
+remote 7.005270 W PLL Register V [00]
+remote 7.005299 W TX Register I [16]
+remote 7.005328 W TX Register II [2B]
+remote 7.005362 W Delay Register I [12]
+remote 7.005391 W Delay Register II [00]
+remote 7.005420 W RX Register [62]
+remote 7.005449 W RX Gain Register I [80]
+remote 7.005477 W RX Gain Register II [80]
+remote 7.005513 W RX Gain Register III [00]
+remote 7.005547 W RX Gain Register IV [0A]
+remote 7.005575 W RSSI Thershld Register [32]
+remote 7.005605 W ADC Control Register [C3]
+remote 7.005634 W Code Register I [07]
+remote 7.005663 W Code Register II [17]
+remote 7.005699 W Code Register III [00]
+remote 7.005728 W IF Calibration Register I [00]
+remote 7.005756 W VCO current Calibration Register [00]
+remote 7.005785 W VCO Single band Calibration Register I [00]
+remote 7.005814 W VCO Single band Calibration Register II [3B]
+remote 7.005842 W Battery detect Register [00]
+remote 7.005876 W TX test Register [1F]
+remote 7.005905 W Rx DEM test Register I [47]
+remote 7.005934 W Rx DEM test Register II [80]
+remote 7.005962 W Charge Pump Current Register [03]
+remote 7.005991 W Crystal test Register [01]
+remote 7.006020 W PLL test Register [45]
+remote 7.006054 W VCO test Register I [18]
+remote 7.006082 W VCO test Register II [00]
+remote 7.006111 W IFAT Register [01]
+remote 7.026208 W RScale Register [0F]
+remote 7.026222 S Standby Mode
+remote 7.026251 W Calibration Control Register [01]
+remote 7.026488 R Calibration Control Register [01]
+remote 7.026521 R Calibration Control Register [00]
+remote 7.026551 R IF Calibration Register I [06]
+remote 7.026579 W IF Calibration Register I [13]
+remote 7.026607 W IF Calibration Register II [3B]
+remote 7.026641 W CH 0 (2400.0MHz)
+remote 7.026669 W Calibration Control Register [02]
+remote 7.026901 R Calibration Control Register [02]
+remote 7.026931 R Calibration Control Register [00]
+remote 7.026961 R IF Calibration Register I [03]
+remote 7.026995 W CH 120 (2460.0MHz)
+remote 7.027023 W Calibration Control Register [02]
+remote 7.027255 R Calibration Control Register [02]
+remote 7.027286 R Calibration Control Register [00]
+remote 7.027316 R IF Calibration Register I [03]
+remote 7.027349 W VCO Single band Calibration Register I [0B]
+remote 7.027365 S Standby Mode
+remote 7.027393 W CH 0 (2400.0MHz)
+remote 7.030418 S PLL Mode
+remote 7.030434 S RX Mode
+remote 7.030462 W TX test Register [01]
+remote 7.030491 W RX Gain Register I [9F]
+remote 7.030527 W CH 120 (2460.0MHz)
+remote 7.033553 S PLL Mode
+remote 7.033594 S RX Mode
+remote 7.033609 S Standby Mode
+remote 7.033623 S FIFO Write pointer reset
+remote 7.033874 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 7.033888 S TX Mode
+remote 7.035941 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 7.035976 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 7.036017 S RX Mode
+remote 7.047606 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 7.047620 S Standby Mode
+remote 7.047634 S FIFO Write pointer reset
+remote 7.047877 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 7.047891 S TX Mode
+remote 7.049949 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 7.049979 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 7.050019 S RX Mode
+remote 7.061561 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 207 times)
+remote 7.061576 S Standby Mode
+remote 7.061590 S FIFO Write pointer reset
+remote 7.061838 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 7.061852 S TX Mode
+remote 7.063905 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 7.063939 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 7.063980 S RX Mode
+remote 7.075576 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 7.075591 S Standby Mode
+remote 7.075605 S FIFO Write pointer reset
+remote 7.075848 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 7.075863 S TX Mode
+remote 7.077921 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 7.077950 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 7.077991 S RX Mode
+remote 7.089583 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 7.089597 S Standby Mode
+remote 7.089612 S FIFO Write pointer reset
+remote 7.089859 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 7.089874 S TX Mode
+remote 7.091932 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 7.091961 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 7.092002 S RX Mode
+remote 7.103594 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 7.103608 S Standby Mode
+remote 7.103623 S FIFO Write pointer reset
+remote 7.103870 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 7.103885 S TX Mode
+remote 7.105938 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 7.105975 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 7.106016 S RX Mode
+remote 7.117605 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 7.117620 S Standby Mode
+remote 7.117634 S FIFO Write pointer reset
+remote 7.117876 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 7.117891 S TX Mode
+remote 7.119946 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 7.119975 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 7.120016 S RX Mode
+remote 7.131611 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 7.131626 S Standby Mode
+remote 7.131640 S FIFO Write pointer reset
+remote 7.131888 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 7.131902 S TX Mode
+remote 7.133958 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 7.133987 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 7.134028 S RX Mode
+remote 7.145626 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 7.145640 S Standby Mode
+remote 7.145655 S FIFO Write pointer reset
+remote 7.145898 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 7.145917 S TX Mode
+remote 7.147967 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 7.147996 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 7.148042 S RX Mode
+remote 7.159628 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 7.159648 S Standby Mode
+remote 7.159662 S FIFO Write pointer reset
+remote 7.159905 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 7.159919 S TX Mode
+remote 7.161975 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 7.162004 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 7.162045 S RX Mode
+remote 7.173587 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 207 times)
+remote 7.173602 S Standby Mode
+remote 7.173616 S FIFO Write pointer reset
+remote 7.173858 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 7.173873 S TX Mode
+remote 7.175931 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 7.175961 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 7.176007 S RX Mode
+remote 7.187599 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 7.187614 S Standby Mode
+remote 7.187628 S FIFO Write pointer reset
+remote 7.187870 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 7.187885 S TX Mode
+remote 7.189940 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 7.189969 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 7.190010 S RX Mode
+remote 7.201606 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 7.201620 S Standby Mode
+remote 7.201634 S FIFO Write pointer reset
+remote 7.201882 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 7.201897 S TX Mode
+remote 7.203947 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 7.203981 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 7.204022 S RX Mode
+remote 7.215623 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 7.215637 S Standby Mode
+remote 7.215651 S FIFO Write pointer reset
+remote 7.215894 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 7.215909 S TX Mode
+remote 7.217965 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 7.217994 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 7.218040 S RX Mode
+remote 7.229629 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 7.229649 S Standby Mode
+remote 7.229663 S FIFO Write pointer reset
+remote 7.229906 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 7.229920 S TX Mode
+remote 7.231975 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 7.232004 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 7.232045 S RX Mode
+remote 7.243639 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 7.243654 S Standby Mode
+remote 7.243668 S FIFO Write pointer reset
+remote 7.243916 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 7.243930 S TX Mode
+remote 7.245984 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 7.246018 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 7.246059 S RX Mode
+remote 7.257650 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 7.257664 S Standby Mode
+remote 7.257679 S FIFO Write pointer reset
+remote 7.257921 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 7.257936 S TX Mode
+remote 7.259991 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 7.260020 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 7.260061 S RX Mode
+remote 7.271655 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 7.271670 S Standby Mode
+remote 7.271684 S FIFO Write pointer reset
+remote 7.271932 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 7.271947 S TX Mode
+remote 7.274001 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 7.274030 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 7.274071 S RX Mode
+remote 7.285669 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 7.285684 S Standby Mode
+remote 7.285698 S FIFO Write pointer reset
+remote 7.285946 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 7.285960 S TX Mode
+remote 7.288010 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 7.288039 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 7.288085 S RX Mode
+remote 7.299676 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 7.299691 S Standby Mode
+remote 7.299705 S FIFO Write pointer reset
+remote 7.299948 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 7.299963 S TX Mode
+remote 7.302018 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 7.302047 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 7.302088 S RX Mode
+remote 7.313683 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 7.313698 S Standby Mode
+remote 7.313712 S FIFO Write pointer reset
+remote 7.313960 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 7.313974 S TX Mode
+remote 7.316027 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 7.316062 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 7.316103 S RX Mode
+remote 7.347698 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 209 times)
+remote 7.367787 W Device Reset
+remote 7.369865 W ID DATA Register [55 20 10 41]
+remote 7.369893 W Mode Control Register [62]
+remote 7.369922 W Calibration Control Register [00]
+remote 7.369951 W FIFO Register I [0F]
+remote 7.369979 W FIFO Register II [C0]
+remote 7.370008 W RC OSC Register I [00]
+remote 7.370037 W RC OSC Register II [00]
+remote 7.370065 W RC OSC Register III [04]
+remote 7.370094 W CKO Pin Control Register [A2]
+remote 7.370123 W GIO1 Pin Control Register I [01]
+remote 7.370152 W GIO2 Pin Control Register II [01]
+remote 7.370180 W Clock Register [05]
+remote 7.370209 W Data Rate Register [04]
+remote 7.370238 W CH 80 (2440.0MHz)
+remote 7.370267 W PLL Register II [9E]
+remote 7.370296 W PLL Register III [4B]
+remote 7.370324 W PLL Register IV [00]
+remote 7.370353 W PLL Register V [00]
+remote 7.370382 W TX Register I [16]
+remote 7.370411 W TX Register II [2B]
+remote 7.370439 W Delay Register I [12]
+remote 7.370468 W Delay Register II [00]
+remote 7.370497 W RX Register [62]
+remote 7.370526 W RX Gain Register I [80]
+remote 7.370554 W RX Gain Register II [80]
+remote 7.370583 W RX Gain Register III [00]
+remote 7.370612 W RX Gain Register IV [0A]
+remote 7.370644 W RSSI Thershld Register [32]
+remote 7.370673 W ADC Control Register [C3]
+remote 7.370702 W Code Register I [07]
+remote 7.370731 W Code Register II [17]
+remote 7.370760 W Code Register III [00]
+remote 7.370788 W IF Calibration Register I [00]
+remote 7.370816 W VCO current Calibration Register [00]
+remote 7.370845 W VCO Single band Calibration Register I [00]
+remote 7.370874 W VCO Single band Calibration Register II [3B]
+remote 7.370902 W Battery detect Register [00]
+remote 7.370931 W TX test Register [1F]
+remote 7.370960 W Rx DEM test Register I [47]
+remote 7.370989 W Rx DEM test Register II [80]
+remote 7.371017 W Charge Pump Current Register [03]
+remote 7.371046 W Crystal test Register [01]
+remote 7.371075 W PLL test Register [45]
+remote 7.371104 W VCO test Register I [18]
+remote 7.371132 W VCO test Register II [00]
+remote 7.371161 W IFAT Register [01]
+remote 7.391252 W RScale Register [0F]
+remote 7.391266 S Standby Mode
+remote 7.391295 W Calibration Control Register [01]
+remote 7.391527 R Calibration Control Register [01]
+remote 7.391557 R Calibration Control Register [00]
+remote 7.391587 R IF Calibration Register I [06]
+remote 7.391615 W IF Calibration Register I [13]
+remote 7.391647 W IF Calibration Register II [3B]
+remote 7.391675 W CH 0 (2400.0MHz)
+remote 7.391704 W Calibration Control Register [02]
+remote 7.391936 R Calibration Control Register [02]
+remote 7.391966 R Calibration Control Register [00]
+remote 7.391996 R IF Calibration Register I [03]
+remote 7.392024 W CH 120 (2460.0MHz)
+remote 7.392053 W Calibration Control Register [02]
+remote 7.392285 R Calibration Control Register [02]
+remote 7.392315 R Calibration Control Register [00]
+remote 7.392346 R IF Calibration Register I [03]
+remote 7.392374 W VCO Single band Calibration Register I [0B]
+remote 7.392390 S Standby Mode
+remote 7.392418 W CH 0 (2400.0MHz)
+remote 7.395442 S PLL Mode
+remote 7.395458 S RX Mode
+remote 7.395486 W TX test Register [01]
+remote 7.395515 W RX Gain Register I [9F]
+remote 7.395544 W CH 120 (2460.0MHz)
+remote 7.398569 S PLL Mode
+remote 7.398610 S RX Mode
+remote 7.398625 S Standby Mode
+remote 7.398642 S FIFO Write pointer reset
+remote 7.398880 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 7.398894 S TX Mode
+remote 7.400943 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 69 times)
+remote 7.400972 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 7.401013 S RX Mode
+remote 7.412711 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 217 times)
+remote 7.412726 S Standby Mode
+remote 7.412740 S FIFO Write pointer reset
+remote 7.412977 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 7.412992 S TX Mode
+remote 7.415040 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 69 times)
+remote 7.415069 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 7.415110 S RX Mode
+remote 7.426704 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 215 times)
+remote 7.426719 S Standby Mode
+remote 7.426733 S FIFO Write pointer reset
+remote 7.426970 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 7.426985 S TX Mode
+remote 7.429033 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 69 times)
+remote 7.429062 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 7.429103 S RX Mode
+remote 7.440720 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 211 times)
+remote 7.440734 S Standby Mode
+remote 7.440748 S FIFO Write pointer reset
+remote 7.440996 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 7.441010 S TX Mode
+remote 7.443068 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 7.443097 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 7.443138 S RX Mode
+remote 7.454729 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 7.454744 S Standby Mode
+remote 7.454758 S FIFO Write pointer reset
+remote 7.455000 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 7.455020 S TX Mode
+remote 7.457073 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 7.457103 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 7.457151 S RX Mode
+remote 7.468682 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 207 times)
+remote 7.468697 S Standby Mode
+remote 7.468711 S FIFO Write pointer reset
+remote 7.468959 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 7.468974 S TX Mode
+remote 7.471024 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 7.471058 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 7.471099 S RX Mode
+remote 7.482693 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 7.482708 S Standby Mode
+remote 7.482722 S FIFO Write pointer reset
+remote 7.482965 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 7.482980 S TX Mode
+remote 7.485035 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 7.485064 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 7.485110 S RX Mode
+remote 7.496703 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 7.496722 S Standby Mode
+remote 7.496736 S FIFO Write pointer reset
+remote 7.496979 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 7.496994 S TX Mode
+remote 7.499049 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 7.499078 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 7.499119 S RX Mode
+remote 7.510717 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 7.510731 S Standby Mode
+remote 7.510745 S FIFO Write pointer reset
+remote 7.510993 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 7.511008 S TX Mode
+remote 7.513058 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 7.513092 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 7.513133 S RX Mode
+remote 7.524725 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 7.524740 S Standby Mode
+remote 7.524754 S FIFO Write pointer reset
+remote 7.524996 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 7.525011 S TX Mode
+remote 7.527070 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 7.527099 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 7.527140 S RX Mode
+remote 7.538737 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 7.538752 S Standby Mode
+remote 7.538771 S FIFO Write pointer reset
+remote 7.539014 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 7.539028 S TX Mode
+remote 7.541084 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 7.541113 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 7.541154 S RX Mode
+remote 7.552749 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 7.552764 S Standby Mode
+remote 7.552778 S FIFO Write pointer reset
+remote 7.553026 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 7.553040 S TX Mode
+remote 7.555090 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 7.555124 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 7.555165 S RX Mode
+remote 7.566762 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 7.566776 S Standby Mode
+remote 7.566790 S FIFO Write pointer reset
+remote 7.567033 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 7.567048 S TX Mode
+remote 7.569103 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 7.569133 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 7.569173 S RX Mode
+remote 7.580716 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 207 times)
+remote 7.580731 S Standby Mode
+remote 7.580745 S FIFO Write pointer reset
+remote 7.580993 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 7.581007 S TX Mode
+remote 7.583056 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 7.583091 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 7.583132 S RX Mode
+remote 7.594724 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 7.594739 S Standby Mode
+remote 7.594753 S FIFO Write pointer reset
+remote 7.594995 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 7.595010 S TX Mode
+remote 7.597069 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 7.597098 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 7.597139 S RX Mode
+remote 7.608733 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 7.608747 S Standby Mode
+remote 7.608762 S FIFO Write pointer reset
+remote 7.609009 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 7.609024 S TX Mode
+remote 7.611079 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 7.611108 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 7.611149 S RX Mode
+remote 7.622742 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 7.622757 S Standby Mode
+remote 7.622771 S FIFO Write pointer reset
+remote 7.623014 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 7.623029 S TX Mode
+remote 7.625083 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 7.625113 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 7.625158 S RX Mode
+remote 7.636749 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 7.636768 S Standby Mode
+remote 7.636782 S FIFO Write pointer reset
+remote 7.637025 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 7.637040 S TX Mode
+remote 7.639094 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 7.639124 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 7.639164 S RX Mode
+remote 7.650758 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 7.650773 S Standby Mode
+remote 7.650787 S FIFO Write pointer reset
+remote 7.651029 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 7.651044 S TX Mode
+remote 7.653099 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 7.653129 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 7.653169 S RX Mode
+remote 7.664762 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 7.664776 S Standby Mode
+remote 7.664790 S FIFO Write pointer reset
+remote 7.665041 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 7.665055 S TX Mode
+remote 7.667109 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 7.667143 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 7.667184 S RX Mode
+remote 7.678769 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 7.678788 S Standby Mode
+remote 7.678802 S FIFO Write pointer reset
+remote 7.679048 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 7.679062 S TX Mode
+remote 7.681117 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 7.681147 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 7.681187 S RX Mode
+remote 7.712827 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 7.732918 W Device Reset
+remote 7.734996 W ID DATA Register [55 20 10 41]
+remote 7.735024 W Mode Control Register [62]
+remote 7.735053 W Calibration Control Register [00]
+remote 7.735082 W FIFO Register I [0F]
+remote 7.735116 W FIFO Register II [C0]
+remote 7.735144 W RC OSC Register I [00]
+remote 7.735173 W RC OSC Register II [00]
+remote 7.735202 W RC OSC Register III [04]
+remote 7.735230 W CKO Pin Control Register [A2]
+remote 7.735259 W GIO1 Pin Control Register I [01]
+remote 7.735293 W GIO2 Pin Control Register II [01]
+remote 7.735322 W Clock Register [05]
+remote 7.735350 W Data Rate Register [04]
+remote 7.735379 W CH 80 (2440.0MHz)
+remote 7.735408 W PLL Register II [9E]
+remote 7.735437 W PLL Register III [4B]
+remote 7.735466 W PLL Register IV [00]
+remote 7.735502 W PLL Register V [00]
+remote 7.735531 W TX Register I [16]
+remote 7.735560 W TX Register II [2B]
+remote 7.735589 W Delay Register I [12]
+remote 7.735618 W Delay Register II [00]
+remote 7.735651 W RX Register [62]
+remote 7.735680 W RX Gain Register I [80]
+remote 7.735709 W RX Gain Register II [80]
+remote 7.735744 W RX Gain Register III [00]
+remote 7.735773 W RX Gain Register IV [0A]
+remote 7.735802 W RSSI Thershld Register [32]
+remote 7.735837 W ADC Control Register [C3]
+remote 7.735866 W Code Register I [07]
+remote 7.735894 W Code Register II [17]
+remote 7.735923 W Code Register III [00]
+remote 7.735952 W IF Calibration Register I [00]
+remote 7.735980 W VCO current Calibration Register [00]
+remote 7.736013 W VCO Single band Calibration Register I [00]
+remote 7.736042 W VCO Single band Calibration Register II [3B]
+remote 7.736071 W Battery detect Register [00]
+remote 7.736100 W TX test Register [1F]
+remote 7.736129 W Rx DEM test Register I [47]
+remote 7.736157 W Rx DEM test Register II [80]
+remote 7.736191 W Charge Pump Current Register [03]
+remote 7.736220 W Crystal test Register [01]
+remote 7.736249 W PLL test Register [45]
+remote 7.736277 W VCO test Register I [18]
+remote 7.736306 W VCO test Register II [00]
+remote 7.736335 W IFAT Register [01]
+remote 7.756437 W RScale Register [0F]
+remote 7.756452 S Standby Mode
+remote 7.756486 W Calibration Control Register [01]
+remote 7.756718 R Calibration Control Register [01]
+remote 7.756751 R Calibration Control Register [00]
+remote 7.756781 R IF Calibration Register I [06]
+remote 7.756809 W IF Calibration Register I [13]
+remote 7.756842 W IF Calibration Register II [3B]
+remote 7.756871 W CH 0 (2400.0MHz)
+remote 7.756899 W Calibration Control Register [02]
+remote 7.757131 R Calibration Control Register [02]
+remote 7.757161 R Calibration Control Register [00]
+remote 7.757196 R IF Calibration Register I [03]
+remote 7.757225 W CH 120 (2460.0MHz)
+remote 7.757253 W Calibration Control Register [02]
+remote 7.757485 R Calibration Control Register [02]
+remote 7.757516 R Calibration Control Register [00]
+remote 7.757546 R IF Calibration Register I [03]
+remote 7.757579 W VCO Single band Calibration Register I [0B]
+remote 7.757595 S Standby Mode
+remote 7.757623 W CH 0 (2400.0MHz)
+remote 7.760648 S PLL Mode
+remote 7.760663 S RX Mode
+remote 7.760692 W TX test Register [01]
+remote 7.760726 W RX Gain Register I [9F]
+remote 7.760757 W CH 120 (2460.0MHz)
+remote 7.763782 S PLL Mode
+remote 7.763824 S RX Mode
+remote 7.763839 S Standby Mode
+remote 7.763853 S FIFO Write pointer reset
+remote 7.764101 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 7.764115 S TX Mode
+remote 7.766169 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 7.766204 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 7.766244 S RX Mode
+remote 7.777777 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 207 times)
+remote 7.777791 S Standby Mode
+remote 7.777805 S FIFO Write pointer reset
+remote 7.778056 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 7.778071 S TX Mode
+remote 7.780120 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 7.780154 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 7.780195 S RX Mode
+remote 7.791781 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 7.791800 S Standby Mode
+remote 7.791814 S FIFO Write pointer reset
+remote 7.792060 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 7.792075 S TX Mode
+remote 7.794129 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 7.794159 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 7.794199 S RX Mode
+remote 7.805795 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 7.805810 S Standby Mode
+remote 7.805824 S FIFO Write pointer reset
+remote 7.806066 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 7.806081 S TX Mode
+remote 7.808138 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 7.808168 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 7.808208 S RX Mode
+remote 7.819801 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 7.819815 S Standby Mode
+remote 7.819829 S FIFO Write pointer reset
+remote 7.820077 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 7.820092 S TX Mode
+remote 7.822144 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 7.822173 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 7.822219 S RX Mode
+remote 7.833804 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 7.833824 S Standby Mode
+remote 7.833838 S FIFO Write pointer reset
+remote 7.834081 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 7.834095 S TX Mode
+remote 7.836156 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 7.836186 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 7.836226 S RX Mode
+remote 7.847815 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 7.847830 S Standby Mode
+remote 7.847844 S FIFO Write pointer reset
+remote 7.848086 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 7.848101 S TX Mode
+remote 7.850156 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 7.850185 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 7.850226 S RX Mode
+remote 7.861820 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 7.861835 S Standby Mode
+remote 7.861849 S FIFO Write pointer reset
+remote 7.862097 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 7.862111 S TX Mode
+remote 7.864161 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 7.864191 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 7.864236 S RX Mode
+remote 7.875827 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 7.875842 S Standby Mode
+remote 7.875861 S FIFO Write pointer reset
+remote 7.876104 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 7.876118 S TX Mode
+remote 7.878174 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 7.878203 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 7.878244 S RX Mode
+remote 7.889836 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 7.889850 S Standby Mode
+remote 7.889864 S FIFO Write pointer reset
+remote 7.890106 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 7.890121 S TX Mode
+remote 7.892176 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 7.892206 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 7.892246 S RX Mode
+remote 7.903843 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 7.903858 S Standby Mode
+remote 7.903872 S FIFO Write pointer reset
+remote 7.904120 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 7.904134 S TX Mode
+remote 7.906188 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 7.906218 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 7.906263 S RX Mode
+remote 7.917850 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 7.917865 S Standby Mode
+remote 7.917879 S FIFO Write pointer reset
+remote 7.918127 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 7.918141 S TX Mode
+remote 7.920197 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 7.920226 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 7.920267 S RX Mode
+remote 7.931858 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 7.931873 S Standby Mode
+remote 7.931887 S FIFO Write pointer reset
+remote 7.932129 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 7.932144 S TX Mode
+remote 7.934199 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 7.934228 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 7.934269 S RX Mode
+remote 7.945842 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 210 times)
+remote 7.945857 S Standby Mode
+remote 7.945871 S FIFO Write pointer reset
+remote 7.946109 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 7.946123 S TX Mode
+remote 7.948201 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 70 times)
+remote 7.948242 S RX Mode
+remote 7.959887 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 216 times)
+remote 7.959902 S Standby Mode
+remote 7.959916 S FIFO Write pointer reset
+remote 7.960153 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 7.960168 S TX Mode
+remote 7.962216 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 69 times)
+remote 7.962246 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 7.962287 S RX Mode
+remote 7.973877 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 215 times)
+remote 7.973891 S Standby Mode
+remote 7.973906 S FIFO Write pointer reset
+remote 7.974143 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 7.974158 S TX Mode
+remote 7.976210 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 69 times)
+remote 7.976239 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 7.976280 S RX Mode
+remote 7.987870 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 215 times)
+remote 7.987885 S Standby Mode
+remote 7.987899 S FIFO Write pointer reset
+remote 7.988136 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 7.988151 S TX Mode
+remote 7.990199 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 69 times)
+remote 7.990228 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 7.990269 S RX Mode
+remote 8.001860 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 215 times)
+remote 8.001874 S Standby Mode
+remote 8.001888 S FIFO Write pointer reset
+remote 8.002126 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 8.002140 S TX Mode
+remote 8.004218 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 70 times)
+remote 8.004259 S RX Mode
+remote 8.015908 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 216 times)
+remote 8.015922 S Standby Mode
+remote 8.015937 S FIFO Write pointer reset
+remote 8.016174 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 8.016189 S TX Mode
+remote 8.018237 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 69 times)
+remote 8.018266 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 8.018307 S RX Mode
+remote 8.029897 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 215 times)
+remote 8.029912 S Standby Mode
+remote 8.029926 S FIFO Write pointer reset
+remote 8.030163 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 8.030178 S TX Mode
+remote 8.032226 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 69 times)
+remote 8.032256 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 8.032296 S RX Mode
+remote 8.043887 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 215 times)
+remote 8.043901 S Standby Mode
+remote 8.043915 S FIFO Write pointer reset
+remote 8.044153 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 8.044168 S TX Mode
+remote 8.046220 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 69 times)
+remote 8.046249 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 8.046290 S RX Mode
+remote 8.077906 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 210 times)
+remote 8.097999 W Device Reset
+remote 8.100076 W ID DATA Register [55 20 10 41]
+remote 8.100105 W Mode Control Register [62]
+remote 8.100134 W Calibration Control Register [00]
+remote 8.100163 W FIFO Register I [0F]
+remote 8.100191 W FIFO Register II [C0]
+remote 8.100220 W RC OSC Register I [00]
+remote 8.100253 W RC OSC Register II [00]
+remote 8.100282 W RC OSC Register III [04]
+remote 8.100311 W CKO Pin Control Register [A2]
+remote 8.100339 W GIO1 Pin Control Register I [01]
+remote 8.100368 W GIO2 Pin Control Register II [01]
+remote 8.100402 W Clock Register [05]
+remote 8.100431 W Data Rate Register [04]
+remote 8.100460 W CH 80 (2440.0MHz)
+remote 8.100489 W PLL Register II [9E]
+remote 8.100518 W PLL Register III [4B]
+remote 8.100546 W PLL Register IV [00]
+remote 8.100580 W PLL Register V [00]
+remote 8.100609 W TX Register I [16]
+remote 8.100637 W TX Register II [2B]
+remote 8.100666 W Delay Register I [12]
+remote 8.100695 W Delay Register II [00]
+remote 8.100724 W RX Register [62]
+remote 8.100758 W RX Gain Register I [80]
+remote 8.100787 W RX Gain Register II [80]
+remote 8.100816 W RX Gain Register III [00]
+remote 8.100844 W RX Gain Register IV [0A]
+remote 8.100876 W RSSI Thershld Register [32]
+remote 8.100905 W ADC Control Register [C3]
+remote 8.100939 W Code Register I [07]
+remote 8.100968 W Code Register II [17]
+remote 8.100997 W Code Register III [00]
+remote 8.101025 W IF Calibration Register I [00]
+remote 8.101054 W VCO current Calibration Register [00]
+remote 8.101082 W VCO Single band Calibration Register I [00]
+remote 8.101116 W VCO Single band Calibration Register II [3B]
+remote 8.101145 W Battery detect Register [00]
+remote 8.101174 W TX test Register [1F]
+remote 8.101203 W Rx DEM test Register I [47]
+remote 8.101231 W Rx DEM test Register II [80]
+remote 8.101260 W Charge Pump Current Register [03]
+remote 8.101294 W Crystal test Register [01]
+remote 8.101323 W PLL test Register [45]
+remote 8.101351 W VCO test Register I [18]
+remote 8.101380 W VCO test Register II [00]
+remote 8.101408 W IFAT Register [01]
+remote 8.121503 W RScale Register [0F]
+remote 8.121523 S Standby Mode
+remote 8.121552 W Calibration Control Register [01]
+remote 8.121784 R Calibration Control Register [01]
+remote 8.121814 R Calibration Control Register [00]
+remote 8.121844 R IF Calibration Register I [06]
+remote 8.121880 W IF Calibration Register I [13]
+remote 8.121909 W IF Calibration Register II [3B]
+remote 8.121937 W CH 0 (2400.0MHz)
+remote 8.121966 W Calibration Control Register [02]
+remote 8.122198 R Calibration Control Register [02]
+remote 8.122234 R Calibration Control Register [00]
+remote 8.122263 R IF Calibration Register I [03]
+remote 8.122292 W CH 120 (2460.0MHz)
+remote 8.122321 W Calibration Control Register [02]
+remote 8.122553 R Calibration Control Register [02]
+remote 8.122591 R Calibration Control Register [00]
+remote 8.122622 R IF Calibration Register I [03]
+remote 8.122650 W VCO Single band Calibration Register I [0B]
+remote 8.122665 S Standby Mode
+remote 8.122694 W CH 0 (2400.0MHz)
+remote 8.125719 S PLL Mode
+remote 8.125740 S RX Mode
+remote 8.125768 W TX test Register [01]
+remote 8.125797 W RX Gain Register I [9F]
+remote 8.125825 W CH 120 (2460.0MHz)
+remote 8.128851 S PLL Mode
+remote 8.128901 S RX Mode
+remote 8.128915 S Standby Mode
+remote 8.128929 S FIFO Write pointer reset
+remote 8.129172 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 8.129186 S TX Mode
+remote 8.131241 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 8.131270 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 8.131311 S RX Mode
+remote 8.142905 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 8.142920 S Standby Mode
+remote 8.142934 S FIFO Write pointer reset
+remote 8.143182 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 8.143196 S TX Mode
+remote 8.145246 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 8.145280 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 8.145321 S RX Mode
+remote 8.156921 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 8.156935 S Standby Mode
+remote 8.156950 S FIFO Write pointer reset
+remote 8.157193 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 8.157207 S TX Mode
+remote 8.159262 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 8.159291 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 8.159332 S RX Mode
+remote 8.170927 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 8.170942 S Standby Mode
+remote 8.170961 S FIFO Write pointer reset
+remote 8.171204 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 8.171218 S TX Mode
+remote 8.173273 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 8.173302 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 8.173343 S RX Mode
+remote 8.184937 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 8.184952 S Standby Mode
+remote 8.184966 S FIFO Write pointer reset
+remote 8.185214 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 8.185229 S TX Mode
+remote 8.187282 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 8.187317 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 8.187358 S RX Mode
+remote 8.198951 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 8.198965 S Standby Mode
+remote 8.198979 S FIFO Write pointer reset
+remote 8.199222 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 8.199236 S TX Mode
+remote 8.201292 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 8.201321 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 8.201362 S RX Mode
+remote 8.212956 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 8.212971 S Standby Mode
+remote 8.212985 S FIFO Write pointer reset
+remote 8.213233 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 8.213247 S TX Mode
+remote 8.215302 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 8.215331 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 8.215372 S RX Mode
+remote 8.226972 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 8.226986 S Standby Mode
+remote 8.227000 S FIFO Write pointer reset
+remote 8.227248 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 8.227263 S TX Mode
+remote 8.229313 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 8.229342 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 8.229388 S RX Mode
+remote 8.240922 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 207 times)
+remote 8.240937 S Standby Mode
+remote 8.240951 S FIFO Write pointer reset
+remote 8.241199 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 8.241213 S TX Mode
+remote 8.243269 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 8.243298 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 8.243339 S RX Mode
+remote 8.254933 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 8.254948 S Standby Mode
+remote 8.254962 S FIFO Write pointer reset
+remote 8.255204 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 8.255225 S TX Mode
+remote 8.257278 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 8.257307 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 8.257354 S RX Mode
+remote 8.268949 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 8.268964 S Standby Mode
+remote 8.268978 S FIFO Write pointer reset
+remote 8.269220 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 8.269235 S TX Mode
+remote 8.271290 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 8.271320 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 8.271360 S RX Mode
+remote 8.282955 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 8.282969 S Standby Mode
+remote 8.282983 S FIFO Write pointer reset
+remote 8.283231 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 8.283246 S TX Mode
+remote 8.285296 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 8.285330 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 8.285371 S RX Mode
+remote 8.296970 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 8.296985 S Standby Mode
+remote 8.296999 S FIFO Write pointer reset
+remote 8.297242 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 8.297256 S TX Mode
+remote 8.299311 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 8.299341 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 8.299381 S RX Mode
+remote 8.310978 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 8.310998 S Standby Mode
+remote 8.311012 S FIFO Write pointer reset
+remote 8.311255 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 8.311270 S TX Mode
+remote 8.313325 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 8.313354 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 8.313395 S RX Mode
+remote 8.324991 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 8.325006 S Standby Mode
+remote 8.325020 S FIFO Write pointer reset
+remote 8.325268 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 8.325283 S TX Mode
+remote 8.327336 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 8.327371 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 8.327412 S RX Mode
+remote 8.339004 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 8.339019 S Standby Mode
+remote 8.339033 S FIFO Write pointer reset
+remote 8.339275 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 8.339290 S TX Mode
+remote 8.341345 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 8.341374 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 8.341415 S RX Mode
+remote 8.353007 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 8.353022 S Standby Mode
+remote 8.353036 S FIFO Write pointer reset
+remote 8.353286 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 8.353301 S TX Mode
+remote 8.355356 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 8.355385 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 8.355426 S RX Mode
+remote 8.366967 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 207 times)
+remote 8.366981 S Standby Mode
+remote 8.366995 S FIFO Write pointer reset
+remote 8.367241 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 8.367256 S TX Mode
+remote 8.369311 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 8.369340 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 8.369381 S RX Mode
+remote 8.380973 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 8.380987 S Standby Mode
+remote 8.381001 S FIFO Write pointer reset
+remote 8.381252 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 8.381267 S TX Mode
+remote 8.383322 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 8.383351 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 8.383392 S RX Mode
+remote 8.394983 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 8.394997 S Standby Mode
+remote 8.395012 S FIFO Write pointer reset
+remote 8.395254 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 8.395277 S TX Mode
+remote 8.397330 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 8.397359 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 8.397406 S RX Mode
+remote 8.408995 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 8.409010 S Standby Mode
+remote 8.409024 S FIFO Write pointer reset
+remote 8.409266 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 8.409281 S TX Mode
+remote 8.411339 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 8.411368 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 8.411409 S RX Mode
+remote 8.443041 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 8.463139 W Device Reset
+remote 8.465222 W ID DATA Register [55 20 10 41]
+remote 8.465250 W Mode Control Register [62]
+remote 8.465279 W Calibration Control Register [00]
+remote 8.465313 W FIFO Register I [0F]
+remote 8.465342 W FIFO Register II [C0]
+remote 8.465371 W RC OSC Register I [00]
+remote 8.465399 W RC OSC Register II [00]
+remote 8.465428 W RC OSC Register III [04]
+remote 8.465456 W CKO Pin Control Register [A2]
+remote 8.465490 W GIO1 Pin Control Register I [01]
+remote 8.465519 W GIO2 Pin Control Register II [01]
+remote 8.465548 W Clock Register [05]
+remote 8.465576 W Data Rate Register [04]
+remote 8.465605 W CH 80 (2440.0MHz)
+remote 8.465634 W PLL Register II [9E]
+remote 8.465671 W PLL Register III [4B]
+remote 8.465700 W PLL Register IV [00]
+remote 8.465728 W PLL Register V [00]
+remote 8.465757 W TX Register I [16]
+remote 8.465786 W TX Register II [2B]
+remote 8.465820 W Delay Register I [12]
+remote 8.465848 W Delay Register II [00]
+remote 8.465877 W RX Register [62]
+remote 8.465906 W RX Gain Register I [80]
+remote 8.465935 W RX Gain Register II [80]
+remote 8.465970 W RX Gain Register III [00]
+remote 8.466004 W RX Gain Register IV [0A]
+remote 8.466033 W RSSI Thershld Register [32]
+remote 8.466062 W ADC Control Register [C3]
+remote 8.466092 W Code Register I [07]
+remote 8.466120 W Code Register II [17]
+remote 8.466149 W Code Register III [00]
+remote 8.466182 W IF Calibration Register I [00]
+remote 8.466211 W VCO current Calibration Register [00]
+remote 8.466239 W VCO Single band Calibration Register I [00]
+remote 8.466268 W VCO Single band Calibration Register II [3B]
+remote 8.466297 W Battery detect Register [00]
+remote 8.466326 W TX test Register [1F]
+remote 8.466360 W Rx DEM test Register I [47]
+remote 8.466389 W Rx DEM test Register II [80]
+remote 8.466418 W Charge Pump Current Register [03]
+remote 8.466446 W Crystal test Register [01]
+remote 8.466475 W PLL test Register [45]
+remote 8.466504 W VCO test Register I [18]
+remote 8.466537 W VCO test Register II [00]
+remote 8.466566 W IFAT Register [01]
+remote 8.486659 W RScale Register [0F]
+remote 8.486674 S Standby Mode
+remote 8.486702 W Calibration Control Register [01]
+remote 8.486939 R Calibration Control Register [01]
+remote 8.486973 R Calibration Control Register [00]
+remote 8.487002 R IF Calibration Register I [06]
+remote 8.487030 W IF Calibration Register I [13]
+remote 8.487059 W IF Calibration Register II [3B]
+remote 8.487087 W CH 0 (2400.0MHz)
+remote 8.487121 W Calibration Control Register [02]
+remote 8.487353 R Calibration Control Register [02]
+remote 8.487383 R Calibration Control Register [00]
+remote 8.487413 R IF Calibration Register I [03]
+remote 8.487442 W CH 120 (2460.0MHz)
+remote 8.487476 W Calibration Control Register [02]
+remote 8.487708 R Calibration Control Register [02]
+remote 8.487738 R Calibration Control Register [00]
+remote 8.487769 R IF Calibration Register I [03]
+remote 8.487797 W VCO Single band Calibration Register I [0B]
+remote 8.487818 S Standby Mode
+remote 8.487846 W CH 0 (2400.0MHz)
+remote 8.490872 S PLL Mode
+remote 8.490887 S RX Mode
+remote 8.490915 W TX test Register [01]
+remote 8.490944 W RX Gain Register I [9F]
+remote 8.490982 W CH 120 (2460.0MHz)
+remote 8.494007 S PLL Mode
+remote 8.494048 S RX Mode
+remote 8.494063 S Standby Mode
+remote 8.494077 S FIFO Write pointer reset
+remote 8.494325 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 8.494339 S TX Mode
+remote 8.496394 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 8.496423 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 8.496468 S RX Mode
+remote 8.508004 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 207 times)
+remote 8.508018 S Standby Mode
+remote 8.508032 S FIFO Write pointer reset
+remote 8.508280 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 8.508295 S TX Mode
+remote 8.510350 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 8.510379 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 8.510420 S RX Mode
+remote 8.522015 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 8.522030 S Standby Mode
+remote 8.522044 S FIFO Write pointer reset
+remote 8.522292 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 8.522306 S TX Mode
+remote 8.524356 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 8.524385 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 8.524431 S RX Mode
+remote 8.536027 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 8.536041 S Standby Mode
+remote 8.536056 S FIFO Write pointer reset
+remote 8.536298 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 8.536312 S TX Mode
+remote 8.538367 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 8.538397 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 8.538437 S RX Mode
+remote 8.550031 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 8.550045 S Standby Mode
+remote 8.550059 S FIFO Write pointer reset
+remote 8.550310 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 8.550324 S TX Mode
+remote 8.552375 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 8.552409 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 8.552450 S RX Mode
+remote 8.564039 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 211 times)
+remote 8.564053 S Standby Mode
+remote 8.564068 S FIFO Write pointer reset
+remote 8.564305 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 8.564320 S TX Mode
+remote 8.566372 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 69 times)
+remote 8.566401 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 8.566442 S RX Mode
+remote 8.578032 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 215 times)
+remote 8.578047 S Standby Mode
+remote 8.578061 S FIFO Write pointer reset
+remote 8.578298 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 8.578313 S TX Mode
+remote 8.580391 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 70 times)
+remote 8.580431 S RX Mode
+remote 8.592077 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 216 times)
+remote 8.592092 S Standby Mode
+remote 8.592106 S FIFO Write pointer reset
+remote 8.592343 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 8.592358 S TX Mode
+remote 8.594406 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 69 times)
+remote 8.594435 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 8.594476 S RX Mode
+remote 8.606070 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 215 times)
+remote 8.606085 S Standby Mode
+remote 8.606099 S FIFO Write pointer reset
+remote 8.606336 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 8.606351 S TX Mode
+remote 8.608400 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 69 times)
+remote 8.608429 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 8.608470 S RX Mode
+remote 8.620060 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 215 times)
+remote 8.620074 S Standby Mode
+remote 8.620088 S FIFO Write pointer reset
+remote 8.620326 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 8.620340 S TX Mode
+remote 8.622389 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 69 times)
+remote 8.622418 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 8.622459 S RX Mode
+remote 8.634049 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 215 times)
+remote 8.634064 S Standby Mode
+remote 8.634078 S FIFO Write pointer reset
+remote 8.634315 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 8.634330 S TX Mode
+remote 8.636382 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 69 times)
+remote 8.636411 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 8.636452 S RX Mode
+remote 8.648098 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 216 times)
+remote 8.648112 S Standby Mode
+remote 8.648126 S FIFO Write pointer reset
+remote 8.648364 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 8.648378 S TX Mode
+remote 8.650427 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 69 times)
+remote 8.650456 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 8.650497 S RX Mode
+remote 8.662087 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 215 times)
+remote 8.662101 S Standby Mode
+remote 8.662116 S FIFO Write pointer reset
+remote 8.662353 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 8.662368 S TX Mode
+remote 8.664416 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 69 times)
+remote 8.664445 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 8.664486 S RX Mode
+remote 8.676098 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 210 times)
+remote 8.676113 S Standby Mode
+remote 8.676127 S FIFO Write pointer reset
+remote 8.676369 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 8.676384 S TX Mode
+remote 8.678438 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 8.678468 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 8.678508 S RX Mode
+remote 8.690101 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 8.690116 S Standby Mode
+remote 8.690130 S FIFO Write pointer reset
+remote 8.690375 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 8.690390 S TX Mode
+remote 8.692445 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 8.692474 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 8.692515 S RX Mode
+remote 8.704108 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 8.704123 S Standby Mode
+remote 8.704137 S FIFO Write pointer reset
+remote 8.704387 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 8.704402 S TX Mode
+remote 8.706455 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 8.706490 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 8.706531 S RX Mode
+remote 8.718114 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 8.718134 S Standby Mode
+remote 8.718149 S FIFO Write pointer reset
+remote 8.718391 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 8.718406 S TX Mode
+remote 8.720463 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 8.720492 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 8.720533 S RX Mode
+remote 8.732124 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 8.732139 S Standby Mode
+remote 8.732153 S FIFO Write pointer reset
+remote 8.732396 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 8.732410 S TX Mode
+remote 8.734468 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 8.734497 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 8.734538 S RX Mode
+remote 8.746081 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 207 times)
+remote 8.746096 S Standby Mode
+remote 8.746110 S FIFO Write pointer reset
+remote 8.746352 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 8.746367 S TX Mode
+remote 8.748422 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 8.748451 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 8.748501 S RX Mode
+remote 8.760087 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 8.760102 S Standby Mode
+remote 8.760116 S FIFO Write pointer reset
+remote 8.760364 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 8.760378 S TX Mode
+remote 8.762429 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 8.762463 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 8.762503 S RX Mode
+remote 8.774094 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 8.774113 S Standby Mode
+remote 8.774127 S FIFO Write pointer reset
+remote 8.774370 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 8.774385 S TX Mode
+remote 8.776444 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 8.776473 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 8.776514 S RX Mode
+remote 8.808150 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 8.828241 W Device Reset
+remote 8.830324 W ID DATA Register [55 20 10 41]
+remote 8.830353 W Mode Control Register [62]
+remote 8.830381 W Calibration Control Register [00]
+remote 8.830410 W FIFO Register I [0F]
+remote 8.830444 W FIFO Register II [C0]
+remote 8.830473 W RC OSC Register I [00]
+remote 8.830501 W RC OSC Register II [00]
+remote 8.830530 W RC OSC Register III [04]
+remote 8.830559 W CKO Pin Control Register [A2]
+remote 8.830588 W GIO1 Pin Control Register I [01]
+remote 8.830621 W GIO2 Pin Control Register II [01]
+remote 8.830650 W Clock Register [05]
+remote 8.830679 W Data Rate Register [04]
+remote 8.830708 W CH 80 (2440.0MHz)
+remote 8.830736 W PLL Register II [9E]
+remote 8.830765 W PLL Register III [4B]
+remote 8.830799 W PLL Register IV [00]
+remote 8.830828 W PLL Register V [00]
+remote 8.830857 W TX Register I [16]
+remote 8.830885 W TX Register II [2B]
+remote 8.830914 W Delay Register I [12]
+remote 8.830943 W Delay Register II [00]
+remote 8.830977 W RX Register [62]
+remote 8.831005 W RX Gain Register I [80]
+remote 8.831034 W RX Gain Register II [80]
+remote 8.831063 W RX Gain Register III [00]
+remote 8.831095 W RX Gain Register IV [0A]
+remote 8.831124 W RSSI Thershld Register [32]
+remote 8.831158 W ADC Control Register [C3]
+remote 8.831187 W Code Register I [07]
+remote 8.831216 W Code Register II [17]
+remote 8.831245 W Code Register III [00]
+remote 8.831273 W IF Calibration Register I [00]
+remote 8.831302 W VCO current Calibration Register [00]
+remote 8.831335 W VCO Single band Calibration Register I [00]
+remote 8.831364 W VCO Single band Calibration Register II [3B]
+remote 8.831392 W Battery detect Register [00]
+remote 8.831421 W TX test Register [1F]
+remote 8.831450 W Rx DEM test Register I [47]
+remote 8.831479 W Rx DEM test Register II [80]
+remote 8.831516 W Charge Pump Current Register [03]
+remote 8.831544 W Crystal test Register [01]
+remote 8.831573 W PLL test Register [45]
+remote 8.831602 W VCO test Register I [18]
+remote 8.831630 W VCO test Register II [00]
+remote 8.831659 W IFAT Register [01]
+remote 8.851756 W RScale Register [0F]
+remote 8.851770 S Standby Mode
+remote 8.851799 W Calibration Control Register [01]
+remote 8.852036 R Calibration Control Register [01]
+remote 8.852066 R Calibration Control Register [00]
+remote 8.852099 R IF Calibration Register I [06]
+remote 8.852127 W IF Calibration Register I [13]
+remote 8.852161 W IF Calibration Register II [3B]
+remote 8.852189 W CH 0 (2400.0MHz)
+remote 8.852218 W Calibration Control Register [02]
+remote 8.852450 R Calibration Control Register [02]
+remote 8.852480 R Calibration Control Register [00]
+remote 8.852514 R IF Calibration Register I [03]
+remote 8.852543 W CH 120 (2460.0MHz)
+remote 8.852572 W Calibration Control Register [02]
+remote 8.852804 R Calibration Control Register [02]
+remote 8.852834 R Calibration Control Register [00]
+remote 8.852869 R IF Calibration Register I [03]
+remote 8.852898 W VCO Single band Calibration Register I [0B]
+remote 8.852913 S Standby Mode
+remote 8.852941 W CH 0 (2400.0MHz)
+remote 8.855967 S PLL Mode
+remote 8.855982 S RX Mode
+remote 8.856010 W TX test Register [01]
+remote 8.856044 W RX Gain Register I [9F]
+remote 8.856073 W CH 120 (2460.0MHz)
+remote 8.859105 S PLL Mode
+remote 8.859144 S RX Mode
+remote 8.859159 S Standby Mode
+remote 8.859173 S FIFO Write pointer reset
+remote 8.859420 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 8.859435 S TX Mode
+remote 8.861485 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 8.861522 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 8.861563 S RX Mode
+remote 8.873146 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 8.873161 S Standby Mode
+remote 8.873180 S FIFO Write pointer reset
+remote 8.873423 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 8.873437 S TX Mode
+remote 8.875492 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 8.875521 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 8.875562 S RX Mode
+remote 8.887158 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 8.887173 S Standby Mode
+remote 8.887187 S FIFO Write pointer reset
+remote 8.887430 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 8.887445 S TX Mode
+remote 8.889499 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 8.889529 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 8.889570 S RX Mode
+remote 8.901165 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 8.901179 S Standby Mode
+remote 8.901193 S FIFO Write pointer reset
+remote 8.901441 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 8.901456 S TX Mode
+remote 8.903505 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 8.903534 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 8.903580 S RX Mode
+remote 8.915170 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 8.915184 S Standby Mode
+remote 8.915198 S FIFO Write pointer reset
+remote 8.915446 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 8.915461 S TX Mode
+remote 8.917519 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 8.917549 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 8.917589 S RX Mode
+remote 8.929184 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 8.929198 S Standby Mode
+remote 8.929212 S FIFO Write pointer reset
+remote 8.929455 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 8.929470 S TX Mode
+remote 8.931525 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 8.931554 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 8.931595 S RX Mode
+remote 8.943190 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 8.943205 S Standby Mode
+remote 8.943219 S FIFO Write pointer reset
+remote 8.943466 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 8.943481 S TX Mode
+remote 8.945531 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 8.945565 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 8.945606 S RX Mode
+remote 8.957144 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 207 times)
+remote 8.957158 S Standby Mode
+remote 8.957178 S FIFO Write pointer reset
+remote 8.957420 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 8.957434 S TX Mode
+remote 8.959489 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 8.959518 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 8.959559 S RX Mode
+remote 8.971153 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 8.971168 S Standby Mode
+remote 8.971182 S FIFO Write pointer reset
+remote 8.971430 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 8.971445 S TX Mode
+remote 8.973494 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 8.973524 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 8.973569 S RX Mode
+remote 8.985161 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 8.985176 S Standby Mode
+remote 8.985190 S FIFO Write pointer reset
+remote 8.985433 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 8.985447 S TX Mode
+remote 8.987506 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 8.987536 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 8.987576 S RX Mode
+remote 8.999170 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 8.999185 S Standby Mode
+remote 8.999199 S FIFO Write pointer reset
+remote 8.999446 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 8.999461 S TX Mode
+remote 9.001516 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 9.001545 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 9.001586 S RX Mode
+remote 9.013180 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 9.013195 S Standby Mode
+remote 9.013209 S FIFO Write pointer reset
+remote 9.013452 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 9.013472 S TX Mode
+remote 9.015521 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 9.015550 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 9.015597 S RX Mode
+remote 9.027195 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 9.027210 S Standby Mode
+remote 9.027224 S FIFO Write pointer reset
+remote 9.027466 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 9.027481 S TX Mode
+remote 9.029536 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 9.029565 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 9.029606 S RX Mode
+remote 9.041199 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 9.041214 S Standby Mode
+remote 9.041228 S FIFO Write pointer reset
+remote 9.041478 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 9.041493 S TX Mode
+remote 9.043543 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 9.043577 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 9.043618 S RX Mode
+remote 9.055212 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 9.055227 S Standby Mode
+remote 9.055241 S FIFO Write pointer reset
+remote 9.055487 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 9.055501 S TX Mode
+remote 9.057560 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 9.057590 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 9.057635 S RX Mode
+remote 9.069222 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 9.069242 S Standby Mode
+remote 9.069256 S FIFO Write pointer reset
+remote 9.069501 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 9.069516 S TX Mode
+remote 9.071571 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 9.071600 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 9.071641 S RX Mode
+remote 9.083184 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 207 times)
+remote 9.083199 S Standby Mode
+remote 9.083213 S FIFO Write pointer reset
+remote 9.083455 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 9.083470 S TX Mode
+remote 9.085527 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 9.085556 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 9.085597 S RX Mode
+remote 9.097191 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 9.097206 S Standby Mode
+remote 9.097226 S FIFO Write pointer reset
+remote 9.097468 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 9.097482 S TX Mode
+remote 9.099540 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 9.099569 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 9.099610 S RX Mode
+remote 9.111203 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 9.111217 S Standby Mode
+remote 9.111231 S FIFO Write pointer reset
+remote 9.111479 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 9.111494 S TX Mode
+remote 9.113546 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 9.113580 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 9.113621 S RX Mode
+remote 9.125211 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 9.125225 S Standby Mode
+remote 9.125239 S FIFO Write pointer reset
+remote 9.125482 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 9.125497 S TX Mode
+remote 9.127558 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 9.127588 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 9.127628 S RX Mode
+remote 9.139221 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 9.139235 S Standby Mode
+remote 9.139250 S FIFO Write pointer reset
+remote 9.139497 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 9.139512 S TX Mode
+remote 9.141570 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 9.141599 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 9.141640 S RX Mode
+remote 9.173284 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 9.193374 W Device Reset
+remote 9.195452 W ID DATA Register [55 20 10 41]
+remote 9.195480 W Mode Control Register [62]
+remote 9.195509 W Calibration Control Register [00]
+remote 9.195538 W FIFO Register I [0F]
+remote 9.195566 W FIFO Register II [C0]
+remote 9.195595 W RC OSC Register I [00]
+remote 9.195623 W RC OSC Register II [00]
+remote 9.195652 W RC OSC Register III [04]
+remote 9.195681 W CKO Pin Control Register [A2]
+remote 9.195709 W GIO1 Pin Control Register I [01]
+remote 9.195738 W GIO2 Pin Control Register II [01]
+remote 9.195767 W Clock Register [05]
+remote 9.195796 W Data Rate Register [04]
+remote 9.195825 W CH 80 (2440.0MHz)
+remote 9.195854 W PLL Register II [9E]
+remote 9.195882 W PLL Register III [4B]
+remote 9.195911 W PLL Register IV [00]
+remote 9.195940 W PLL Register V [00]
+remote 9.195968 W TX Register I [16]
+remote 9.195997 W TX Register II [2B]
+remote 9.196026 W Delay Register I [12]
+remote 9.196055 W Delay Register II [00]
+remote 9.196084 W RX Register [62]
+remote 9.196112 W RX Gain Register I [80]
+remote 9.196141 W RX Gain Register II [80]
+remote 9.196170 W RX Gain Register III [00]
+remote 9.196205 W RX Gain Register IV [0A]
+remote 9.196234 W RSSI Thershld Register [32]
+remote 9.196263 W ADC Control Register [C3]
+remote 9.196293 W Code Register I [07]
+remote 9.196321 W Code Register II [17]
+remote 9.196350 W Code Register III [00]
+remote 9.196378 W IF Calibration Register I [00]
+remote 9.196407 W VCO current Calibration Register [00]
+remote 9.196435 W VCO Single band Calibration Register I [00]
+remote 9.196464 W VCO Single band Calibration Register II [3B]
+remote 9.196493 W Battery detect Register [00]
+remote 9.196522 W TX test Register [1F]
+remote 9.196551 W Rx DEM test Register I [47]
+remote 9.196579 W Rx DEM test Register II [80]
+remote 9.196608 W Charge Pump Current Register [03]
+remote 9.196636 W Crystal test Register [01]
+remote 9.196665 W PLL test Register [45]
+remote 9.196694 W VCO test Register I [18]
+remote 9.196723 W VCO test Register II [00]
+remote 9.196751 W IFAT Register [01]
+remote 9.216842 W RScale Register [0F]
+remote 9.216856 S Standby Mode
+remote 9.216885 W Calibration Control Register [01]
+remote 9.217117 R Calibration Control Register [01]
+remote 9.217147 R Calibration Control Register [00]
+remote 9.217177 R IF Calibration Register I [06]
+remote 9.217208 W IF Calibration Register I [13]
+remote 9.217237 W IF Calibration Register II [3B]
+remote 9.217265 W CH 0 (2400.0MHz)
+remote 9.217294 W Calibration Control Register [02]
+remote 9.217526 R Calibration Control Register [02]
+remote 9.217556 R Calibration Control Register [00]
+remote 9.217586 R IF Calibration Register I [03]
+remote 9.217614 W CH 120 (2460.0MHz)
+remote 9.217643 W Calibration Control Register [02]
+remote 9.217875 R Calibration Control Register [02]
+remote 9.217905 R Calibration Control Register [00]
+remote 9.217936 R IF Calibration Register I [03]
+remote 9.217964 W VCO Single band Calibration Register I [0B]
+remote 9.217980 S Standby Mode
+remote 9.218008 W CH 0 (2400.0MHz)
+remote 9.221033 S PLL Mode
+remote 9.221048 S RX Mode
+remote 9.221076 W TX test Register [01]
+remote 9.221105 W RX Gain Register I [9F]
+remote 9.221134 W CH 120 (2460.0MHz)
+remote 9.224159 S PLL Mode
+remote 9.224203 S RX Mode
+remote 9.224218 S Standby Mode
+remote 9.224232 S FIFO Write pointer reset
+remote 9.224470 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 9.224484 S TX Mode
+remote 9.226536 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 69 times)
+remote 9.226566 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 9.226606 S RX Mode
+remote 9.238252 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 216 times)
+remote 9.238267 S Standby Mode
+remote 9.238281 S FIFO Write pointer reset
+remote 9.238518 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 9.238533 S TX Mode
+remote 9.240610 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 70 times)
+remote 9.240651 S RX Mode
+remote 9.252242 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 215 times)
+remote 9.252256 S Standby Mode
+remote 9.252271 S FIFO Write pointer reset
+remote 9.252508 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 9.252523 S TX Mode
+remote 9.254600 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 70 times)
+remote 9.254630 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 9.254670 S RX Mode
+remote 9.266265 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 215 times)
+remote 9.266279 S Standby Mode
+remote 9.266293 S FIFO Write pointer reset
+remote 9.266531 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 9.266545 S TX Mode
+remote 9.268623 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 70 times)
+remote 9.268664 S RX Mode
+remote 9.280255 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 215 times)
+remote 9.280269 S Standby Mode
+remote 9.280283 S FIFO Write pointer reset
+remote 9.280521 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 9.280535 S TX Mode
+remote 9.282613 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 70 times)
+remote 9.282654 S RX Mode
+remote 9.294300 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 210 times)
+remote 9.294315 S Standby Mode
+remote 9.294329 S FIFO Write pointer reset
+remote 9.294571 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 9.294586 S TX Mode
+remote 9.296644 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 9.296674 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 9.296720 S RX Mode
+remote 9.308258 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 207 times)
+remote 9.308272 S Standby Mode
+remote 9.308286 S FIFO Write pointer reset
+remote 9.308534 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 9.308549 S TX Mode
+remote 9.310599 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 9.310633 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 9.310674 S RX Mode
+remote 9.322271 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 9.322286 S Standby Mode
+remote 9.322300 S FIFO Write pointer reset
+remote 9.322543 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 9.322557 S TX Mode
+remote 9.324613 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 9.324642 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 9.324688 S RX Mode
+remote 9.336289 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 9.336303 S Standby Mode
+remote 9.336318 S FIFO Write pointer reset
+remote 9.336561 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 9.336575 S TX Mode
+remote 9.338630 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 9.338660 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 9.338700 S RX Mode
+remote 9.350298 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 9.350313 S Standby Mode
+remote 9.350327 S FIFO Write pointer reset
+remote 9.350575 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 9.350589 S TX Mode
+remote 9.352639 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 9.352674 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 9.352715 S RX Mode
+remote 9.364312 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 9.364327 S Standby Mode
+remote 9.364341 S FIFO Write pointer reset
+remote 9.364583 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 9.364598 S TX Mode
+remote 9.366657 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 9.366686 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 9.366733 S RX Mode
+remote 9.378319 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 9.378342 S Standby Mode
+remote 9.378356 S FIFO Write pointer reset
+remote 9.378599 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 9.378613 S TX Mode
+remote 9.380669 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 9.380698 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 9.380738 S RX Mode
+remote 9.392333 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 9.392348 S Standby Mode
+remote 9.392362 S FIFO Write pointer reset
+remote 9.392612 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 9.392627 S TX Mode
+remote 9.394677 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 9.394711 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 9.394752 S RX Mode
+remote 9.406288 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 207 times)
+remote 9.406303 S Standby Mode
+remote 9.406322 S FIFO Write pointer reset
+remote 9.406567 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 9.406582 S TX Mode
+remote 9.408637 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 9.408666 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 9.408707 S RX Mode
+remote 9.420299 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 9.420314 S Standby Mode
+remote 9.420328 S FIFO Write pointer reset
+remote 9.420579 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 9.420593 S TX Mode
+remote 9.422643 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 9.422678 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 9.422719 S RX Mode
+remote 9.434308 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 9.434323 S Standby Mode
+remote 9.434337 S FIFO Write pointer reset
+remote 9.434579 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 9.434594 S TX Mode
+remote 9.436656 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 9.436685 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 9.436726 S RX Mode
+remote 9.448318 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 9.448332 S Standby Mode
+remote 9.448346 S FIFO Write pointer reset
+remote 9.448594 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 9.448609 S TX Mode
+remote 9.450667 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 9.450696 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 9.450737 S RX Mode
+remote 9.462327 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 9.462342 S Standby Mode
+remote 9.462356 S FIFO Write pointer reset
+remote 9.462599 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 9.462619 S TX Mode
+remote 9.464672 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 9.464701 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 9.464747 S RX Mode
+remote 9.476340 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 9.476355 S Standby Mode
+remote 9.476369 S FIFO Write pointer reset
+remote 9.476612 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 9.476627 S TX Mode
+remote 9.478684 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 9.478713 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 9.478754 S RX Mode
+remote 9.490347 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 9.490362 S Standby Mode
+remote 9.490376 S FIFO Write pointer reset
+remote 9.490624 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 9.490638 S TX Mode
+remote 9.492688 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 9.492725 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 9.492766 S RX Mode
+remote 9.504359 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 9.504373 S Standby Mode
+remote 9.504387 S FIFO Write pointer reset
+remote 9.504630 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 9.504644 S TX Mode
+remote 9.506703 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 9.506732 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 9.506781 S RX Mode
+remote 9.538417 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 9.558517 W Device Reset
+remote 9.560595 W ID DATA Register [55 20 10 41]
+remote 9.560629 W Mode Control Register [62]
+remote 9.560657 W Calibration Control Register [00]
+remote 9.560686 W FIFO Register I [0F]
+remote 9.560715 W FIFO Register II [C0]
+remote 9.560744 W RC OSC Register I [00]
+remote 9.560772 W RC OSC Register II [00]
+remote 9.560806 W RC OSC Register III [04]
+remote 9.560834 W CKO Pin Control Register [A2]
+remote 9.560863 W GIO1 Pin Control Register I [01]
+remote 9.560892 W GIO2 Pin Control Register II [01]
+remote 9.560921 W Clock Register [05]
+remote 9.560949 W Data Rate Register [04]
+remote 9.560984 W CH 80 (2440.0MHz)
+remote 9.561013 W PLL Register II [9E]
+remote 9.561041 W PLL Register III [4B]
+remote 9.561070 W PLL Register IV [00]
+remote 9.561099 W PLL Register V [00]
+remote 9.561127 W TX Register I [16]
+remote 9.561161 W TX Register II [2B]
+remote 9.561190 W Delay Register I [12]
+remote 9.561219 W Delay Register II [00]
+remote 9.561248 W RX Register [62]
+remote 9.561276 W RX Gain Register I [80]
+remote 9.561316 W RX Gain Register II [80]
+remote 9.561345 W RX Gain Register III [00]
+remote 9.561374 W RX Gain Register IV [0A]
+remote 9.561402 W RSSI Thershld Register [32]
+remote 9.561432 W ADC Control Register [C3]
+remote 9.561461 W Code Register I [07]
+remote 9.561494 W Code Register II [17]
+remote 9.561523 W Code Register III [00]
+remote 9.561551 W IF Calibration Register I [00]
+remote 9.561580 W VCO current Calibration Register [00]
+remote 9.561608 W VCO Single band Calibration Register I [00]
+remote 9.561637 W VCO Single band Calibration Register II [3B]
+remote 9.561671 W Battery detect Register [00]
+remote 9.561700 W TX test Register [1F]
+remote 9.561729 W Rx DEM test Register I [47]
+remote 9.561758 W Rx DEM test Register II [80]
+remote 9.561786 W Charge Pump Current Register [03]
+remote 9.561815 W Crystal test Register [01]
+remote 9.561849 W PLL test Register [45]
+remote 9.561877 W VCO test Register I [18]
+remote 9.561906 W VCO test Register II [00]
+remote 9.561935 W IFAT Register [01]
+remote 9.582032 W RScale Register [0F]
+remote 9.582046 S Standby Mode
+remote 9.582081 W Calibration Control Register [01]
+remote 9.582315 R Calibration Control Register [01]
+remote 9.582345 R Calibration Control Register [00]
+remote 9.582375 R IF Calibration Register I [06]
+remote 9.582403 W IF Calibration Register I [13]
+remote 9.582440 W IF Calibration Register II [3B]
+remote 9.582468 W CH 0 (2400.0MHz)
+remote 9.582497 W Calibration Control Register [02]
+remote 9.582729 R Calibration Control Register [02]
+remote 9.582759 R Calibration Control Register [00]
+remote 9.582794 R IF Calibration Register I [03]
+remote 9.582823 W CH 120 (2460.0MHz)
+remote 9.582851 W Calibration Control Register [02]
+remote 9.583084 R Calibration Control Register [02]
+remote 9.583114 R Calibration Control Register [00]
+remote 9.583150 R IF Calibration Register I [03]
+remote 9.583178 W VCO Single band Calibration Register I [0B]
+remote 9.583193 S Standby Mode
+remote 9.583222 W CH 0 (2400.0MHz)
+remote 9.586251 S PLL Mode
+remote 9.586267 S RX Mode
+remote 9.586300 W TX test Register [01]
+remote 9.586336 W RX Gain Register I [9F]
+remote 9.586365 W CH 120 (2460.0MHz)
+remote 9.589390 S PLL Mode
+remote 9.589431 S RX Mode
+remote 9.589446 S Standby Mode
+remote 9.589468 S FIFO Write pointer reset
+remote 9.589710 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 9.589725 S TX Mode
+remote 9.591781 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 9.591810 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 9.591851 S RX Mode
+remote 9.603388 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 207 times)
+remote 9.603403 S Standby Mode
+remote 9.603417 S FIFO Write pointer reset
+remote 9.603663 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 9.603677 S TX Mode
+remote 9.605733 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 9.605762 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 9.605802 S RX Mode
+remote 9.617398 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 9.617413 S Standby Mode
+remote 9.617432 S FIFO Write pointer reset
+remote 9.617678 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 9.617692 S TX Mode
+remote 9.619747 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 9.619776 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 9.619817 S RX Mode
+remote 9.631408 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 9.631423 S Standby Mode
+remote 9.631437 S FIFO Write pointer reset
+remote 9.631687 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 9.631702 S TX Mode
+remote 9.633752 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 9.633781 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 9.633827 S RX Mode
+remote 9.645359 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 207 times)
+remote 9.645373 S Standby Mode
+remote 9.645387 S FIFO Write pointer reset
+remote 9.645635 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 9.645650 S TX Mode
+remote 9.647706 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 9.647740 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 9.647781 S RX Mode
+remote 9.659368 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 9.659388 S Standby Mode
+remote 9.659402 S FIFO Write pointer reset
+remote 9.659645 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 9.659659 S TX Mode
+remote 9.661717 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 9.661746 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 9.661787 S RX Mode
+remote 9.673382 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 9.673397 S Standby Mode
+remote 9.673411 S FIFO Write pointer reset
+remote 9.673653 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 9.673668 S TX Mode
+remote 9.675723 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 9.675752 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 9.675801 S RX Mode
+remote 9.687392 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 9.687406 S Standby Mode
+remote 9.687421 S FIFO Write pointer reset
+remote 9.687668 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 9.687683 S TX Mode
+remote 9.689734 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 9.689768 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 9.689809 S RX Mode
+remote 9.701396 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 9.701415 S Standby Mode
+remote 9.701429 S FIFO Write pointer reset
+remote 9.701672 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 9.701687 S TX Mode
+remote 9.703741 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 9.703771 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 9.703811 S RX Mode
+remote 9.715406 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 9.715420 S Standby Mode
+remote 9.715434 S FIFO Write pointer reset
+remote 9.715677 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 9.715692 S TX Mode
+remote 9.717750 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 9.717780 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 9.717826 S RX Mode
+remote 9.729414 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 9.729428 S Standby Mode
+remote 9.729443 S FIFO Write pointer reset
+remote 9.729690 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 9.729705 S TX Mode
+remote 9.731755 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 9.731789 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 9.731830 S RX Mode
+remote 9.743418 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 9.743433 S Standby Mode
+remote 9.743452 S FIFO Write pointer reset
+remote 9.743695 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 9.743709 S TX Mode
+remote 9.745764 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 9.745794 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 9.745834 S RX Mode
+remote 9.757431 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 9.757445 S Standby Mode
+remote 9.757459 S FIFO Write pointer reset
+remote 9.757702 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 9.757716 S TX Mode
+remote 9.759772 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 9.759801 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 9.759842 S RX Mode
+remote 9.771436 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 9.771451 S Standby Mode
+remote 9.771465 S FIFO Write pointer reset
+remote 9.771713 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 9.771728 S TX Mode
+remote 9.773778 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 9.773812 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 9.773853 S RX Mode
+remote 9.785440 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 9.785455 S Standby Mode
+remote 9.785474 S FIFO Write pointer reset
+remote 9.785716 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 9.785731 S TX Mode
+remote 9.787790 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 9.787819 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 9.787860 S RX Mode
+remote 9.799410 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 211 times)
+remote 9.799425 S Standby Mode
+remote 9.799439 S FIFO Write pointer reset
+remote 9.799676 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 9.799691 S TX Mode
+remote 9.801769 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 70 times)
+remote 9.801809 S RX Mode
+remote 9.813455 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 216 times)
+remote 9.813470 S Standby Mode
+remote 9.813484 S FIFO Write pointer reset
+remote 9.813721 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 9.813736 S TX Mode
+remote 9.815814 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 70 times)
+remote 9.815855 S RX Mode
+remote 9.827450 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 215 times)
+remote 9.827464 S Standby Mode
+remote 9.827478 S FIFO Write pointer reset
+remote 9.827716 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 9.827730 S TX Mode
+remote 9.829808 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 70 times)
+remote 9.829849 S RX Mode
+remote 9.841439 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 215 times)
+remote 9.841454 S Standby Mode
+remote 9.841468 S FIFO Write pointer reset
+remote 9.841705 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 9.841720 S TX Mode
+remote 9.843798 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 70 times)
+remote 9.843838 S RX Mode
+remote 9.855430 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 215 times)
+remote 9.855444 S Standby Mode
+remote 9.855458 S FIFO Write pointer reset
+remote 9.855696 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 9.855711 S TX Mode
+remote 9.857762 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 69 times)
+remote 9.857792 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 9.857832 S RX Mode
+remote 9.869478 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 216 times)
+remote 9.869493 S Standby Mode
+remote 9.869507 S FIFO Write pointer reset
+remote 9.869745 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 9.869759 S TX Mode
+remote 9.871808 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 69 times)
+remote 9.871837 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 9.871878 S RX Mode
+remote 9.903509 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 215 times)
+remote 9.923602 W Device Reset
+remote 9.925680 W ID DATA Register [55 20 10 41]
+remote 9.925708 W Mode Control Register [62]
+remote 9.925737 W Calibration Control Register [00]
+remote 9.925766 W FIFO Register I [0F]
+remote 9.925794 W FIFO Register II [C0]
+remote 9.925823 W RC OSC Register I [00]
+remote 9.925857 W RC OSC Register II [00]
+remote 9.925886 W RC OSC Register III [04]
+remote 9.925914 W CKO Pin Control Register [A2]
+remote 9.925943 W GIO1 Pin Control Register I [01]
+remote 9.925972 W GIO2 Pin Control Register II [01]
+remote 9.926001 W Clock Register [05]
+remote 9.926034 W Data Rate Register [04]
+remote 9.926063 W CH 80 (2440.0MHz)
+remote 9.926092 W PLL Register II [9E]
+remote 9.926121 W PLL Register III [4B]
+remote 9.926150 W PLL Register IV [00]
+remote 9.926178 W PLL Register V [00]
+remote 9.926212 W TX Register I [16]
+remote 9.926241 W TX Register II [2B]
+remote 9.926270 W Delay Register I [12]
+remote 9.926299 W Delay Register II [00]
+remote 9.926328 W RX Register [62]
+remote 9.926356 W RX Gain Register I [80]
+remote 9.926390 W RX Gain Register II [80]
+remote 9.926426 W RX Gain Register III [00]
+remote 9.926454 W RX Gain Register IV [0A]
+remote 9.926483 W RSSI Thershld Register [32]
+remote 9.926512 W ADC Control Register [C3]
+remote 9.926541 W Code Register I [07]
+remote 9.926576 W Code Register II [17]
+remote 9.926604 W Code Register III [00]
+remote 9.926633 W IF Calibration Register I [00]
+remote 9.926661 W VCO current Calibration Register [00]
+remote 9.926690 W VCO Single band Calibration Register I [00]
+remote 9.926719 W VCO Single band Calibration Register II [3B]
+remote 9.926752 W Battery detect Register [00]
+remote 9.926781 W TX test Register [1F]
+remote 9.926810 W Rx DEM test Register I [47]
+remote 9.926839 W Rx DEM test Register II [80]
+remote 9.926867 W Charge Pump Current Register [03]
+remote 9.926896 W Crystal test Register [01]
+remote 9.926930 W PLL test Register [45]
+remote 9.926959 W VCO test Register I [18]
+remote 9.926988 W VCO test Register II [00]
+remote 9.927016 W IFAT Register [01]
+remote 9.947108 W RScale Register [0F]
+remote 9.947123 S Standby Mode
+remote 9.947151 W Calibration Control Register [01]
+remote 9.947384 R Calibration Control Register [01]
+remote 9.947414 R Calibration Control Register [00]
+remote 9.947446 R IF Calibration Register I [06]
+remote 9.947475 W IF Calibration Register I [13]
+remote 9.947503 W IF Calibration Register II [3B]
+remote 9.947531 W CH 0 (2400.0MHz)
+remote 9.947565 W Calibration Control Register [02]
+remote 9.947797 R Calibration Control Register [02]
+remote 9.947827 R Calibration Control Register [00]
+remote 9.947857 R IF Calibration Register I [03]
+remote 9.947885 W CH 120 (2460.0MHz)
+remote 9.947919 W Calibration Control Register [02]
+remote 9.948151 R Calibration Control Register [02]
+remote 9.948181 R Calibration Control Register [00]
+remote 9.948211 R IF Calibration Register I [03]
+remote 9.948240 W VCO Single band Calibration Register I [0B]
+remote 9.948260 S Standby Mode
+remote 9.948289 W CH 0 (2400.0MHz)
+remote 9.951315 S PLL Mode
+remote 9.951330 S RX Mode
+remote 9.951358 W TX test Register [01]
+remote 9.951388 W RX Gain Register I [9F]
+remote 9.951421 W CH 120 (2460.0MHz)
+remote 9.954449 S PLL Mode
+remote 9.954491 S RX Mode
+remote 9.954505 S Standby Mode
+remote 9.954519 S FIFO Write pointer reset
+remote 9.954767 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 9.954782 S TX Mode
+remote 9.956835 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 9.956864 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 9.956910 S RX Mode
+remote 9.968502 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 9.968517 S Standby Mode
+remote 9.968531 S FIFO Write pointer reset
+remote 9.968773 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 9.968788 S TX Mode
+remote 9.970843 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 9.970872 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 9.970913 S RX Mode
+remote 9.982508 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 9.982523 S Standby Mode
+remote 9.982537 S FIFO Write pointer reset
+remote 9.982785 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 9.982800 S TX Mode
+remote 9.984855 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 9.984884 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 9.984925 S RX Mode
+remote 9.996523 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXDIS TX  (Repeated 208 times)
+remote 9.996537 S Standby Mode
+remote 9.996551 S FIFO Write pointer reset
+remote 9.996794 W FIFO 0x05 | 0x01 | 0x78 | 0xd0 | 0x0c | 0x99 | 0xd8 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x00 | 0x3a
+remote 9.996814 S TX Mode
+remote 9.998864 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  TX  (Repeated 67 times)
+remote 9.998893 R MODE: FECOK  CRCOK  RFEN  XEN  PLLDIS TRXEN  RX 
+remote 9.998939 S RX Mode
