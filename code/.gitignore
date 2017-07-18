@@ -1,0 +1,11 @@
+obj/
+obj-Mini51/
+*.dep
+*.uvopt
+*.uvgui.*
+*.bak
+*.map
+*.lst
+/Debug
+.settings/
+
