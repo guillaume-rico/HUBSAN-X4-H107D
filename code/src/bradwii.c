@@ -68,7 +68,7 @@ m
 #include "lib_i2c.h"
 #include "lib_digitalio.h"
 #include "lib_fp.h"
-#if CONTROL_BOARD_TYPE == CONTROL_BOARD_HUBSAN_H107L
+#if CONTROL_BOARD_TYPE == CONTROL_BOARD_HUBSAN_H107L || CONTROL_BOARD_TYPE == CONTROL_BOARD_HUBSAN_H107D 
 #include "lib_adc.h"
 #endif
 
@@ -87,6 +87,9 @@ m
 #include "navigation.h"
 #include "pilotcontrol.h"
 #include "autotune.h"
+#if CONTROL_BOARD_TYPE == CONTROL_BOARD_HUBSAN_H107D 
+#include "H107D_camera.h"
+#endif
 
 // Data type for stick movement detection to execute accelerometer calibration
 typedef enum stickstate_tag {
@@ -106,7 +109,7 @@ fixedpointnum integratedangleerror[3];
 // limit pid windup
 #define INTEGRATEDANGLEERRORLIMIT FIXEDPOINTCONSTANT(1000)
 
-#if CONTROL_BOARD_TYPE == CONTROL_BOARD_HUBSAN_H107L
+#if CONTROL_BOARD_TYPE == CONTROL_BOARD_HUBSAN_H107L || CONTROL_BOARD_TYPE == CONTROL_BOARD_HUBSAN_H107D 
 // Factor from ADC input voltage to battery voltage
 #define FP_BATTERY_VOLTAGE_FACTOR FIXEDPOINTCONSTANT(BATTERY_VOLTAGE_FACTOR)
 
@@ -130,7 +133,7 @@ static void detectstickcommand(void);
 // It all starts here:
 int main(void)
 {
-#if CONTROL_BOARD_TYPE == CONTROL_BOARD_HUBSAN_H107L
+#if CONTROL_BOARD_TYPE == CONTROL_BOARD_HUBSAN_H107L || CONTROL_BOARD_TYPE == CONTROL_BOARD_HUBSAN_H107D 
     // Static to keep it off the stack
     static bool isbatterylow;         // Set to true while voltage is below limit
     static bool isadcchannelref;      // Set to true if the next ADC result is reference channel
@@ -147,7 +150,7 @@ int main(void)
     static bool isfailsafeactive;     // true while we don't get new data from transmitter
 
     // initialize hardware
-	lib_hal_init();
+	  lib_hal_init();
 
     // start with default user settings in case there's nothing in eeprom
     defaultusersettings();
@@ -162,7 +165,7 @@ int main(void)
     lib_timers_init();
     lib_i2c_init();
 
-#if CONTROL_BOARD_TYPE == CONTROL_BOARD_HUBSAN_H107L
+#if CONTROL_BOARD_TYPE == CONTROL_BOARD_HUBSAN_H107L || CONTROL_BOARD_TYPE == CONTROL_BOARD_HUBSAN_H107D 
     // extras init for Hubsan X4
     x4_init_leds();
     if(!global.usersettingsfromeeprom) {
@@ -185,10 +188,14 @@ int main(void)
 		
     // initialize all other modules
     initrx();
-#if (CONTROL_BOARD_TYPE == CONTROL_BOARD_HUBSAN_H107L)
+#if (CONTROL_BOARD_TYPE == CONTROL_BOARD_HUBSAN_H107L  || CONTROL_BOARD_TYPE == CONTROL_BOARD_HUBSAN_H107D  )
     // Give the battery voltage lowpass filter a reasonable starting point.
     global.batteryvoltage = FP_BATTERY_UNDERVOLTAGE_LIMIT;
     lib_adc_init();  // For battery voltage
+		
+		// Init camera
+		//H107D_camera_init();
+		
 #endif
     initoutputs();
 #if (MULTIWII_CONFIG_SERIAL_PORTS != NOSERIALPORT)
@@ -207,7 +214,7 @@ int main(void)
 #endif
     initimu();
 
-#if (CONTROL_BOARD_TYPE == CONTROL_BOARD_HUBSAN_H107L)
+#if (CONTROL_BOARD_TYPE == CONTROL_BOARD_HUBSAN_H107L || CONTROL_BOARD_TYPE == CONTROL_BOARD_HUBSAN_H107D )
     x4_set_leds(X4_LED_ALL);
     // Measure internal bandgap voltage now.
     // Battery is probably full and there is no load,
@@ -236,7 +243,6 @@ int main(void)
     global.armed = 0;
     global.navigationmode = NAVIGATIONMODEOFF;
     global.failsafetimer = lib_timers_starttimer();
-
     for (;;) {
 
         // check to see what switches are activated
@@ -251,8 +257,16 @@ int main(void)
         // run the imu to estimate the current attitude of the aircraft
         imucalculateestimatedattitude();
 
-        // arm and disarm via rx aux switches
+#if CONTROL_BOARD_TYPE == CONTROL_BOARD_HUBSAN_H107D
+				if (!global.armed) {
+					  if (global.rxvalues[THROTTLEINDEX] < FPSTICKLOW) {
+							   global.armed = 1;
+						}
+				}
+#else
+			  // arm and disarm via rx aux switches (FPSTICKLOW = 0xFFFF5100)
         if (global.rxvalues[THROTTLEINDEX] < FPSTICKLOW) {      // see if we want to change armed modes
+            
             if (!global.armed) {
                 if (global.activecheckboxitems & CHECKBOXMASKARM) {
                     global.armed = 1;
@@ -270,6 +284,10 @@ int main(void)
             // Not armed: check if there is a stick command to execute.
             detectstickcommand();
         }
+        global.armed = 1;
+#endif
+
+
 
 #if (GPS_TYPE!=NO_GPS)
         // turn on or off navigation when appropriate
@@ -299,7 +317,7 @@ int main(void)
         readrx();
 
         // Hubsan X4 has its own LED management
-#if (CONTROL_BOARD_TYPE != CONTROL_BOARD_HUBSAN_H107L)
+#if (CONTROL_BOARD_TYPE != CONTROL_BOARD_HUBSAN_H107L && CONTROL_BOARD_TYPE != CONTROL_BOARD_HUBSAN_H107D )
         // turn on the LED when we are stable and the gps has 5 satellites or more
 #if (GPS_TYPE==NO_GPS)
         lib_digitalio_setoutput(LED1_OUTPUT, (global.stable == 0) ? (!LED1_ON) : LED1_ON);
@@ -466,6 +484,8 @@ int main(void)
                 throttleoutput = lib_fp_multiply(throttleoutput - AUTOTHROTTLEDEADAREA, recriprocal) + AUTOTHROTTLEDEADAREA;
             }
         }
+        isfailsafeactive = false;
+#if defined(prout)
         // if we don't hear from the receiver for over a second, try to land safely
         if (lib_timers_gettimermicroseconds(global.failsafetimer) > 1000000L) {
             throttleoutput = FPFAILSAFEMOTOROUTPUT;
@@ -477,7 +497,7 @@ int main(void)
         }
         else
             isfailsafeactive = false;
-
+#endif
         // calculate output values.  Output values will range from 0 to 1.0
 
         // calculate pid outputs based on our angleerrors as inputs
@@ -497,14 +517,14 @@ int main(void)
 
             // do the attitude pid
             pidoutput[x] = lib_fp_multiply(angleerror[x], usersettings.pid_pgain[x])
-                - lib_fp_multiply(global.gyrorate[x], usersettings.pid_dgain[x])
-            + (lib_fp_multiply(integratedangleerror[x], usersettings.pid_igain[x]) >> 4);
+                         - lib_fp_multiply(global.gyrorate[x], usersettings.pid_dgain[x])
+                         + (lib_fp_multiply(integratedangleerror[x], usersettings.pid_igain[x]) >> 4);
 
             // add gain scheduling.  
             pidoutput[x] = lib_fp_multiply(gainschedulingmultiplier, pidoutput[x]);
         }
 
-#if (CONTROL_BOARD_TYPE == CONTROL_BOARD_HUBSAN_H107L)
+#if (CONTROL_BOARD_TYPE == CONTROL_BOARD_HUBSAN_H107L || CONTROL_BOARD_TYPE == CONTROL_BOARD_HUBSAN_H107D )
 		// On Hubsan X4 H107L the front right motor
 		// rotates clockwise (viewed from top).
 		// On the J385 the motors spin in the opposite direction.
@@ -532,7 +552,7 @@ int main(void)
 #endif // QUADX config
         }
 
-#if (CONTROL_BOARD_TYPE == CONTROL_BOARD_HUBSAN_H107L)
+#if (CONTROL_BOARD_TYPE == CONTROL_BOARD_HUBSAN_H107L || CONTROL_BOARD_TYPE == CONTROL_BOARD_HUBSAN_H107D )
         // Measure battery voltage
         if(!lib_adc_is_busy())
         {

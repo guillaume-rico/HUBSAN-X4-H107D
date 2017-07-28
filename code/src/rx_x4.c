@@ -23,6 +23,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #include "lib_timers.h"
 #include "a7105.h"
 #include "config_X4.h"
+#include "H107D_camera.h"
 
 #define A7105_SCS   (DIGITALPORT1 | 4)
 #define A7105_SCK   (DIGITALPORT1 | 3)
@@ -31,8 +32,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define AUX1_FLAG   0x04 
 #define AUX2_FLAG   0x08 
 
+#define FP_BATTERY_MULTIPLIER FIXEDPOINTCONSTANT(10)
+
 static const uint8_t allowed_ch[] = {0x14, 0x1E, 0x28, 0x32, 0x3C, 0x46, 0x50, 0x5A, 0x64, 0x6E, 0x78, 0x82};
-static uint8_t packet[16], channel, counter;
+static uint8_t packet[16], channel, counter, telemetry_last_tram_send;
 static uint8_t txid[4];
 static unsigned long timeout_timer;
 void init_a7105(void);
@@ -71,25 +74,62 @@ void hubsan_build_bind_packet(uint8_t bindstate)
 
 void init_a7105(void)
 {
+    // Chip reset
     A7105_Reset();
+    
+    // ID
     A7105_WriteID(0x55201041); 
+    
+    // Registers initialisation
+    // A changer en A7105_WriteRegister(A7105_01_MODE_CONTROL, 0x62);
     A7105_WriteRegister(A7105_01_MODE_CONTROL, 0x63);
+    // A ajouter : A7105_WriteRegister(A7105_04_FIFOII, 0x00);
     A7105_WriteRegister(A7105_03_FIFOI, 0x0f);
     A7105_WriteRegister(A7105_0D_CLOCK, 0x05);
     A7105_WriteRegister(A7105_0E_DATA_RATE, 0x04);
     A7105_WriteRegister(A7105_15_TX_II, 0x2b);
+    // A ajouter : A7105_WriteRegister(A7105_17_DELAY_II, 0x40);
     A7105_WriteRegister(A7105_18_RX, 0x62);
     A7105_WriteRegister(A7105_19_RX_GAIN_I, 0x80);
     A7105_WriteRegister(A7105_1C_RX_GAIN_IV, 0x0A);
+    // A ajouter : A7105_WriteRegister(A7105_1E_ADC, 0xC3);
     A7105_WriteRegister(A7105_1F_CODE_I, 0x07);
     A7105_WriteRegister(A7105_20_CODE_II, 0x17);
+    // A ajouter : A7105_WriteRegister(A7105_27_BATTERY_DET, 0x00);
     A7105_WriteRegister(A7105_29_RX_DEM_TEST_I, 0x47);
+    // A ajouter : A7105_WriteRegister(A7105_2B_CPC, 0x03);
+    // A ajouter : A7105_WriteRegister(A7105_2C_XTAL_TEST, 0x01);
+    // A ajouter : A7105_WriteRegister(A7105_2D_PLL_TEST, 0x45);
+    // A ajouter : A7105_WriteRegister(A7105_2E_VCO_TEST_I, 0x18);
+    // A ajouter : A7105_WriteRegister(A7105_30_IFAT, 0x01);
+    
+    // Calibration
+    // 1. IF Filter Bank Calibration procedure
+    // A changer en A7105_Strobe(A7105_PLL);
     A7105_Strobe(A7105_STANDBY);
+    
     A7105_WriteRegister(A7105_02_CALC,0x01);
+    // A ajouter : vérifier que le flag passe a 0 
+    // Wait until calibration is finished
+    // while (A7105_ReadRegister(A7105_02_CALC) & A7105_CALC_FBC_MASK)
+    //  ;
+    
+    // Why ? Handset write same registers but this is not a reason....
     A7105_WriteRegister(A7105_0F_PLL_I,0x00);
+    
+    // 2. VCO Bank Calibration procedure
     A7105_WriteRegister(A7105_02_CALC,0x02);
+    // A ajouter : vérifier que le flag passe a 0 
+    // Wait until calibration is finished
+    // while (A7105_ReadRegister(A7105_02_CALC) & A7105_CALC_VBC_MASK)
+    //  ;
+    
+    // Why ? Handset write same registers but this is not a reason....
     A7105_WriteRegister(A7105_0F_PLL_I,0xA0);
+    
+    // Why ? This is already done
     A7105_WriteRegister(A7105_02_CALC,0x02);
+    
     A7105_Strobe(A7105_STANDBY);
 }
 
@@ -147,6 +187,7 @@ void bind()
     }
     channel = packet[1];
 	
+    // Handshake 1
     while(1) {
         hubsan_build_bind_packet(2);
         A7105_Strobe(A7105_STANDBY);
@@ -161,6 +202,7 @@ void bind()
     hubsan_build_bind_packet(4);
     A7105_Strobe(A7105_STANDBY);
     A7105_WritePayload((uint8_t*)&packet, sizeof(packet));
+    // Always done
     A7105_WriteRegister(A7105_0F_PLL_I, channel);
     A7105_Strobe(A7105_TX);
     waitTRXCompletion();
@@ -201,13 +243,26 @@ void bind()
             break;
         }
     }
+    
+#if CONTROL_BOARD_TYPE == CONTROL_BOARD_HUBSAN_H107D
+    uint16_t frequency;
+    // Update camera frequency 
+    // Compute frequency from packet
+    frequency = packet[8] * 256 + packet[7];
+    
+    // Send (if needed) the new frequency to camera
+    H107D_camera_init();
+    H107D_camera_update_frequency(frequency);
+#endif
 	
     A7105_WriteRegister(A7105_1F_CODE_I,0x0F); //CRC option CRC enabled adress 0x1f data 1111(CRCS=1,IDL=4bytes,PML[1:1]=4 bytes)
     //A7105_WriteRegister(0x28, 0x1F);//set Power to "1" dbm max value.
+		
     A7105_Strobe(A7105_STANDBY);
     for(int i=0;i<4;i++){
         txid[i]=packet[i+11];
     }
+
 }
 
 void initrx(void)
@@ -225,13 +280,70 @@ void decodepacket()
         // converts [0;255] to [-1;1] fixed point num
         lib_fp_lowpassfilter(&global.rxvalues[THROTTLEINDEX], ((fixedpointnum) packet[2] - 0x80) * 513L, global.timesliver, FIXEDPOINTONEOVERONESIXTYITH, TIMESLIVEREXTRASHIFT);
         lib_fp_lowpassfilter(&global.rxvalues[YAWINDEX], ((fixedpointnum) packet[4] - 0x80) * 513L, global.timesliver, FIXEDPOINTONEOVERONESIXTYITH, TIMESLIVEREXTRASHIFT);
-        lib_fp_lowpassfilter(&global.rxvalues[PITCHINDEX], ((fixedpointnum) 0x80 - packet[6]) * 513L, global.timesliver, FIXEDPOINTONEOVERONESIXTYITH, TIMESLIVEREXTRASHIFT);
-        lib_fp_lowpassfilter(&global.rxvalues[ROLLINDEX], ((fixedpointnum) 0x80 - packet[8]) * 513L, global.timesliver, FIXEDPOINTONEOVERONESIXTYITH, TIMESLIVEREXTRASHIFT);
+        lib_fp_lowpassfilter(&global.rxvalues[PITCHINDEX], ((fixedpointnum) 0x80 - packet[6]) * 774L, global.timesliver, FIXEDPOINTONEOVERONESIXTYITH, TIMESLIVEREXTRASHIFT);
+        lib_fp_lowpassfilter(&global.rxvalues[ROLLINDEX], ((fixedpointnum) 0x80 - packet[8]) * 774L, global.timesliver, FIXEDPOINTONEOVERONESIXTYITH, TIMESLIVEREXTRASHIFT);
         // "LEDs" channel, AUX1 (only on H107L, H107C, H107D and Deviation TXs, high by default)
         lib_fp_lowpassfilter(&global.rxvalues[AUX1INDEX], ((fixedpointnum) (packet[9] & AUX1_FLAG ? 0x7F : -0x7F)) * 513L, global.timesliver, FIXEDPOINTONEOVERONESIXTYITH, TIMESLIVEREXTRASHIFT);
         // "Flip" channel, AUX2 (only on H107L, H107C, H107D and Deviation TXs, high by default)
         lib_fp_lowpassfilter(&global.rxvalues[AUX2INDEX], ((fixedpointnum) (packet[9] & AUX2_FLAG ? 0x7F : -0x7F)) * 513L, global.timesliver, FIXEDPOINTONEOVERONESIXTYITH, TIMESLIVEREXTRASHIFT);
     }
+    
+#if CONTROL_BOARD_TYPE == CONTROL_BOARD_HUBSAN_H107E
+    uint16_t frequency;
+    if(packet[0]==0x40) {
+        
+        // Compute frequency from packet
+        frequency = packet[1] * 256 + packet[2];
+        
+        // Send (if needed) the new frequency to camera
+        H107D_camera_update_frequency(frequency);
+				//lib_timers_delaymilliseconds(100); 
+        
+    }
+#endif
+
+}
+
+/**
+ * @brief      Send battery voltage to handset
+ * @param      None.
+ * @return     None
+ * @details    Batterie volatge is contain in the 13 byte. 
+ *             Batterie voltage is multiply by 10 then send.
+ */
+void sendtelemetry(void)
+{
+    fixedpointnum batteryX10;
+    
+    packet[1] = 0x00;
+    //packet[2] = global.armed;
+    packet[3] = 0xff;
+    packet[7] = 0x00;
+    //packet[8] = 0xff;
+    packet[14] = 0x00;
+    
+    if (telemetry_last_tram_send == 0xe0) {
+        packet[0] = 0xe1;
+        packet[5] = 0xff;
+        telemetry_last_tram_send = 0xe1;
+    } else {
+        packet[0] = 0xe0;
+        packet[5] = 0x00;
+        telemetry_last_tram_send = 0xe0;
+    }
+
+    // Compute battery value : 
+    batteryX10 = lib_fp_multiply(global.batteryvoltage, FP_BATTERY_MULTIPLIER);
+    packet[13] = ((batteryX10 >> 16) & 0x000000ff);
+
+    update_crc();
+    
+    A7105_Strobe(A7105_STANDBY);
+    A7105_Strobe(A7105_RST_WRPTR);
+    A7105_WritePayload((uint8_t*)&packet, sizeof(packet));
+    A7105_WriteRegister(A7105_0F_PLL_I, channel);
+    A7105_Strobe(A7105_TX);
+    waitTRXCompletion();
 }
 
 void readrx(void) // todo : telemetry
@@ -240,17 +352,31 @@ void readrx(void) // todo : telemetry
         timeout_timer = lib_timers_starttimer();
         A7105_Strobe(A7105_RX);
     }
-    if(A7105_ReadRegister(A7105_00_MODE) & A7105_MODE_TRER_MASK)
-        return; // nothing received
+    
+    // Check if something received
+    if(A7105_ReadRegister(A7105_00_MODE) & A7105_MODE_TRER_MASK) {
+        // nothing received
+        return; 
+    }
+        
     A7105_ReadPayload((uint8_t*)&packet, sizeof(packet)); 
-    if(!((packet[11]==txid[0])&&(packet[12]==txid[1])&&(packet[13]==txid[2])&&(packet[14]==txid[3])))
+    if(!((packet[11]==txid[0])&&(packet[12]==txid[1])&&(packet[13]==txid[2])&&(packet[14]==txid[3]))&&0)
         return; // not our TX !
-    if(!hubsan_check_integrity())
+    if(!hubsan_check_integrity()&&0)
         return; // bad checksum
     timeout_timer = lib_timers_starttimer();
     A7105_Strobe(A7105_RST_RDPTR);
-    A7105_Strobe(A7105_RX);
+    
+    // Decode packet before send telemetry info : same array is used
     decodepacket();
+
+#if CONTROL_BOARD_TYPE == CONTROL_BOARD_HUBSAN_H107D
+		// Send info from quad
+		sendtelemetry();
+#endif
+
+    A7105_Strobe(A7105_RX);
+
     // reset the failsafe timer
     global.failsafetimer = lib_timers_starttimer();
 }

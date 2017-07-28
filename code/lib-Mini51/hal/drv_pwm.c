@@ -10,7 +10,7 @@
 // returns whether driver is asking to calibrate throttle or not
 bool pwmInit(drv_pwm_config_t *init)
 {
-#if (CONTROL_BOARD_TYPE == CONTROL_BOARD_HUBSAN_H107L)
+#if (CONTROL_BOARD_TYPE == CONTROL_BOARD_HUBSAN_H107L  || CONTROL_BOARD_TYPE == CONTROL_BOARD_HUBSAN_H107D )
 		
     CLK_EnableModuleClock(PWM01_MODULE);
     CLK_EnableModuleClock(PWM23_MODULE);
@@ -50,7 +50,7 @@ bool pwmInit(drv_pwm_config_t *init)
     PWM_SET_CNR(PWM, 2, MWII_PWM_MAX);
     PWM_SET_CNR(PWM, 3, MWII_PWM_MAX);
 	
-// end of CONTROL_BOARD_TYPE == CONTROL_BOARD_HUBSAN_H107L
+// end of CONTROL_BOARD_TYPE == CONTROL_BOARD_HUBSAN_H107L  || CONTROL_BOARD_TYPE == CONTROL_BOARD_HUBSAN_H107D 
 #elif (CONTROL_BOARD_TYPE == CONTROL_BOARD_JXD_JD385) || (CONTROL_BOARD_TYPE == CONTROL_BOARD_WLT_V202)
     CLK_EnableModuleClock(PWM23_MODULE);
     CLK_EnableModuleClock(PWM45_MODULE);
@@ -118,7 +118,7 @@ void pwmWriteMotor(uint8_t index, uint16_t value)
     // Motor 2 BACK_L  - PWM5
     // Motor 3 FRONT_L - PWM4
     static uint8_t motor_to_pwm[] = { 2, 3, 5, 4 };
-#elif CONTROL_BOARD_TYPE == CONTROL_BOARD_HUBSAN_H107L
+#elif CONTROL_BOARD_TYPE == CONTROL_BOARD_HUBSAN_H107L  || CONTROL_BOARD_TYPE == CONTROL_BOARD_HUBSAN_H107D 
     // Motor 1 BACK_R  - PWM2
     // Motor 3 FRONT_R - PWM3
     // Motor 2 BACK_L  - PWM1

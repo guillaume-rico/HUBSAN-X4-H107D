@@ -22,9 +22,14 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 // This file takes the settings from config.h and creates all of the definitions needed for the rest of the code.
 
 // set control board dependant defines here
-#if CONTROL_BOARD_TYPE == CONTROL_BOARD_HUBSAN_H107L
+#if CONTROL_BOARD_TYPE == CONTROL_BOARD_HUBSAN_H107L || CONTROL_BOARD_TYPE == CONTROL_BOARD_HUBSAN_H107D 
 
-#define GYRO_TYPE MPU3050       // gyro
+// gyro
+#if CONTROL_BOARD_TYPE == CONTROL_BOARD_HUBSAN_H107L
+    #define GYRO_TYPE MPU3050       
+#elif CONTROL_BOARD_TYPE == CONTROL_BOARD_HUBSAN_H107D 
+    #define GYRO_TYPE MPU6050
+#endif
 
 #define GYRO_ORIENTATION(VALUES,X, Y, Z) {VALUES[ROLLINDEX] =  -Y; VALUES[PITCHINDEX] = X; VALUES[YAWINDEX] = -Z;}
 

@@ -40,7 +40,8 @@ void x4_set_leds(unsigned char state);
 //#define CONTROL_BOARD_TYPE CONTROL_BOARD_WITESPY_MULTIWII_PRO_2_GPS
 //#define CONTROL_BOARD_TYPE CONTROL_BOARD_WLT_V202
 //#define CONTROL_BOARD_TYPE CONTROL_BOARD_JXD_JD385
-#define CONTROL_BOARD_TYPE CONTROL_BOARD_HUBSAN_H107L
+//#define CONTROL_BOARD_TYPE CONTROL_BOARD_HUBSAN_H107L
+#define CONTROL_BOARD_TYPE CONTROL_BOARD_HUBSAN_H107D
 
 // Choose the type of r/c reciever that will be used
 //#define RX_TYPE RX_NORMAL
@@ -140,7 +141,8 @@ void x4_set_leds(unsigned char state);
 #define BAROMETER_TYPE NO_BAROMETER
 
 // Get your magnetic decliniation from here : http://magnetic-declination.com/
-#define MAG_DECLINATION_DEGREES  -13.4  // for Hyde Park, NY
+//#define MAG_DECLINATION_DEGREES  -13.4  // for Hyde Park, NY
+#define MAG_DECLINATION_DEGREES  +1.31  // for Grenoble, FRANCE
 
 // ESCs calibration
 // To calibrate all ESCs connected to the aircraft at the same time (useful to avoid unplugging/re-plugging each ESC)

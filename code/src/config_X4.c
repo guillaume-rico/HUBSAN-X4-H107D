@@ -31,12 +31,12 @@ void x4_set_usersettings()
     
     // pitch PIDs
     usersettings.pid_pgain[PITCHINDEX] = 35L << 3;
-    usersettings.pid_igain[PITCHINDEX] = 4L;
+    usersettings.pid_igain[PITCHINDEX] = 4L << 2;
     usersettings.pid_dgain[PITCHINDEX] = 22L << 2;
 
     // roll PIDs
     usersettings.pid_pgain[ROLLINDEX] = 35L << 3;
-    usersettings.pid_igain[ROLLINDEX] = 4L;
+    usersettings.pid_igain[ROLLINDEX] = 4L << 2;
     usersettings.pid_dgain[ROLLINDEX] = 22L << 2;
 
     // yaw PIDs

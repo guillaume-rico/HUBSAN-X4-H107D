@@ -64,6 +64,10 @@
 #define A7105_32_FILTER_TEST   0x32
 
 #define A7105_MODE_TRER_MASK	(uint8_t)(1 << 0) // TRX is enabled
+#define A7105_CALC_FBC_MASK	(uint8_t)(1 << 0) // FBC Flag
+#define A7105_CALC_VBC_MASK	(uint8_t)(1 << 1) // VBC Flag
+#define A7105_CALC_VCC_MASK	(uint8_t)(1 << 2) // VCC Flag
+#define A7105_IF_CALIB_I_FBCF_MASK	(uint8_t)(1 << 4) // IF calibration status flag
 
 void A7105_WriteID(uint32_t ida);
 void A7105_ReadID(uint8_t *_aid);
