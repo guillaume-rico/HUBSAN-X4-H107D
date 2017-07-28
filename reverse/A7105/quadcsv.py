@@ -10,6 +10,10 @@ import argparse
 # V2 : Allow openbench files 
 # use : python quadcsv.py -r rawdata\handset_export_4.2V.csv -a openbench
 # C:\Python27\python.exe D:\Perso\HUBSAN-X4-H107D\reverse\A7105\quadcsv.py -r D:\Perso\HUBSAN-X4-H107D\reverse\A7105\rawdata\handset_start.csv
+# C:\Python27\python.exe D:\Perso\HUBSAN-X4-H107D\reverse\A7105\quadcsv.py -r D:\Perso\HUBSAN-X4-H107D\reverse\A7105\rawdata\handset_binding.csv -d -p "FIFO 0x"
+# C:\Python27\python.exe D:\Perso\HUBSAN-X4-H107D\reverse\A7105\quadcsv.py -r D:\Perso\HUBSAN-X4-H107D\reverse\A7105\rawdata\untitled.csv -d -p "FIFO 0x"
+
+
 # From Logic sniffer, tools, SPI Analyser, you must check "SHOW /CS?"
 
 # Use this script to process Saleae Logic captured SPI data (from CSV) to more manageable chunks
@@ -168,7 +172,6 @@ def printPackets(packets, decode, pattern):
 
     for packet in packets:
         
-        
         if pattern != "" :
             toWrite = a7105.decodeSPIPacket(packet[1])
             
@@ -198,11 +201,7 @@ def printPackets(packets, decode, pattern):
                 sys.stdout.write(packet[1]);
             else:
                 toWrite = a7105.decodeSPIPacket(packet[1])
-                if fifo == True : 
-                    if "R FIFO" in toWrite :
-                        sys.stdout.write(toWrite)
-                else :
-                    sys.stdout.write(toWrite)
+                sys.stdout.write(toWrite)
 
             if packet[2] > 0:
                 sys.stdout.write(' (Repeated ' + str(packet[2]) + ' times)')
