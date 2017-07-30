@@ -49,6 +49,7 @@ void H107D_camera_init(void)
 	lib_digitalio_setoutput(PIN_H107D_CAMERA_SCK, DIGITALOFF);
 
 	// Send initialisation frame
+
 	lib_digitalio_setoutput(PIN_H107D_CAMERA_SCS, DIGITALOFF);
 	while(n--) {
 		if(TSdata&0x80000000UL) // MSB first
@@ -58,10 +59,11 @@ void H107D_camera_init(void)
 		lib_digitalio_setoutput(PIN_H107D_CAMERA_SCK, DIGITALON);
 		CLK_SysTickDelay(3);
 		lib_digitalio_setoutput(PIN_H107D_CAMERA_SCK, DIGITALOFF);
-		CLK_SysTickDelay(1);
+		CLK_SysTickDelay(2);
 		TSdata = TSdata << 1;
 	}
 	lib_digitalio_setoutput(PIN_H107D_CAMERA_SCS, DIGITALON);
+
 }
 
 
@@ -136,7 +138,7 @@ void H107D_camera_update_frequency(uint16_t newfrequency)
 					lib_digitalio_setoutput(PIN_H107D_CAMERA_SCK, DIGITALON);
 					CLK_SysTickDelay(3);
 					lib_digitalio_setoutput(PIN_H107D_CAMERA_SCK, DIGITALOFF);
-					CLK_SysTickDelay(1);
+					CLK_SysTickDelay(2);
 					TSdata = TSdata << 1;
 			}
 			lib_digitalio_setoutput(PIN_H107D_CAMERA_SCS, DIGITALON);

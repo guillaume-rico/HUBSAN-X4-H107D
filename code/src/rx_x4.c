@@ -288,7 +288,7 @@ void decodepacket()
         lib_fp_lowpassfilter(&global.rxvalues[AUX2INDEX], ((fixedpointnum) (packet[9] & AUX2_FLAG ? 0x7F : -0x7F)) * 513L, global.timesliver, FIXEDPOINTONEOVERONESIXTYITH, TIMESLIVEREXTRASHIFT);
     }
     
-#if CONTROL_BOARD_TYPE == CONTROL_BOARD_HUBSAN_H107E
+#if CONTROL_BOARD_TYPE == CONTROL_BOARD_HUBSAN_H107D
     uint16_t frequency;
     if(packet[0]==0x40) {
         
@@ -297,8 +297,6 @@ void decodepacket()
         
         // Send (if needed) the new frequency to camera
         H107D_camera_update_frequency(frequency);
-				//lib_timers_delaymilliseconds(100); 
-        
     }
 #endif
 

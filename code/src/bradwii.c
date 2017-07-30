@@ -176,9 +176,9 @@ int main(void)
         // calibration will be executed (4 long LED blinks)
         for(uint8_t i=0;i<4;i++) {
             x4_set_leds(X4_LED_ALL);
-            lib_timers_delaymilliseconds(500);
+            lib_timers_delaymilliseconds(100);
             x4_set_leds(X4_LED_NONE);
-            lib_timers_delaymilliseconds(500);
+            lib_timers_delaymilliseconds(100);
         }
     }
 #endif
