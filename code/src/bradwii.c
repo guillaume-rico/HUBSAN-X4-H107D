@@ -191,11 +191,7 @@ int main(void)
 #if (CONTROL_BOARD_TYPE == CONTROL_BOARD_HUBSAN_H107L  || CONTROL_BOARD_TYPE == CONTROL_BOARD_HUBSAN_H107D  )
     // Give the battery voltage lowpass filter a reasonable starting point.
     global.batteryvoltage = FP_BATTERY_UNDERVOLTAGE_LIMIT;
-    lib_adc_init();  // For battery voltage
-		
-		// Init camera
-		//H107D_camera_init();
-		
+    lib_adc_init();  // For battery voltage	
 #endif
     initoutputs();
 #if (MULTIWII_CONFIG_SERIAL_PORTS != NOSERIALPORT)
@@ -259,9 +255,13 @@ int main(void)
 
 #if CONTROL_BOARD_TYPE == CONTROL_BOARD_HUBSAN_H107D
 				if (!global.armed) {
-					  if (global.rxvalues[THROTTLEINDEX] < FPSTICKLOW) {
+					  if (global.rxvalues[THROTTLEINDEX] < FPSTICKLOW && global.rxvalues[YAWINDEX] < FPSTICKYAWLOW) {
 							   global.armed = 1;
 						}
+				} else {
+					if (global.rxvalues[THROTTLEINDEX] < FPSTICKLOW && global.rxvalues[YAWINDEX] > FPSTICKYAWHIGH) {
+					 global.armed = 0;
+					}
 				}
 #else
 			  // arm and disarm via rx aux switches (FPSTICKLOW = 0xFFFF5100)
@@ -284,7 +284,6 @@ int main(void)
             // Not armed: check if there is a stick command to execute.
             detectstickcommand();
         }
-        global.armed = 1;
 #endif
 
 

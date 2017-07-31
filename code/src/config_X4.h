@@ -64,8 +64,8 @@ void x4_set_leds(unsigned char state);
 // uncomment to allow arming and disarming with the sticks:
 // Arming and disarming only happen at low throttle
 // Uncomment the following two lines to allow arming using yaw
-//#define STICK_ARM STICK_COMMAND_YAW_HIGH
-//#define STICK_DISARM STICK_COMMAND_YAW_LOW
+#define STICK_ARM STICK_COMMAND_YAW_HIGH
+#define STICK_DISARM STICK_COMMAND_YAW_LOW
 
 // uncomment the following two lines to allow arming using yaw, roll, and pitch all at once
 //#define STICK_ARM STICK_COMMAND_YAW_HIGH+STICK_COMMAND_ROLL_HIGH+STICK_COMMAND_PITCH_LOW

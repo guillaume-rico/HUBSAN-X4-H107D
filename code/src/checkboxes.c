@@ -90,9 +90,9 @@ void checkcheckboxitems(void)
     else if (global.rxvalues[PITCHINDEX] > FPSTICKHIGH)
         stickmask |= STICK_COMMAND_PITCH_HIGH;
 
-    if (global.rxvalues[YAWINDEX] < FPSTICKLOW)
+    if (global.rxvalues[YAWINDEX] < FPSTICKYAWLOW)
         stickmask |= STICK_COMMAND_YAW_LOW;
-    else if (global.rxvalues[YAWINDEX] > FPSTICKHIGH)
+    else if (global.rxvalues[YAWINDEX] > FPSTICKYAWHIGH)
         stickmask |= STICK_COMMAND_YAW_HIGH;
 
 
