@@ -259,7 +259,7 @@ int main(void)
 				if (!global.armed) {
 					
 					// Throttle low and yaw left
-					if (global.rxvalues[THROTTLEINDEX] < FPSTICKLOW && global.rxvalues[YAWINDEX] < FPSTICKX4LOW) {
+					if (global.rxvalues[THROTTLEINDEX] < FPSTICKLOW && global.rxvalues[YAWINDEX] > FPSTICKX4HIGH ) {
 						
 						// Default : Level mode 
 						global.activecheckboxitems &= ~CHECKBOXMASKFULLACRO;
@@ -313,12 +313,12 @@ int main(void)
 							
 							// pitch PIDs
 							usersettings.pid_pgain[PITCHINDEX] = 35L << 3;
-							usersettings.pid_igain[PITCHINDEX] = 4L;
+							usersettings.pid_igain[PITCHINDEX] = 4L << 3;
 							usersettings.pid_dgain[PITCHINDEX] = 22L << 2;
 
 							// roll PIDs
 							usersettings.pid_pgain[ROLLINDEX] = 35L << 3;
-							usersettings.pid_igain[ROLLINDEX] = 4L;
+							usersettings.pid_igain[ROLLINDEX] = 4L << 3;
 							usersettings.pid_dgain[ROLLINDEX] = 22L << 2;
 
 							// yaw PIDs
@@ -343,9 +343,10 @@ int main(void)
 						*/
 						global.started = 0;
 						global.armed = 1;
+						calibrategyroandaccelerometer(true);
 					}
 				} else {
-					if (global.rxvalues[THROTTLEINDEX] < FPSTICKLOW && global.rxvalues[YAWINDEX] > FPSTICKX4HIGH) {
+					if (global.rxvalues[THROTTLEINDEX] < FPSTICKLOW && global.rxvalues[YAWINDEX] < FPSTICKX4LOW) {
 						global.armed = 0;
 					} else if (global.rxvalues[THROTTLEINDEX] > FPSTICKLOW) {
 						global.started = 1;
@@ -622,7 +623,7 @@ int main(void)
         lib_fp_constrain(&throttleoutput, 0, FIXEDPOINTONE);
 
         // set the final motor outputs
-        // if we aren't armed, or if we desire to have the motors stop, && global.flymode == LEVELFLIGHTMODE
+        // if we aren't armed, or if we desire to have the motors stop, AfterFPSTICKLOW  && global.flymode == LEVELFLIGHTMODE
         if (!global.armed || (global.rxvalues[THROTTLEINDEX] < FPSTICKLOW ) || global.started == 0)
             setallmotoroutputs(MIN_MOTOR_OUTPUT);
         else {

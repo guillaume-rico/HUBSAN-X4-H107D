@@ -99,7 +99,7 @@ void x4_set_leds(unsigned char state);
 #define HIGH_RATES_MULTILIER 2.0
 
 // Choose maximum tilt angles when in level mode
-#define LEVEL_MODE_MAX_TILT 55  // 55 degrees
+#define LEVEL_MODE_MAX_TILT 110  // 55 degrees
 #define LEVEL_MODE_MAX_TILT_HIGH_ANGLE 80       // 80 degrees when high angle checkbox active
 
 // Choose maximum tilt angles while navigating. This will determine how fast it moves from point to point.
