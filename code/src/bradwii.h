@@ -51,6 +51,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define MAXFHSIZE 20  // maximum frequency hopping size
 #endif    
 
+#define ACCROFLIGHTMODE 1
+#define SEMIACCROFLIGHTMODE 2
+#define LEVELFLIGHTMODE 3
 
 // put all of the global variables into one structure to make them easy to find
 typedef struct {
@@ -87,6 +90,8 @@ typedef struct {
     uint32_t      failsafetimer;        // Timer for determining if we lose radio contact
     fixedpointnum batteryvoltage;       // Battery voltage, fixed point in Volt
     uint16_t      camera_frequency;
+		unsigned char flymode;  // Set to 1 for accro , 2 for semiaccro , 3 for level
+		unsigned char started; // Set to 0 if waiting to start , 1 if started
 } globalstruct;
 
 // put all of the user adjustable settings in one structure to make it easy to read and write to eeprom.

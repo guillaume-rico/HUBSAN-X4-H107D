@@ -146,6 +146,8 @@ int main(void)
     // Initial bandgap voltage [V]. We measure this once when there is no load on the battery
     // because the specified tolerance for this is pretty high.
     static fixedpointnum initialbandgapvoltage;
+	  uint8_t nbFlash;
+		global.started = 0;
 #endif
     static bool isfailsafeactive;     // true while we don't get new data from transmitter
 
@@ -255,12 +257,98 @@ int main(void)
 
 #if CONTROL_BOARD_TYPE == CONTROL_BOARD_HUBSAN_H107D
 				if (!global.armed) {
-					  if (global.rxvalues[THROTTLEINDEX] < FPSTICKLOW && global.rxvalues[YAWINDEX] < FPSTICKYAWLOW) {
-							   global.armed = 1;
+					
+					// Throttle low and yaw left
+					if (global.rxvalues[THROTTLEINDEX] < FPSTICKLOW && global.rxvalues[YAWINDEX] < FPSTICKX4LOW) {
+						
+						// Default : Level mode 
+						global.activecheckboxitems &= ~CHECKBOXMASKFULLACRO;
+						global.activecheckboxitems &= ~CHECKBOXMASKSEMIACRO;
+						
+						if (global.rxvalues[ROLLINDEX] < FPSTICKX4LOW) {
+							// Pith High (Up) : Accro
+							global.activecheckboxitems |= CHECKBOXMASKFULLACRO;
+							global.flymode = ACCROFLIGHTMODE;
+							
+							// pitch PIDs
+							usersettings.pid_pgain[PITCHINDEX] = 35L << 3;
+							usersettings.pid_igain[PITCHINDEX] = 4L;
+							usersettings.pid_dgain[PITCHINDEX] = 22L << 2;
+
+							// roll PIDs
+							usersettings.pid_pgain[ROLLINDEX] = 35L << 3;
+							usersettings.pid_igain[ROLLINDEX] = 4L;
+							usersettings.pid_dgain[ROLLINDEX] = 22L << 2;
+
+							// yaw PIDs
+							usersettings.pid_pgain[YAWINDEX] = 100L << 4;
+							usersettings.pid_igain[YAWINDEX] = 0L;
+							usersettings.pid_dgain[YAWINDEX] = 22L << 3;
+							
+							nbFlash = 3;
+						} else if (global.rxvalues[ROLLINDEX] > FPSTICKX4HIGH) {
+							// Pitch Low (Down) : Semi Accro
+							global.activecheckboxitems |= CHECKBOXMASKSEMIACRO;
+							global.flymode = SEMIACCROFLIGHTMODE;
+							
+							// pitch PIDs
+							usersettings.pid_pgain[PITCHINDEX] = 35L << 3;
+							usersettings.pid_igain[PITCHINDEX] = 4L;
+							usersettings.pid_dgain[PITCHINDEX] = 22L << 2;
+
+							// roll PIDs
+							usersettings.pid_pgain[ROLLINDEX] = 35L << 3;
+							usersettings.pid_igain[ROLLINDEX] = 4L;
+							usersettings.pid_dgain[ROLLINDEX] = 22L << 2;
+
+							// yaw PIDs
+							usersettings.pid_pgain[YAWINDEX] = 100L << 4;
+							usersettings.pid_igain[YAWINDEX] = 0L;
+							usersettings.pid_dgain[YAWINDEX] = 22L << 3;
+							
+							nbFlash = 2;
+						} else {
+							// Level mode
+							global.flymode = LEVELFLIGHTMODE;
+							
+							// pitch PIDs
+							usersettings.pid_pgain[PITCHINDEX] = 35L << 3;
+							usersettings.pid_igain[PITCHINDEX] = 4L;
+							usersettings.pid_dgain[PITCHINDEX] = 22L << 2;
+
+							// roll PIDs
+							usersettings.pid_pgain[ROLLINDEX] = 35L << 3;
+							usersettings.pid_igain[ROLLINDEX] = 4L;
+							usersettings.pid_dgain[ROLLINDEX] = 22L << 2;
+
+							// yaw PIDs
+							usersettings.pid_pgain[YAWINDEX] = 100L << 4;
+							usersettings.pid_igain[YAWINDEX] = 0L;
+							usersettings.pid_dgain[YAWINDEX] = 22L << 2;
+							
+							nbFlash = 1;
 						}
+						
+						// Flash all leds :
+						// 1 time for level mode
+						// 2 times for semi accro
+						// 3 times for accro
+						/*
+						for(uint8_t i=0;i<nbFlash;i++) {
+								x4_set_leds(X4_LED_ALL);
+								lib_timers_delaymilliseconds(500);
+								x4_set_leds(X4_LED_NONE);
+								lib_timers_delaymilliseconds(500);
+						}
+						*/
+						global.started = 0;
+						global.armed = 1;
+					}
 				} else {
-					if (global.rxvalues[THROTTLEINDEX] < FPSTICKLOW && global.rxvalues[YAWINDEX] > FPSTICKYAWHIGH) {
-					 global.armed = 0;
+					if (global.rxvalues[THROTTLEINDEX] < FPSTICKLOW && global.rxvalues[YAWINDEX] > FPSTICKX4HIGH) {
+						global.armed = 0;
+					} else if (global.rxvalues[THROTTLEINDEX] > FPSTICKLOW) {
+						global.started = 1;
 					}
 				}
 #else
@@ -534,21 +622,15 @@ int main(void)
         lib_fp_constrain(&throttleoutput, 0, FIXEDPOINTONE);
 
         // set the final motor outputs
-        // if we aren't armed, or if we desire to have the motors stop, 
-        if (!global.armed
-#if (MOTORS_STOP==YES)
-            || (global.rxvalues[THROTTLEINDEX] < FPSTICKLOW && !(global.activecheckboxitems & (CHECKBOXMASKFULLACRO | CHECKBOXMASKSEMIACRO)))
-#endif
-            )
+        // if we aren't armed, or if we desire to have the motors stop, && global.flymode == LEVELFLIGHTMODE
+        if (!global.armed || (global.rxvalues[THROTTLEINDEX] < FPSTICKLOW ) || global.started == 0)
             setallmotoroutputs(MIN_MOTOR_OUTPUT);
         else {
             // mix the outputs to create motor values
-#if (AIRCRAFT_CONFIGURATION==QUADX)
             setmotoroutput(0, 0, throttleoutput - pidoutput[ROLLINDEX] + pidoutput[PITCHINDEX] - pidoutput[YAWINDEX]);
             setmotoroutput(1, 1, throttleoutput - pidoutput[ROLLINDEX] - pidoutput[PITCHINDEX] + pidoutput[YAWINDEX]);
             setmotoroutput(2, 2, throttleoutput + pidoutput[ROLLINDEX] + pidoutput[PITCHINDEX] + pidoutput[YAWINDEX]);
             setmotoroutput(3, 3, throttleoutput + pidoutput[ROLLINDEX] - pidoutput[PITCHINDEX] - pidoutput[YAWINDEX]);
-#endif // QUADX config
         }
 
 #if (CONTROL_BOARD_TYPE == CONTROL_BOARD_HUBSAN_H107L || CONTROL_BOARD_TYPE == CONTROL_BOARD_HUBSAN_H107D )

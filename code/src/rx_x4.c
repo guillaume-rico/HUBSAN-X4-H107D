@@ -333,6 +333,16 @@ void sendtelemetry(void)
     // Compute battery value : 
     batteryX10 = lib_fp_multiply(global.batteryvoltage, FP_BATTERY_MULTIPLIER);
     packet[13] = ((batteryX10 >> 16) & 0x000000ff);
+		if (global.started == 0) {
+			// Send 0x01 - 0x05 display copter battery symbol on VRX!
+			if ( global.flymode == ACCROFLIGHTMODE) {    // acro mode
+					packet[13] = 0x05;
+			} else if (global.flymode == LEVELFLIGHTMODE) {  // level mode
+					packet[13] = 0x01;
+			} else {
+					packet[13] = 0x03;
+			}
+		}
 
     update_crc();
     

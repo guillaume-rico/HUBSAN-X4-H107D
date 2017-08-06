@@ -34,7 +34,7 @@ void checkcheckboxitems(void)
 {
     global.previousactivecheckboxitems = global.activecheckboxitems;
     global.activecheckboxitems = 0;
-
+/*
     uint16_t mask = 0;      // a mask of what aux states are true
 #if (RXNUMCHANNELS>4)
     if (global.rxvalues[AUX1INDEX] < FPAUXMIDRANGELOW)  // low
@@ -90,9 +90,9 @@ void checkcheckboxitems(void)
     else if (global.rxvalues[PITCHINDEX] > FPSTICKHIGH)
         stickmask |= STICK_COMMAND_PITCH_HIGH;
 
-    if (global.rxvalues[YAWINDEX] < FPSTICKYAWLOW)
+    if (global.rxvalues[YAWINDEX] < FPSTICKLOW)
         stickmask |= STICK_COMMAND_YAW_LOW;
-    else if (global.rxvalues[YAWINDEX] > FPSTICKYAWHIGH)
+    else if (global.rxvalues[YAWINDEX] > FPSTICKHIGH)
         stickmask |= STICK_COMMAND_YAW_HIGH;
 
 
@@ -107,4 +107,5 @@ void checkcheckboxitems(void)
         global.activecheckboxitems &= ~CHECKBOXMASKARM;
 
 #endif
+*/
 }

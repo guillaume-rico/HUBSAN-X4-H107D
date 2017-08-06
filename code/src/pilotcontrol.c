@@ -145,10 +145,10 @@ void getangleerrorfrompilotinput(fixedpointnum * angleerror)
     fixedpointnum acromodefraction;     // these two values should total FIXEDPOINTONE.  They are the weights applied to acro and level mode control
     fixedpointnum levelmodefraction;
 
-    if (global.activecheckboxitems & CHECKBOXMASKFULLACRO) {    // acro mode
+    if (global.activecheckboxitems & CHECKBOXMASKFULLACRO || global.flymode == ACCROFLIGHTMODE) {    // acro mode
         acromodefraction = FIXEDPOINTONE;
         levelmodefraction = 0;
-    } else if (!(global.activecheckboxitems & CHECKBOXMASKSEMIACRO)) {  // level mode
+    } else if (!(global.activecheckboxitems & CHECKBOXMASKSEMIACRO)  || global.flymode == LEVELFLIGHTMODE) {  // level mode
         acromodefraction = 0;
         levelmodefraction = FIXEDPOINTONE;
     } else {                    // semi acro mode

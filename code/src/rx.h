@@ -44,6 +44,6 @@ void readrx(void);
 
 #define FPSTICKLOW (((fixedpointnum)STICK_RANGE_LOW-1500)<<7)
 #define FPSTICKHIGH (((fixedpointnum)STICK_RANGE_HIGH-1500)<<7)
-#define FPSTICKYAWLOW (((fixedpointnum)1300-1500)<<7)
-#define FPSTICKYAWHIGH (((fixedpointnum)1700-1500)<<7)
+#define FPSTICKX4LOW (((fixedpointnum)1300-1500)<<7)
+#define FPSTICKX4HIGH (((fixedpointnum)1700-1500)<<7)
 
