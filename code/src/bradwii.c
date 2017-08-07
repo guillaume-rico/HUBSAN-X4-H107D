@@ -265,12 +265,28 @@ int main(void)
 						global.activecheckboxitems &= ~CHECKBOXMASKFULLACRO;
 						global.activecheckboxitems &= ~CHECKBOXMASKSEMIACRO;
 						
+						// pitch PIDs
+						usersettings.pid_pgain[PITCHINDEX] = 120L; // 35L << 3;
+						usersettings.pid_igain[PITCHINDEX] = 4L; //4L << 3; 32L
+						usersettings.pid_dgain[PITCHINDEX] = 90L; //22L << 2; 88L
+
+						// roll PIDs
+						usersettings.pid_pgain[ROLLINDEX] = 120L; //35L << 3;
+						usersettings.pid_igain[ROLLINDEX] = 4L; //4L << 3;
+						usersettings.pid_dgain[ROLLINDEX] = 90L; //22L << 2;
+
+						// yaw PIDs
+						usersettings.pid_pgain[YAWINDEX] = 300L; //100L << 4;
+						usersettings.pid_igain[YAWINDEX] = 0L; //0L;
+						usersettings.pid_dgain[YAWINDEX] = 90L; //22L << 2;
+						
 						if (global.rxvalues[ROLLINDEX] < FPSTICKX4LOW) {
 							// Pith High (Up) : Accro
 							global.activecheckboxitems |= CHECKBOXMASKFULLACRO;
 							global.flymode = ACCROFLIGHTMODE;
-							
+							/*
 							// pitch PIDs
+							// 35 << 3 : 280 , 
 							usersettings.pid_pgain[PITCHINDEX] = 35L << 3;
 							usersettings.pid_igain[PITCHINDEX] = 4L;
 							usersettings.pid_dgain[PITCHINDEX] = 22L << 2;
@@ -284,13 +300,13 @@ int main(void)
 							usersettings.pid_pgain[YAWINDEX] = 100L << 4;
 							usersettings.pid_igain[YAWINDEX] = 0L;
 							usersettings.pid_dgain[YAWINDEX] = 22L << 3;
-							
+							*/
 							nbFlash = 3;
 						} else if (global.rxvalues[ROLLINDEX] > FPSTICKX4HIGH) {
 							// Pitch Low (Down) : Semi Accro
 							global.activecheckboxitems |= CHECKBOXMASKSEMIACRO;
 							global.flymode = SEMIACCROFLIGHTMODE;
-							
+							/*
 							// pitch PIDs
 							usersettings.pid_pgain[PITCHINDEX] = 35L << 3;
 							usersettings.pid_igain[PITCHINDEX] = 4L;
@@ -305,26 +321,11 @@ int main(void)
 							usersettings.pid_pgain[YAWINDEX] = 100L << 4;
 							usersettings.pid_igain[YAWINDEX] = 0L;
 							usersettings.pid_dgain[YAWINDEX] = 22L << 3;
-							
+							*/
 							nbFlash = 2;
 						} else {
 							// Level mode
 							global.flymode = LEVELFLIGHTMODE;
-							
-							// pitch PIDs
-							usersettings.pid_pgain[PITCHINDEX] = 35L << 3;
-							usersettings.pid_igain[PITCHINDEX] = 4L << 3;
-							usersettings.pid_dgain[PITCHINDEX] = 22L << 2;
-
-							// roll PIDs
-							usersettings.pid_pgain[ROLLINDEX] = 35L << 3;
-							usersettings.pid_igain[ROLLINDEX] = 4L << 3;
-							usersettings.pid_dgain[ROLLINDEX] = 22L << 2;
-
-							// yaw PIDs
-							usersettings.pid_pgain[YAWINDEX] = 100L << 4;
-							usersettings.pid_igain[YAWINDEX] = 0L;
-							usersettings.pid_dgain[YAWINDEX] = 22L << 2;
 							
 							nbFlash = 1;
 						}
@@ -606,7 +607,7 @@ int main(void)
             // do the attitude pid
             pidoutput[x] = lib_fp_multiply(angleerror[x], usersettings.pid_pgain[x])
                          - lib_fp_multiply(global.gyrorate[x], usersettings.pid_dgain[x])
-                         + (lib_fp_multiply(integratedangleerror[x], usersettings.pid_igain[x]) >> 4);
+                         + lib_fp_multiply(integratedangleerror[x], usersettings.pid_igain[x]);
 
             // add gain scheduling.  
             pidoutput[x] = lib_fp_multiply(gainschedulingmultiplier, pidoutput[x]);
