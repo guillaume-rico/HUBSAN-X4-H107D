@@ -32,7 +32,6 @@ extern usersettingsstruct usersettings;
 // When the yaw stick is centered, allow compass hold.  This defines what centered is:
 #define YAWCOMPASSRXDEADBAND FIXEDPOINTCONSTANT(.125)   // 1/8 of the range
 
-static fixedpointnum filteredyawgyrorate = 0;
 static fixedpointnum desiredcompassheading;
 static fixedpointnum highyawrate;
 static fixedpointnum highpitchandrollrate;
@@ -53,21 +52,6 @@ void resetpilotcontrol(void)
 void getangleerrorfrompilotinput(fixedpointnum * angleerror)
 {
     // sets the ange errors for roll, pitch, and yaw based on where the pilot has the tx sticks.
-    fixedpointnum rxrollvalue;
-    fixedpointnum rxpitchvalue;
-
-    // if in headfree mode, rotate the pilot's stick inputs by the angle that is the difference between where we are currently heading and where we were heading when we armed.
-    if (global.activecheckboxitems & CHECKBOXMASKHEADFREE) {
-        fixedpointnum angledifference = global.currentestimatedeulerattitude[YAWINDEX] - global.heading_when_armed;
-
-        fixedpointnum cosangledifference = lib_fp_cosine(angledifference);
-        fixedpointnum sinangledifference = lib_fp_sine(angledifference);
-        rxpitchvalue = lib_fp_multiply(global.rxvalues[PITCHINDEX], cosangledifference) + lib_fp_multiply(global.rxvalues[ROLLINDEX], sinangledifference);
-        rxrollvalue = lib_fp_multiply(global.rxvalues[ROLLINDEX], cosangledifference) - lib_fp_multiply(global.rxvalues[PITCHINDEX], sinangledifference);
-    } else {
-        rxpitchvalue = global.rxvalues[PITCHINDEX];
-        rxrollvalue = global.rxvalues[ROLLINDEX];
-    }
 
     // first, calculate level mode values
     // how far is our estimated current attitude from our desired attitude?
@@ -80,8 +64,8 @@ void getangleerrorfrompilotinput(fixedpointnum * angleerror)
         levelmodemaxangle = FP_LEVEL_MODE_MAX_TILT;
 
     // the angle error is how much our current angles differ from our desired angles.
-    fixedpointnum levelmoderollangleerror = lib_fp_multiply(rxrollvalue, levelmodemaxangle) - global.currentestimatedeulerattitude[ROLLINDEX];
-    fixedpointnum levelmodepitchangleerror = lib_fp_multiply(rxpitchvalue, levelmodemaxangle) - global.currentestimatedeulerattitude[PITCHINDEX];
+    fixedpointnum levelmoderollangleerror  = lib_fp_multiply(global.rxvalues[ROLLINDEX], levelmodemaxangle)  - global.currentestimatedeulerattitude[ROLLINDEX];
+    fixedpointnum levelmodepitchangleerror = lib_fp_multiply(global.rxvalues[PITCHINDEX], levelmodemaxangle) - global.currentestimatedeulerattitude[PITCHINDEX];
 
     // In acro mode, we want the rotation rate to be proportional to the pilot's stick movement.  The desired rotation rate is
     // the stick movement * a multiplier.
@@ -99,48 +83,11 @@ void getangleerrorfrompilotinput(fixedpointnum * angleerror)
         maxpitchandrollrate = usersettings.maxpitchandrollrate;
     }
 
-    angleerror[ROLLINDEX] = lib_fp_multiply(lib_fp_multiply(rxrollvalue, maxpitchandrollrate) - global.gyrorate[ROLLINDEX], global.timesliver);
-    angleerror[PITCHINDEX] = lib_fp_multiply(lib_fp_multiply(rxpitchvalue, maxpitchandrollrate) - global.gyrorate[PITCHINDEX], global.timesliver);
 
-    // put a low pass filter on the yaw gyro.  If we don't do this, things can get jittery.
-    lib_fp_lowpassfilter(&filteredyawgyrorate, global.gyrorate[YAWINDEX], global.timesliver >> (TIMESLIVEREXTRASHIFT - 3), FIXEDPOINTONEOVERONESIXTYITH, 3);
+		angleerror[ROLLINDEX]  = lib_fp_multiply(lib_fp_multiply(global.rxvalues[ROLLINDEX], maxpitchandrollrate) - global.gyrorate[ROLLINDEX], global.timesliver);
+		angleerror[PITCHINDEX] = lib_fp_multiply(lib_fp_multiply(global.rxvalues[PITCHINDEX], maxpitchandrollrate) - global.gyrorate[PITCHINDEX], global.timesliver);
+    angleerror[YAWINDEX]   = lib_fp_multiply(lib_fp_multiply(global.rxvalues[YAWINDEX], maxyawrate) - global.gyrorate[YAWINDEX], global.timesliver);
 
-    if(global.activecheckboxitems & CHECKBOXMASKYAWHOLD) {
-        // Yaw hold: control yaw angle instead of yaw rate by accumulating the yaw errors.
-        // This is similar to compass mode, but no hardware compass needed.
-        if(!(global.previousactivecheckboxitems & CHECKBOXMASKYAWHOLD)) {
-            // This mode was just switched on. Use current position as reference by setting error to zero.
-            accumulatedyawerror = 0;
-        }
-        // Accumulate yaw angle error
-        accumulatedyawerror += lib_fp_multiply(lib_fp_multiply(global.rxvalues[YAWINDEX], maxyawrate) - filteredyawgyrorate, global.timesliver) >> TIMESLIVEREXTRASHIFT;
-        // Make sure it does not get too high
-        lib_fp_constrain180(&accumulatedyawerror);
-        angleerror[YAWINDEX] = accumulatedyawerror;
-    } else {
-        // Normal mode: control yaw rate
-        // Calculate yaw angle error since last update based on desired and actual yaw rate.
-        // TIMESLIVEREXTRASHIFT is not used here, so this value is 256 times higher than expected.
-        // This is OK because timesliver is very small, making the angle error during this time
-        // also very small. Using the amplified result the same yaw PID control parameters can be used
-        // for all modes (normal, compass and yaw hold).
-        angleerror[YAWINDEX] = lib_fp_multiply(lib_fp_multiply(global.rxvalues[YAWINDEX], maxyawrate) - filteredyawgyrorate, global.timesliver);
-    }
-
-    // handle compass control
-    if (global.activecheckboxitems & CHECKBOXMASKCOMPASS) {
-        if (!(global.previousactivecheckboxitems & CHECKBOXMASKCOMPASS)) {      // we just switched into compass mode
-            // reset the angle error to zero so that we don't yaw because of the switch
-            desiredcompassheading = global.currentestimatedeulerattitude[YAWINDEX];
-        }
-        // the compass holds only when right side up with throttle up (not sitting on the ground)
-        // and the yaw stick is centered.  If it is centered, override the pilot's input
-        if (global.estimateddownvector[ZINDEX] > 0 && global.rxvalues[THROTTLEINDEX] > FPSTICKLOW && global.rxvalues[YAWINDEX] > -YAWCOMPASSRXDEADBAND && global.rxvalues[YAWINDEX] < YAWCOMPASSRXDEADBAND) {
-            angleerror[YAWINDEX] = desiredcompassheading - global.currentestimatedeulerattitude[YAWINDEX];
-            lib_fp_constrain180(&angleerror[YAWINDEX]);
-        } else                  // the pilot is controlling yaw, so update the desired heading
-            desiredcompassheading = global.currentestimatedeulerattitude[YAWINDEX];
-    }
     // figure out how much to use acro mode and how much to use level mode.
     fixedpointnum acromodefraction;     // these two values should total FIXEDPOINTONE.  They are the weights applied to acro and level mode control
     fixedpointnum levelmodefraction;
@@ -155,16 +102,16 @@ void getangleerrorfrompilotinput(fixedpointnum * angleerror)
         // figure out how much the most moved stick is from centered
         fixedpointnum maxstickthrow;
 
-        if (rxrollvalue < 0)
-            maxstickthrow = -rxrollvalue;
+        if (global.rxvalues[ROLLINDEX] < 0)
+            maxstickthrow = -global.rxvalues[ROLLINDEX];
         else
-            maxstickthrow = rxrollvalue;
+            maxstickthrow = global.rxvalues[ROLLINDEX];
 
-        if (rxpitchvalue < 0) {
-            if (-rxpitchvalue > maxstickthrow)
-                maxstickthrow = -rxpitchvalue;
-        } else if (rxpitchvalue > maxstickthrow)
-            maxstickthrow = rxpitchvalue;
+        if (global.rxvalues[PITCHINDEX] < 0) {
+            if (-global.rxvalues[PITCHINDEX] > maxstickthrow)
+                maxstickthrow = -global.rxvalues[PITCHINDEX];
+        } else if (global.rxvalues[PITCHINDEX] > maxstickthrow)
+            maxstickthrow = global.rxvalues[PITCHINDEX];
 
 
         // if the aircraft is tipped more than 90 degrees, use full acro mode so we don't run into
@@ -184,20 +131,6 @@ void getangleerrorfrompilotinput(fixedpointnum * angleerror)
     // combine level and acro modes
     angleerror[ROLLINDEX] = lib_fp_multiply(angleerror[ROLLINDEX], acromodefraction) + lib_fp_multiply(levelmoderollangleerror, levelmodefraction);
     angleerror[PITCHINDEX] = lib_fp_multiply(angleerror[PITCHINDEX], acromodefraction) + lib_fp_multiply(levelmodepitchangleerror, levelmodefraction);
-
-//if (1) // auto banking (experimental)
-//   {
-//   static fixedpointnum accrollangle=0;
-//   
-//   // calculate the current roll angle
-//   
-//   fixedpointnum newrollangle=  lib_fp_atan2(global.acc_g_vector[XINDEX] , global.acc_g_vector[ZINDEX]);
-//
-//   lib_fp_lowpassfilter(&accrollangle,newrollangle,global.timesliver,FIXEDPOINTCONSTANT(8),TIMESLIVEREXTRASHIFT);
-//   angleerror[ROLLINDEX]-=accrollangle;
-//global.debugvalue[0]=newrollangle>>FIXEDPOINTSHIFT;
-//global.debugvalue[1]=accrollangle>>FIXEDPOINTSHIFT;
-//   }
 }
 
 /*

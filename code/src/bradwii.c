@@ -105,6 +105,7 @@ fixedpointnum altitudeholddesiredaltitude;
 fixedpointnum integratedaltitudeerror;  // for pid control
 
 fixedpointnum integratedangleerror[3];
+fixedpointnum filteredgyrorate[3];
 
 // limit pid windup
 #define INTEGRATEDANGLEERRORLIMIT FIXEDPOINTCONSTANT(1000)
@@ -190,26 +191,12 @@ int main(void)
 		
     // initialize all other modules
     initrx();
-#if (CONTROL_BOARD_TYPE == CONTROL_BOARD_HUBSAN_H107L  || CONTROL_BOARD_TYPE == CONTROL_BOARD_HUBSAN_H107D  )
     // Give the battery voltage lowpass filter a reasonable starting point.
     global.batteryvoltage = FP_BATTERY_UNDERVOLTAGE_LIMIT;
     lib_adc_init();  // For battery voltage	
-#endif
     initoutputs();
-#if (MULTIWII_CONFIG_SERIAL_PORTS != NOSERIALPORT)
-    serialinit();
-#endif
     initgyro();
     initacc();
-#if (BAROMETER_TYPE != NO_BAROMETER)
-    initbaro();
-#endif
-#if (COMPASS_TYPE != NO_COMPASS)
-    initcompass();
-#endif
-#if (GPS_TYPE != NO_GPS)
-    initgps();
-#endif
     initimu();
 
 #if (CONTROL_BOARD_TYPE == CONTROL_BOARD_HUBSAN_H107L || CONTROL_BOARD_TYPE == CONTROL_BOARD_HUBSAN_H107D )
@@ -255,7 +242,6 @@ int main(void)
         // run the imu to estimate the current attitude of the aircraft
         imucalculateestimatedattitude();
 
-#if CONTROL_BOARD_TYPE == CONTROL_BOARD_HUBSAN_H107D
 				if (!global.armed) {
 					
 					// Throttle low and yaw left
@@ -266,19 +252,19 @@ int main(void)
 						global.activecheckboxitems &= ~CHECKBOXMASKSEMIACRO;
 						
 						// pitch PIDs
-						usersettings.pid_pgain[PITCHINDEX] = 120L; // 35L << 3;
-						usersettings.pid_igain[PITCHINDEX] = 4L; //4L << 3; 32L
+						usersettings.pid_pgain[PITCHINDEX] = 300L; // 35L << 3;
+						usersettings.pid_igain[PITCHINDEX] = 32L; //4L << 3; 32L
 						usersettings.pid_dgain[PITCHINDEX] = 90L; //22L << 2; 88L
 
 						// roll PIDs
-						usersettings.pid_pgain[ROLLINDEX] = 120L; //35L << 3;
-						usersettings.pid_igain[ROLLINDEX] = 4L; //4L << 3;
+						usersettings.pid_pgain[ROLLINDEX] = 300L; //35L << 3;
+						usersettings.pid_igain[ROLLINDEX] = 32L; //4L << 3;
 						usersettings.pid_dgain[ROLLINDEX] = 90L; //22L << 2;
 
 						// yaw PIDs
 						usersettings.pid_pgain[YAWINDEX] = 300L; //100L << 4;
 						usersettings.pid_igain[YAWINDEX] = 0L; //0L;
-						usersettings.pid_dgain[YAWINDEX] = 90L; //22L << 2;
+						usersettings.pid_dgain[YAWINDEX] = 90L; //Was 90L 22L << 2;
 						
 						if (global.rxvalues[ROLLINDEX] < FPSTICKX4LOW) {
 							// Pith High (Up) : Accro
@@ -327,6 +313,21 @@ int main(void)
 							// Level mode
 							global.flymode = LEVELFLIGHTMODE;
 							
+							// pitch PIDs
+							usersettings.pid_pgain[PITCHINDEX] = 180L; // 35L << 3;
+							usersettings.pid_igain[PITCHINDEX] = 64L; //4L << 3; 32L
+							usersettings.pid_dgain[PITCHINDEX] = 90L; //22L << 2; 88L
+
+							// roll PIDs 120 4 90
+							usersettings.pid_pgain[ROLLINDEX] = 180L; //35L << 3;
+							usersettings.pid_igain[ROLLINDEX] = 64L; //4L << 3;
+							usersettings.pid_dgain[ROLLINDEX] = 90L; //22L << 2;
+
+							// yaw PIDs
+							usersettings.pid_pgain[YAWINDEX] = 300L; //100L << 4;300
+							usersettings.pid_igain[YAWINDEX] = 0L; //0L;
+							usersettings.pid_dgain[YAWINDEX] = 9L; //Was 90L 22L << 2;
+							
 							nbFlash = 1;
 						}
 						
@@ -353,67 +354,9 @@ int main(void)
 						global.started = 1;
 					}
 				}
-#else
-			  // arm and disarm via rx aux switches (FPSTICKLOW = 0xFFFF5100)
-        if (global.rxvalues[THROTTLEINDEX] < FPSTICKLOW) {      // see if we want to change armed modes
-            
-            if (!global.armed) {
-                if (global.activecheckboxitems & CHECKBOXMASKARM) {
-                    global.armed = 1;
-#if (GPS_TYPE!=NO_GPS)
-                    navigation_sethometocurrentlocation();
-#endif
-                    global.heading_when_armed = global.currentestimatedeulerattitude[YAWINDEX];
-                    global.altitude_when_armed = global.barorawaltitude;
-                }
-            } else if (!(global.activecheckboxitems & CHECKBOXMASKARM))
-                global.armed = 0;
-        } // if throttle low
-
-        if(!global.armed) {
-            // Not armed: check if there is a stick command to execute.
-            detectstickcommand();
-        }
-#endif
-
-
-
-#if (GPS_TYPE!=NO_GPS)
-        // turn on or off navigation when appropriate
-        if (global.navigationmode == NAVIGATIONMODEOFF) {
-            if (global.activecheckboxitems & CHECKBOXMASKRETURNTOHOME)  // return to home switch turned on
-            {
-                navigation_set_destination(global.gps_home_latitude, global.gps_home_longitude);
-                global.navigationmode = NAVIGATIONMODERETURNTOHOME;
-            } else if (global.activecheckboxitems & CHECKBOXMASKPOSITIONHOLD)   // position hold turned on
-            {
-                navigation_set_destination(global.gps_current_latitude, global.gps_current_longitude);
-                global.navigationmode = NAVIGATIONMODEPOSITIONHOLD;
-            }
-        } else                  // we are currently navigating
-        {                       // turn off navigation if desired
-            if ((global.navigationmode == NAVIGATIONMODERETURNTOHOME && !(global.activecheckboxitems & CHECKBOXMASKRETURNTOHOME))
-                ||(global.navigationmode == NAVIGATIONMODEPOSITIONHOLD && !(global.activecheckboxitems & CHECKBOXMASKPOSITIONHOLD))) {
-                global.navigationmode = NAVIGATIONMODEOFF;
-
-                // we will be turning control back over to the pilot.
-                resetpilotcontrol();
-            }
-        }
-#endif
 
         // read the receiver
         readrx();
-
-        // Hubsan X4 has its own LED management
-#if (CONTROL_BOARD_TYPE != CONTROL_BOARD_HUBSAN_H107L && CONTROL_BOARD_TYPE != CONTROL_BOARD_HUBSAN_H107D )
-        // turn on the LED when we are stable and the gps has 5 satellites or more
-#if (GPS_TYPE==NO_GPS)
-        lib_digitalio_setoutput(LED1_OUTPUT, (global.stable == 0) ? (!LED1_ON) : LED1_ON);
-#else
-        lib_digitalio_setoutput(LED1_OUTPUT, (!(global.stable && global.gps_num_satelites >= 5)) == LED1_ON);
-#endif
-#endif // Not Hubsan
 
         // get the angle error.  Angle error is the difference between our current attitude and our desired attitude.
         // It can be set by navigation, or by the pilot, etc.
@@ -421,16 +364,6 @@ int main(void)
 
         // let the pilot control the aircraft.
         getangleerrorfrompilotinput(angleerror);
-
-#if (GPS_TYPE!=NO_GPS)
-        // read the gps
-        unsigned char gotnewgpsreading = readgps();
-
-        // if we are navigating, use navigation to determine our desired attitude (tilt angles)
-        if (global.navigationmode != NAVIGATIONMODEOFF) {       // we are navigating
-            navigation_setangleerror(gotnewgpsreading, angleerror);
-        }
-#endif
 
         if (global.rxvalues[THROTTLEINDEX] < FPSTICKLOW) {
             // We are probably on the ground. Don't accumnulate error when we can't correct it
@@ -440,153 +373,16 @@ int main(void)
             lib_fp_lowpassfilter(&integratedangleerror[ROLLINDEX], 0L, global.timesliver >> TIMESLIVEREXTRASHIFT, FIXEDPOINTONEOVERONEFOURTH, 0);
             lib_fp_lowpassfilter(&integratedangleerror[PITCHINDEX], 0L, global.timesliver >> TIMESLIVEREXTRASHIFT, FIXEDPOINTONEOVERONEFOURTH, 0);
             lib_fp_lowpassfilter(&integratedangleerror[YAWINDEX], 0L, global.timesliver >> TIMESLIVEREXTRASHIFT, FIXEDPOINTONEOVERONEFOURTH, 0);
-        }
-#ifndef NO_AUTOTUNE
-        // let autotune adjust the angle error if the pilot has autotune turned on
-        if (global.activecheckboxitems & CHECKBOXMASKAUTOTUNE) {
-            if (!(global.previousactivecheckboxitems & CHECKBOXMASKAUTOTUNE))
-                autotune(angleerror, AUTOTUNESTARTING); // tell autotune that we just started autotuning
-            else
-                autotune(angleerror, AUTOTUNETUNING);   // tell autotune that we are in the middle of autotuning
-        } else if (global.previousactivecheckboxitems & CHECKBOXMASKAUTOTUNE)
-            autotune(angleerror, AUTOTUNESTOPPING);     // tell autotune that we just stopped autotuning
-#endif
+						filteredgyrorate[ROLLINDEX] = FIXEDPOINTCONSTANT(0L);
+						filteredgyrorate[PITCHINDEX] = FIXEDPOINTCONSTANT(0L);
+						filteredgyrorate[YAWINDEX] = FIXEDPOINTCONSTANT(0L);
+					
+				}
 
         // get the pilot's throttle component
         // convert from fixedpoint -1 to 1 to fixedpoint 0 to 1
         fixedpointnum throttleoutput = (global.rxvalues[THROTTLEINDEX] >> 1) + FIXEDPOINTONEOVERTWO + FPTHROTTLETOMOTOROFFSET;
 
-        // keep a flag to indicate whether we shoud apply altitude hold.  The pilot can turn it on or
-        // uncrashability mode can turn it on.
-        unsigned char altitudeholdactive = 0;
-
-        if (global.activecheckboxitems & CHECKBOXMASKALTHOLD) {
-            altitudeholdactive = 1;
-            if (!(global.previousactivecheckboxitems & CHECKBOXMASKALTHOLD)) {  // we just turned on alt hold.  Remember our current alt. as our target
-                altitudeholddesiredaltitude = global.altitude;
-                integratedaltitudeerror = 0;
-            }
-        }
-
-        // uncrashability mode
-#define UNCRASHABLELOOKAHEADTIME FIXEDPOINTONE  // look ahead one second to see if we are going to be at a bad altitude
-#define UNCRASHABLERECOVERYANGLE FIXEDPOINTCONSTANT(15) // don't let the pilot pitch or roll more than 20 degrees when altitude is too low.
-#define FPUNCRASHABLE_RADIUS FIXEDPOINTCONSTANT(UNCRAHSABLE_RADIUS)
-#define FPUNCRAHSABLE_MAX_ALTITUDE_OFFSET FIXEDPOINTCONSTANT(UNCRAHSABLE_MAX_ALTITUDE_OFFSET)
-#if (GPS_TYPE!=NO_GPS)
-        // keep a flag that tells us whether uncrashability is doing gps navigation or not
-        static unsigned char doinguncrashablenavigationflag;
-#endif
-        // we need a place to remember what the altitude was when uncrashability mode was turned on
-        static fixedpointnum uncrasabilityminimumaltitude;
-        static fixedpointnum uncrasabilitydesiredaltitude;
-        static unsigned char doinguncrashablealtitudehold = 0;
-
-        if (global.activecheckboxitems & CHECKBOXMASKUNCRASHABLE)       // uncrashable mode
-        {
-            // First, check our altitude
-            // are we about to crash?
-            if (!(global.previousactivecheckboxitems & CHECKBOXMASKUNCRASHABLE)) {      // we just turned on uncrashability.  Remember our current altitude as our new minimum altitude.
-                uncrasabilityminimumaltitude = global.altitude;
-#if (GPS_TYPE!=NO_GPS)
-                doinguncrashablenavigationflag = 0;
-                // set this location as our new home
-                navigation_sethometocurrentlocation();
-#endif
-            }
-            // calculate our projected altitude based on how fast our altitude is changing
-            fixedpointnum projectedaltitude = global.altitude + lib_fp_multiply(global.altitudevelocity, UNCRASHABLELOOKAHEADTIME);
-
-            if (projectedaltitude > uncrasabilityminimumaltitude + FPUNCRAHSABLE_MAX_ALTITUDE_OFFSET) { // we are getting too high
-                // Use Altitude Hold to bring us back to the maximum altitude.
-                altitudeholddesiredaltitude = uncrasabilityminimumaltitude + FPUNCRAHSABLE_MAX_ALTITUDE_OFFSET;
-                integratedaltitudeerror = 0;
-                altitudeholdactive = 1;
-            } else if (projectedaltitude < uncrasabilityminimumaltitude) {      // We are about to get below our minimum crashability altitude
-                if (doinguncrashablealtitudehold == 0) {        // if we just entered uncrashability, set our desired altitude to the current altitude
-                    uncrasabilitydesiredaltitude = global.altitude;
-                    integratedaltitudeerror = 0;
-                    doinguncrashablealtitudehold = 1;
-                }
-                // don't apply throttle until we are almost level
-                if (global.estimateddownvector[ZINDEX] > FIXEDPOINTCONSTANT(.4)) {
-                    altitudeholddesiredaltitude = uncrasabilitydesiredaltitude;
-                    altitudeholdactive = 1;
-                } else
-                    throttleoutput = 0; // we are trying to rotate to level, kill the throttle until we get there
-
-                // make sure we are level!  Don't let the pilot command more than UNCRASHABLERECOVERYANGLE
-                lib_fp_constrain(&angleerror[ROLLINDEX], -UNCRASHABLERECOVERYANGLE - global.currentestimatedeulerattitude[ROLLINDEX], UNCRASHABLERECOVERYANGLE - global.currentestimatedeulerattitude[ROLLINDEX]);
-                lib_fp_constrain(&angleerror[PITCHINDEX], -UNCRASHABLERECOVERYANGLE - global.currentestimatedeulerattitude[PITCHINDEX], UNCRASHABLERECOVERYANGLE - global.currentestimatedeulerattitude[PITCHINDEX]);
-            } else
-                doinguncrashablealtitudehold = 0;
-
-#if (GPS_TYPE!=NO_GPS)
-            // Next, check to see if our GPS says we are out of bounds
-            // are we out of bounds?
-            fixedpointnum bearingfromhome;
-            fixedpointnum distancefromhome = navigation_getdistanceandbearing(global.gps_current_latitude, global.gps_current_longitude, global.gps_home_latitude, global.gps_home_longitude, &bearingfromhome);
-
-            if (distancefromhome > FPUNCRASHABLE_RADIUS) {      // we are outside the allowable area, navigate back toward home
-                if (!doinguncrashablenavigationflag) {  // we just started navigating, so we have to set the destination
-                    navigation_set_destination(global.gps_home_latitude, global.gps_home_longitude);
-                    doinguncrashablenavigationflag = 1;
-                }
-                // Let the navigation figure out our roll and pitch attitudes
-                navigation_setangleerror(gotnewgpsreading, angleerror);
-            } else
-                doinguncrashablenavigationflag = 0;
-#endif
-        }
-#if (GPS_TYPE!=NO_GPS)
-        else
-            doinguncrashablenavigationflag = 0;
-#endif
-
-#if (BAROMETER_TYPE!=NO_BAROMETER)
-        // check for altitude hold and adjust the throttle output accordingly
-        if (altitudeholdactive) {
-            integratedaltitudeerror += lib_fp_multiply(altitudeholddesiredaltitude - global.altitude, global.timesliver);
-            lib_fp_constrain(&integratedaltitudeerror, -INTEGRATEDANGLEERRORLIMIT, INTEGRATEDANGLEERRORLIMIT);  // don't let the integrated error get too high
-
-            // do pid for the altitude hold and add it to the throttle output
-            throttleoutput += lib_fp_multiply(altitudeholddesiredaltitude - global.altitude, usersettings.pid_pgain[ALTITUDEINDEX])
-            - lib_fp_multiply(global.altitudevelocity, usersettings.pid_dgain[ALTITUDEINDEX])
-            + lib_fp_multiply(integratedaltitudeerror, usersettings.pid_igain[ALTITUDEINDEX]);
-
-        }
-#endif
-        if ((global.activecheckboxitems & CHECKBOXMASKAUTOTHROTTLE) ||altitudeholdactive) {
-            // Auto Throttle Adjust - Increases the throttle when the aircraft is tilted so that the vertical
-            // component of thrust remains constant.
-            // The AUTOTHROTTLEDEADAREA adjusts the value at which the throttle starts taking effect.  If this
-            // value is too low, the aircraft will gain altitude when banked, if it's too low, it will lose
-            // altitude when banked. Adjust to suit.
-#define AUTOTHROTTLEDEADAREA FIXEDPOINTCONSTANT(.25)
-
-            if (global.estimateddownvector[ZINDEX] > FIXEDPOINTCONSTANT(.3)) {
-                // Divide the throttle by the throttleoutput by the z component of the down vector
-                // This is probaly the slow way, but it's a way to do fixed point division
-                fixedpointnum recriprocal = lib_fp_invsqrt(global.estimateddownvector[ZINDEX]);
-                recriprocal = lib_fp_multiply(recriprocal, recriprocal);
-
-                throttleoutput = lib_fp_multiply(throttleoutput - AUTOTHROTTLEDEADAREA, recriprocal) + AUTOTHROTTLEDEADAREA;
-            }
-        }
-        isfailsafeactive = false;
-#if defined(prout)
-        // if we don't hear from the receiver for over a second, try to land safely
-        if (lib_timers_gettimermicroseconds(global.failsafetimer) > 1000000L) {
-            throttleoutput = FPFAILSAFEMOTOROUTPUT;
-            isfailsafeactive = true;
-
-            // make sure we are level!
-            angleerror[ROLLINDEX] = -global.currentestimatedeulerattitude[ROLLINDEX];
-            angleerror[PITCHINDEX] = -global.currentestimatedeulerattitude[PITCHINDEX];
-        }
-        else
-            isfailsafeactive = false;
-#endif
         // calculate output values.  Output values will range from 0 to 1.0
 
         // calculate pid outputs based on our angleerrors as inputs
@@ -600,26 +396,27 @@ int main(void)
 
         for (int x = 0; x < 3; ++x) {
             integratedangleerror[x] += lib_fp_multiply(angleerror[x], global.timesliver);
+						//filteredgyrorate[x] = (lib_fp_multiply(global.gyrorate[x], FIXEDPOINTCONSTANT(1)) + lib_fp_multiply(filteredgyrorate[x], FIXEDPOINTCONSTANT(31))) >> 5;
+						//lib_fp_lowpassfilter(&filteredgyrorate[x], global.gyrorate[x], global.timesliver, FIXEDPOINTONEOVERONESIXTYITH, TIMESLIVEREXTRASHIFT);
 
+					
             // don't let the integrated error get too high (windup)
             lib_fp_constrain(&integratedangleerror[x], -INTEGRATEDANGLEERRORLIMIT, INTEGRATEDANGLEERRORLIMIT);
 
             // do the attitude pid
             pidoutput[x] = lib_fp_multiply(angleerror[x], usersettings.pid_pgain[x])
                          - lib_fp_multiply(global.gyrorate[x], usersettings.pid_dgain[x])
-                         + lib_fp_multiply(integratedangleerror[x], usersettings.pid_igain[x]);
+                         + (lib_fp_multiply(integratedangleerror[x], usersettings.pid_igain[x]) >> 4);
 
             // add gain scheduling.  
             pidoutput[x] = lib_fp_multiply(gainschedulingmultiplier, pidoutput[x]);
         }
 
-#if (CONTROL_BOARD_TYPE == CONTROL_BOARD_HUBSAN_H107L || CONTROL_BOARD_TYPE == CONTROL_BOARD_HUBSAN_H107D )
-		// On Hubsan X4 H107L the front right motor
-		// rotates clockwise (viewed from top).
-		// On the J385 the motors spin in the opposite direction.
-		// PID output for yaw has to be reversed
+				// On Hubsan X4 H107L the front right motor
+				// rotates clockwise (viewed from top).
+				// On the J385 the motors spin in the opposite direction.
+				// PID output for yaw has to be reversed
         pidoutput[YAWINDEX] = -pidoutput[YAWINDEX];
-#endif
 
         lib_fp_constrain(&throttleoutput, 0, FIXEDPOINTONE);
 

@@ -26,7 +26,7 @@ extern usersettingsstruct usersettings;
 void x4_set_usersettings()
 {
     // set acro mode rotation rates
-    usersettings.maxyawrate = 600L << FIXEDPOINTSHIFT;  // degrees per second
+    usersettings.maxyawrate = 800L << FIXEDPOINTSHIFT;  // degrees per second
     usersettings.maxpitchandrollrate = 400L << FIXEDPOINTSHIFT; // degrees per second
     
     // pitch PIDs
