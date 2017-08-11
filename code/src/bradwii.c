@@ -314,9 +314,9 @@ int main(void)
 							global.flymode = LEVELFLIGHTMODE;
 							
 							// pitch PIDs
-							usersettings.pid_pgain[PITCHINDEX] = 180L; // 35L << 3;
+							usersettings.pid_pgain[PITCHINDEX] = 200L; // 35L << 3;
 							usersettings.pid_igain[PITCHINDEX] = 64L; //4L << 3; 32L
-							usersettings.pid_dgain[PITCHINDEX] = 90L; //22L << 2; 88L
+							usersettings.pid_dgain[PITCHINDEX] = 100L; //22L << 2; 88L
 
 							// roll PIDs 120 4 90
 							usersettings.pid_pgain[ROLLINDEX] = 180L; //35L << 3;
@@ -326,7 +326,7 @@ int main(void)
 							// yaw PIDs
 							usersettings.pid_pgain[YAWINDEX] = 300L; //100L << 4;300
 							usersettings.pid_igain[YAWINDEX] = 0L; //0L;
-							usersettings.pid_dgain[YAWINDEX] = 9L; //Was 90L 22L << 2;
+							usersettings.pid_dgain[YAWINDEX] = 15L; //Was 90L 22L << 2;
 							
 							nbFlash = 1;
 						}
@@ -396,7 +396,7 @@ int main(void)
 
         for (int x = 0; x < 3; ++x) {
             integratedangleerror[x] += lib_fp_multiply(angleerror[x], global.timesliver);
-						//filteredgyrorate[x] = (lib_fp_multiply(global.gyrorate[x], FIXEDPOINTCONSTANT(1)) + lib_fp_multiply(filteredgyrorate[x], FIXEDPOINTCONSTANT(31))) >> 5;
+						//filteredgyrorate[x] = (lib_fp_multiply(global.gyrorate[x], FIXEDPOINTCONSTANT(1)) + lib_fp_multiply(filteredgyrorate[x], FIXEDPOINTCONSTANT(1))) >> 1;
 						//lib_fp_lowpassfilter(&filteredgyrorate[x], global.gyrorate[x], global.timesliver, FIXEDPOINTONEOVERONESIXTYITH, TIMESLIVEREXTRASHIFT);
 
 					
